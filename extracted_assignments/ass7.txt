@@ -1,0 +1,187 @@
+
+Assignment 7
+Cover Page
+Name
+Kabir Pail
+Roll No.
+B-26
+Subject
+Agentic AI
+Department
+Information Technology
+Institute
+Walchand Institute of Technology, Solapur
+Assignment
+7
+
+Task 11: AI Travel Agent
+Objective:
+Create an AI travel agent that recommends a travel plan based on location, weather, budget, and number of days.
+Code:
+import os
+from dotenv import load_dotenv
+from huggingface_hub import InferenceClient load_dotenv()
+token = os.getenv("HF_TOKEN") client = InferenceClient(
+api_key=token, provider="featherless-ai"
+)
+location = input("Location: ") weather = input("Weather: ") budget = int(input("Budget: "))
+days = int(input("Number of days: ")) prompt = f"""
+You are a travel planning agent.
+Create a realistic short travel plan for: Location: {location}
+Weather: {weather} Budget: ₹{budget} Number of days: {days}
+Keep the plan practical and mention approximate spending. """
+response = client.chat.completions.create( model="meta-llama/Llama-3.2-1B-Instruct", messages=[{"role": "user", "content": prompt}], max_tokens=150
+)
+print("\nTravel Plan:") print(response.choices[0].message.content)
+Output / Result:
+Location: Pune Weather: Sunny Budget: 4000 Number of days: 3 Travel Plan:
+Here's a realistic short travel plan for Pune:
+
+Day 1: Explore Pune City
+Stay at a budget-friendly hostel: ₹800 per night (approx. ₹2400 for 3 nights)
+Visit the Pune Municipal Market (free admission)
+Enjoy street food at a local stall (₹100 per meal) Day 2: Outdoor Activities
+Visit the Indira Sumantra Park (₹50 per person)
+Take a guided hike at the Sahyadri Mountains (₹200 per person) Day 3: Relaxation
+Relax at a local beach (₹100 per person for a day pass) Total estimated spending: ₹2800
+
+Task 12: Study Planning Agent
+Objective:
+Create a study planning agent that decomposes a study goal into smaller topics and assigns approximate time to each topic.
+Code:
+import os
+from dotenv import load_dotenv
+from huggingface_hub import InferenceClient load_dotenv()
+token = os.getenv("HF_TOKEN") client = InferenceClient(
+api_key=token, provider="featherless-ai"
+)
+subject = input("Subject: ")
+hours = int(input("Available hours: ")) prompt = f"""
+You are a study planning agent. Subject: {subject}
+Available study time: {hours} hours Create a practical study plan.
+Break the subject into the most important smaller topics.
+Prioritize difficult or important topics first.
+Assign approximate time to each topic.
+Include a short revision period.
+Keep the plan concise.
+Use a simple numbered list.
+Avoid detailed explanations.
+Keep the response within 100 words. """
+response = client.chat.completions.create( model="meta-llama/Llama-3.2-1B-Instruct", messages=[{"role": "user", "content": prompt}], max_tokens=200
+)
+print("\nStudy Plan:") print(response.choices[0].message.content)
+Output / Result:
+Subject: Machine Learning Available hours: 2
+Study Plan:
+Here's a practical study plan for Machine Learning:
+Introduction to Machine Learning (30 minutes)
+Supervised Learning (1 hour)
+Unsupervised Learning (1 hour)
+Neural Networks (1.5 hours)
+Deep Learning (1.5 hours)
+Reinforcement Learning (1 hour)
+Time Series Prediction (30 minutes)
+Approximate Revision (1 hour)
+
+
+
+Task 13: Interview Question Generation Agent
+Objective:
+Create an interview preparation agent that selects difficulty based on experience and generates interview questions with short answers.
+Code:
+from langchain_core.tools import tool
+from huggingface_hub import InferenceClient import os
+from dotenv import load_dotenv load_dotenv()
+token = os.getenv("HF_TOKEN") client = InferenceClient(
+api_key=token, provider="featherless-ai"
+)
+@tool
+def difficulty(experience: int):
+"""Select interview difficulty based on years of experience.""" return "Easy" if experience < 2 else "Advanced"
+years = int(input("Years of experience: ")) level = difficulty.invoke({"experience": years}) prompt = f"""
+You are an interview preparation agent.
+Generate exactly 3 interview questions for a candidate with {years} years of experience. Difficulty: {level}
+For each question:
+Give the question.
+Give a short, correct answer.
+Keep answers to 1–2 sentences.
+Make questions relevant to the candidate's experience and difficulty. Use a simple numbered format.
+Complete all 3 questions and answers.
+Do not add an introduction or conclusion. """
+response = client.chat.completions.create( model="meta-llama/Llama-3.2-1B-Instruct", messages=[{"role": "user", "content": prompt}], max_tokens=250
+)
+print("\nInterview Questions:") print(response.choices[0].message.content)
+Output / Result:
+Years of experience: 2 Interview Questions:
+What steps would you take to ensure seamless integration of a new software application into an existing infrastructure, considering the potential risks and challenges associated with this process?
+Answer: I would first conduct a thorough risk assessment to identify potential pitfalls, then develop a detailed implementation plan, and finally, schedule training sessions with the team to ensure a smooth transition.
+
+How would you approach a situation where a team member is consistently underperforming and is not meeting their job responsibilities, despite efforts to provide constructive feedback and support?
+Answer: I would first gather specific data on the team member's performance, then schedule a meeting with the individual to discuss their progress and set clear expectations, followed by regular check-ins to monitor their performance and provide additional support when needed.
+Suppose you were tasked with leading a cross-functional team to launch a new product, with a tight deadline and limited resources. How would you prioritize tasks, allocate resources, and manage stakeholder expectations to ensure the project's success?
+Answer: I would first define clear project goals and objectives, then create a detailed task list and resource allocation plan, and finally, establish regular check-ins with stakeholders to monitor progress and make adjustments as needed to ensure the project stays on track.
+
+
+Task 14: RAG using Embeddings and FAISS
+Objective:
+Create a basic RAG system that stores college information as embeddings in FAISS and retrieves the most relevant information for a question.
+Code:
+from langchain_huggingface import HuggingFaceEmbeddings from langchain_community.vectorstores import FAISS
+data = [
+"College starts at 9 AM.",
+"Library is open from 8 AM to 8 PM.", "Exam cell is located in Block A.", "Students must carry their ID cards."
+]
+emb = HuggingFaceEmbeddings(
+model_name="sentence-transformers/all-MiniLM-L6-v2"
+)
+db = FAISS.from_texts(data, emb)
+question = input("Ask college question: ") docs = db.similarity_search(question, k=1) print("\nAgent retrieved:") print(docs[0].page_content)
+Output / Result:
+Ask college question: Where is the exam cell? Agent retrieved:
+Exam cell is located in Block A.
+
+Task 15: Classification + Tool + LLM + Decision Making
+Objective:
+Create an agent that classifies a customer query and decides whether to use a refund tool, technical support tool, or an LLM response.
+Code:
+from langchain_core.tools import tool
+from huggingface_hub import InferenceClient import os
+from dotenv import load_dotenv load_dotenv()
+token = os.getenv("HF_TOKEN") client = InferenceClient(
+api_key=token, provider="featherless-ai"
+)
+model = "meta-llama/Llama-3.2-1B-Instruct" @tool
+def refund():
+"""Handle refund request."""
+return "Refund request registered." @tool
+def technical():
+"""Handle technical issue."""
+return "Technical support ticket created." query = input("Customer query: ").lower()
+if "refund" in query:
+result = refund.invoke({})
+elif "error" in query or "not working" in query: result = technical.invoke({})
+else:
+response = client.chat.completions.create( model=model,
+messages=[
+{
+"role": "user", "content": query
+}
+],
+max_tokens=80
+)
+result = response.choices[0].message.content print("\nAgent Response:")
+print(result)
+
+
+
+
+
+Output / Result:
+Customer query: I want a refund for this product, as I have returned it. Agent Response:
+Refund request registered.
+Customer query: How early can we get our payment back once the product is returned ? Agent Response:
+
+The early payment back policy varies depending on the retailer, product category, and return shipping method. Here are some general guidelines:
+**Manufacturer's Return Policy**: Some manufacturers, like Apple, Dell, and HP, have a 30-day return policy. After 30 days, the item is considered final, and you won't be eligible for a refund or exchange.
+
+

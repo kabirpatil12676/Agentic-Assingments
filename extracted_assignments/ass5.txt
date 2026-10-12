@@ -1,0 +1,331 @@
+ 
+B-26 | Agentic AI Assignment 5 
+ 
+ 
+ 
+ 
+ 
+Agentic AI Assignment 5 
+Name:  Kabir Patil 
+Roll No: B-26 
+Model: meta-llama/Llama-3.2-1B-Instruct 
+Tasks: Summarization, Sentiment Analysis, Interview Questions, AI Tutor  
+  
+ 
+B-26 | Agentic AI Assignment 5 
+Python Code 
+The program loads the Hugging Face token from a .env file, sends formatted prompts to the Featherless AI 
+provider, and uses the Llama 3.2 1B Instruct model for all four tasks.  
+import os 
+from dotenv import load_dotenv  
+  
+from huggingface_hub import InferenceClient  
+from langchain_core.prompts import PromptTemplate  
+  
+# Load environment variables  
+load_dotenv() 
+  
+token = os.getenv("HF_TOKEN")  
+  
+print("Token loaded:", bool(token))  
+  
+# Hugging Face client  
+client = InferenceClient(  
+    api_key=token, 
+    provider="featherless -ai" 
+) 
+  
+# Model 
+model = "meta-llama/Llama-3.2-1B-Instruct" 
+  
+  
+def generate_response(prompt, max_tokens):  
+    response = client.chat.completions.create(  
+        model=model, 
+        messages=[ 
+            { 
+                "role": "user", 
+                "content": prompt  
+            } 
+        ], 
+        max_tokens=max_tokens  
+    ) 
+  
+    return response.choices[0].message.content  
+  
+  
+while True: 
+  
+    print("\n==============================")  
+    print("       AI TASK MENU")  
+    print("==============================")  
+    print("1. Text Summarization")  
+    print("2. Sentiment Analysis")  
+    print("3. Interview Questions")  
+    print("4. AI Tutor")  
+    print("5. Exit")  
+  
+    choice = input("\nEnter your choice: ")  
+  
+    # -----------------------------------  
+ 
+B-26 | Agentic AI Assignment 5 
+    # TASK 1: SUMMARIZATION  
+    # -----------------------------------  
+    if choice == "1":  
+  
+        text = input("\nEnter text to summarize: ")  
+  
+        prompt = PromptTemplate.from_template(  
+            "Summarize the following text in exactly 3 sentences: \n\n{text}" 
+        ) 
+  
+        final_prompt = prompt.invoke({"text": text})  
+  
+        result = generate_response(  
+            final_prompt.to_string(),  
+            100 
+        ) 
+  
+        print("\nSummary:") 
+        print(result) 
+  
+    # -----------------------------------  
+    # TASK 2: SENTIMENT ANALYSIS  
+    # -----------------------------------  
+    elif choice == "2":  
+  
+        text = input("\nEnter a sentence or review: ")  
+  
+        prompt = PromptTemplate.from_template(  
+            """Analyze the sentiment of the following text.  
+  
+Return ONLY one of these three labels:  
+Positive 
+Negative 
+Neutral 
+  
+Text: 
+{text}""" 
+        ) 
+  
+        final_prompt = prompt.invoke({"text": text})  
+  
+        result = generate_response(  
+            final_prompt.to_string(),  
+            30 
+        ) 
+  
+        print("\nSentiment:") 
+        print(result) 
+  
+    # -----------------------------------  
+    # TASK 3: INTERVIEW QUESTIONS  
+    # -----------------------------------  
+    elif choice == "3":  
+  
+        topic = input("\nEnter interview topic: ")  
+  
+        prompt = PromptTemplate.from_template(  
+ 
+B-26 | Agentic AI Assignment 5 
+            """Generate 5 interview questions about the following topic.  
+  
+Topic: {topic} 
+  
+Number the questions from 1 to 5.  
+Give only the questions."""  
+        ) 
+  
+        final_prompt = prompt.invoke ({"topic": topic})  
+  
+        result = generate_response(  
+            final_prompt.to_string(),  
+            150 
+        ) 
+  
+        print("\nInterview Questions:")  
+        print(result) 
+  
+    # -----------------------------------  
+    # TASK 4: AI TUTOR 
+    # -----------------------------------  
+    elif choice == "4":  
+  
+        topic = input("\nEnter topic: ")  
+        level = input("Enter student level (Beginner/Intermediate/Advanced): ")  
+  
+        prompt = PromptTemplate.from_template(  
+            """Act as an AI tutor.  
+  
+Teach the following topic to a student.  
+  
+Topic: {topic} 
+Student Level: {level}  
+  
+Explain the concept clearly and simply.  
+Give a small example.  
+End with one practice question."""  
+        ) 
+  
+        final_prompt = prompt.invoke({  
+            "topic": topic,  
+            "level": level  
+        }) 
+  
+        result = generate_response(  
+            final_prompt.to_string(),  
+            150 
+        ) 
+  
+        print("\nAI Tutor:") 
+        print(result) 
+  
+    # -----------------------------------  
+    # EXIT 
+    # -----------------------------------  
+    elif choice == "5":  
+  
+ 
+B-26 | Agentic AI Assignment 5 
+        print("\nExiting program...")  
+        break 
+  
+    else: 
+  
+        print("\nInvalid choice. Please enter 1 -5.") 
+  
+ 
+B-26 | Agentic AI Assignment 5 
+Execution Output  
+The following console output is reproduced from the provided execution, including the incomplete model 
+responses where generation stopped at the configured token limit.  
+==============================  
+       AI TASK MENU 
+==============================  
+1. Text Summarization  
+2. Sentiment Analysis  
+3. Interview Questions  
+4. AI Tutor 
+5. Exit 
+ 
+Enter your choice: 1  
+ 
+Enter text to summarize: Artificial intelligence is rapidly changing many industries by 
+enabling computers to perform tasks that normally require human intelligence. AI 
+systems can analyze large amounts of data, understand language, recognize images, make 
+predictions, and assist people in making decisions. These technologies are being used 
+in healthcare, education, finance, transportation, and many other fields. However, the 
+increasing use of AI also creates challenges related to privacy, security, employme nt, 
+bias, and responsible use.  
+ 
+Summary: 
+Here is a 3-sentence summary of the text:  
+ 
+Artificial intelligence (AI) is rapidly changing various industries by automating tasks 
+that require human intelligence, such as data analysis, language understanding, and 
+image recognition. AI is being applied in healthcare, education, finance, 
+transportation, and other fields, but also raises concerns about privacy, security, 
+employment, and bias. As AI continues to evolve, it is essential to address these 
+challenges and ensure responsible use to mitigate potential negative impacts.  
+ 
+==============================  
+       AI TASK MENU 
+==============================  
+1. Text Summarization  
+2. Sentiment Analysis  
+3. Interview Questions  
+4. AI Tutor 
+5. Exit 
+ 
+Enter your choice: 2  
+ 
+Enter a sentence or review: I am extremely disappointed with this product. It stopped 
+working after only two days and the customer support was not helpful.  
+ 
+Sentiment: 
+Negative 
+ 
+==============================  
+       AI TASK MENU 
+==============================  
+1. Text Summarization  
+2. Sentiment Analysis  
+3. Interview Questions  
+ 
+B-26 | Agentic AI Assignment 5 
+4. AI Tutor 
+5. Exit 
+ 
+Enter your choice: 3  
+ 
+Enter interview topic: Python  
+ 
+Interview Questions:  
+1. What is the primary advantage of using the Python programming language, and how does 
+it differ from other languages in the industry?  
+ 
+2. Can you explain the concept of object -oriented programming (OOP) in Python, and 
+provide an example of how it is applied in a real -world scenario?  
+ 
+3. What are some of the key libraries and frameworks available for data science and 
+machine learning tasks in Python, and how do they enhance the development process?  
+ 
+4. How do you handle errors and exceptions in Python code, and what are some best 
+practices for debugging and troubleshooting?  
+ 
+5. What are some of the most common pitfalls and mistakes that beginners make when 
+learning Python, and how can they be avoided to ensure a smooth learning experience?  
+ 
+==============================  
+       AI TASK MENU 
+==============================  
+1. Text Summarization  
+2. Sentiment Analysis  
+3. Interview Questions  
+4. AI Tutor 
+5. Exit 
+ 
+Enter your choice: 4  
+ 
+Enter topic: Machine Learning  
+Enter student level (Beginner/Intermediate/Advanced): Beginner  
+ 
+AI Tutor: 
+I'd be happy to help you understand the concept of machine learning.  
+ 
+**What is Machine Learning?**  
+ 
+Machine learning is a way of teaching computers to make decisions or predictions on 
+their own, without being explicitly programmed. It's like teaching a computer to 
+recognize patterns in data, and then using that knowledge to make predictions or 
+decisions. 
+ 
+**How does Machine Learning work?**  
+ 
+Imagine you have a jar of different fruits, and you want to teach a computer to 
+recognize which ones are apples and which ones are bananas. You could write a list of 
+all the characteristics of each fruit, such as "apple: red, crunchy, sweet" and 
+"banana: yellow, soft, tastes like a string". The computer would then use that list to 
+recognize which fruits are apples and which are bananas.  
+ 
+In machine learning, we use algorithms to analyze data, identify patterns, and make 
+predictions. We can use this information to train a computer model to make decisions or 
+predictions on new, unseen data.  
+ 
+B-26 | Agentic AI Assignment 5 
+ 
+**Small Example: 
+ 
+==============================  
+       AI TASK MENU 
+==============================  
+1. Text Summarization  
+2. Sentiment Analysis  
+3. Interview Questions  
+4. AI Tutor 
+5. Exit 
+ 
+Enter your choice: 5  
+ 
+Exiting program... 

@@ -1,0 +1,2 @@
+# This directory holds raw input data (CSVs, etc.)
+# Populated at runtime or by scripts/seed_data.py

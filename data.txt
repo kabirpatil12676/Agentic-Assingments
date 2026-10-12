@@ -1,0 +1,7 @@
+Artificial Intelligence is a branch of computer science that focuses on creating systems capable of performing tasks that normally require human intelligence. These tasks include learning, reasoning, problem solving, understanding language, recognizing images, and making decisions.
+
+Machine Learning is an important part of Artificial Intelligence. It allows computers to learn patterns from data and make predictions without being explicitly programmed for every task. Machine Learning algorithms are commonly used in recommendation systems, fraud detection, medical diagnosis, and image recognition.
+
+Deep Learning is a subset of Machine Learning that uses neural networks with multiple layers. It is widely used in areas such as computer vision, natural language processing, speech recognition, and autonomous vehicles.
+
+Artificial Intelligence is becoming increasingly important in healthcare, education, finance, transportation, and many other industries. However, AI systems also create challenges related to privacy, security, bias, and responsible use.

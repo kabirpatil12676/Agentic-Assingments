@@ -1,0 +1,313 @@
+
+Assignment 8
+Cover Page
+Name
+Kabir Pail
+Roll No.
+B-26
+Subject
+Agentic AI
+Department
+Information Technology
+Institute
+Walchand Institute of Technology, Solapur
+Assignment
+8
+
+
+Task 16: Probability + Decision-Making + LLM
+Objective:
+Create a basic decision-making system that uses predefined probability values to determine an action based on symptom severity and uses an LLM to explain the recommendation.
+Code:
+import os
+from dotenv import load_dotenv
+from huggingface_hub import InferenceClient load_dotenv()
+token = os.getenv("HF_TOKEN")
+
+# Create Hugging Face client client = InferenceClient(
+api_key=token, provider="featherless-ai"
+)
+
+# Probability values symptom_probability = {
+"mild": 0.2,
+"moderate": 0.5,
+"severe": 0.9
+}
+
+# Get user input
+severity = input("Severity (mild/moderate/severe): ").strip().lower()
+
+# Get probability
+risk = symptom_probability[severity]
+
+# Make decision if risk > 0.7:
+action = "Seek professional medical attention" else:
+action = "Monitor symptoms"
+
+# Ask LLM to explain the decision prompt = f"""
+Explain this recommendation simply:
+
+{action}
+
+Keep the explanation short and easy to understand. """
+
+response = client.chat.completions.create( model="meta-llama/Llama-3.2-1B-Instruct", messages=[
+{
+"role": "user", "content": prompt
+}
+],
+max_tokens=80
+)
+
+print("\nRecommendation:") print(action)
+
+print("\nLLM Explanation:") print(response.choices[0].message.content)
+Output / Result:
+Severity (mild/moderate/severe): moderate
+
+Recommendation:
+Monitor symptoms
+
+LLM Explanation:
+This recommendation means that you should pay attention to any changes in your body or behavior, and report them to your doctor. It's like keeping an eye on how you're feeling, and letting your doctor know if things seem to be getting worse or better.
+
+Task 17: Multi-Agent + Code Generation + Supervision
+Objective:
+Create a simple multi-agent system where one agent generates Python code from a programming requirement and another agent reviews the generated code for errors.
+Code:
+import os
+from dotenv import load_dotenv
+from huggingface_hub import InferenceClient load_dotenv()
+token = os.getenv("HF_TOKEN")
+
+# Create Hugging Face client client = InferenceClient(
+api_key=token, provider="featherless-ai"
+)
+
+# Get programming requirement
+task = input("Programming requirement: ")
+
+#
+# Agent 1: Code Generator #
+
+generator_prompt = f"""
+You are a Python code generation agent.
+
+Write Python code for the following requirement:
+{task} Requirements:
+Write simple Python code.
+Make the code complete and executable.
+Do not provide unnecessary explanation.
+Return only the code. """
+
+response = client.chat.completions.create( model="meta-llama/Llama-3.2-1B-Instruct", messages=[
+{
+"role": "user",
+"content": generator_prompt
+}
+],
+max_tokens=200
+
+)
+code = response.choices[0].message.content #
+# Agent 2: Code Reviewer #
+
+review_prompt = f"""
+You are a code reviewer.
+
+Review the following Python code:
+{code} Find:
+Syntax errors
+Logical errors
+Missing parts
+
+Give a short review. """
+
+review_response = client.chat.completions.create( model="meta-llama/Llama-3.2-1B-Instruct", messages=[
+{
+"role": "user", "content": review_prompt
+}
+],
+max_tokens=200
+)
+review = review_response.choices[0].message.content #
+# Output #
+
+print("\nGENERATED CODE:")
+print(code)
+
+print("\nCRITIC:") print(review)
+Output / Result:
+Programming requirement: Write a code for adding two numbers then multiplying the result by 4 and then dividing it by 2.
+
+GENERATED CODE:
+```python
+
+def add_and_multiply():
+num1 = float(input("Enter the first number: ")) num2 = float(input("Enter the second number: "))
+
+result = (num1 + num2) * 4 / 2 return result
+
+# Execute the function result = add_and_multiply()
+print("The result is:", result) CRITIC:
+The provided Python code is syntactically correct and logically sound, with no syntax errors or missing parts identified. The function add_and_multiply reads two numbers from the user, performs necessary arithmetic operations (num1 + num2) * 4 / 2, and returns the result. The constructed print statement outputs the result correctly.
+Here's a brief review:
+
+Syntax: The opening and closing parentheses for the def and return statements are in the correct places, and there are four spaces of indentation, following PEP 8 guidelines for Python indentation.
+Naming Conventions: The function and variable names follow Python's variable naming conventions (lowercase with underscores).
+Functionality: The function accurately performs the intended calculation, which is to add two numbers and multiply the sum by 4 / 2 (which simplifies to 2), and then returns the result.
+
+Task 18: Planning + Task Decomposition + LLM
+Objective:
+Create a planning agent that decomposes a given task into three steps and uses another LLM call to conceptually execute the plan and provide the expected outcome.
+Code:
+import os
+from dotenv import load_dotenv
+from huggingface_hub import InferenceClient load_dotenv()
+token = os.getenv("HF_TOKEN")
+
+# Create Hugging Face client client = InferenceClient(
+api_key=token, provider="featherless-ai"
+)
+# Get user task
+task = input("Enter task: ")
+
+#
+# Agent 1: Planning #
+plan_prompt = f"""
+You are a planning agent.
+Create exactly 3 steps to complete this task:
+{task}
+Keep the steps practical, concise, and clear. """
+plan_response = client.chat.completions.create( model="meta-llama/Llama-3.2-1B-Instruct", messages=[
+{
+"role": "user", "content": plan_prompt
+}
+],
+max_tokens=150
+)
+plan = plan_response.choices[0].message.content
+
+#
+# Agent 2: Execution #
+execution_prompt = f"""
+You are an execution agent. Execute this plan conceptually. Plan:
+{plan}
+Describe the expected outcome briefly. Do not actually perform the task.
+"""
+
+execution_response = client.chat.completions.create( model="meta-llama/Llama-3.2-1B-Instruct", messages=[
+{
+"role": "user",
+"content": execution_prompt
+}
+],
+max_tokens=150
+)
+execution = execution_response.choices[0].message.content
+
+#
+# Output #
+print("\nPLAN:") print(plan) print("\nEXECUTION:") print(execution)
+Output / Result:
+Enter task: Prepare for python exam PLAN:
+Here are three practical steps to help you prepare for your Python exam: Step 1: Review Python Basics
+
+Go through the official Python documentation (python.org) to understand the basics of Python syntax, data types, control structures, functions, and modules.
+Focus on the sections that are most relevant to the exam, such as variables, strings, lists, dictionaries, and conditional statements.
+Step 2: Practice Python Exercises and Code
+
+Complete online Python exercises and quizzes, such as those found on LeetCode, HackerRank, or CodeWars.
+Use online platforms like Repl.it or Google Colab to write and run Python code in a collaborative environment.
+Practice solving problems on platforms like Project Euler or Codeforces to EXECUTION:
+I can provide a conceptual execution of the plan conceptually. Expected Outcome:
+Upon completing the three practical steps outlined in the plan, the individual should be well-prepared for the Python exam by gaining a solid understanding of Python basics, practicing Python exercises and code, and developing problem-solving skills.
+This conceptual execution involves the following steps:
+
+Reviewing Python Basics: The individual will review the official Python documentation to grasp the fundamental concepts of Python syntax, data types, control structures, functions, and modules.
+Practicing Python Exercises and Code: The individual will complete online Python exercises and quizzes, utilize online platforms to write and run Python code, and practice solving problems on relevant platforms.
+
+Task 19: ReAct + Tool + Reasoning
+Objective:
+Create a simple ReAct-style agent that decides whether to use a multiplication tool, executes the tool, observes the result, and generates a final answer.
+Code:
+import os
+from dotenv import load_dotenv
+from huggingface_hub import InferenceClient from langchain_core.tools import tool load_dotenv()
+token = os.getenv("HF_TOKEN")
+
+# Create Hugging Face client client = InferenceClient(
+api_key=token, provider="featherless-ai"
+) #
+# Tool #
+@tool
+def multiply(a: int, b: int): """Multiply two numbers.""" return a * b
+#
+# Agent #
+user_task = input("Enter your request: ") agent_prompt = f"""
+You are an AI agent with access to one tool: Tool:
+multiply(a, b) - multiplies two numbers. User request:
+{user_task}
+Decide whether the multiply tool is needed.
+If multiplication is needed, respond EXACTLY in this format:
+ACTION: multiply a: number
+b: number
+If the tool is not needed, respond EXACTLY: ACTION: none
+Do not provide the final answer yet. """
+# Agent decides what to do
+response = client.chat.completions.create( model="meta-llama/Llama-3.2-1B-Instruct", messages=[
+{
+"role": "user", "content": agent_prompt
+}
+
+],
+max_tokens=80
+)
+decision = response.choices[0].message.content.strip() print("\nAGENT DECISION:")
+print(decision) #
+# Tool execution #
+if "ACTION: multiply" in decision:
+
+
+try:
+
+lines = decision.splitlines()
+
+a = int(lines[1].split(":")[1].strip())
+b = int(lines[2].split(":")[1].strip()) print("\nACTION: multiply")
+result = multiply.invoke({ "a": a,
+"b": b
+
+})
+print("OBSERVATION:", result) #
+# Agent gives final answer #
+
+final_prompt = f""" User request:
+{user_task}
+You decided to use the multiply tool. Tool result:
+{result}
+Give the final answer to the user. Keep it short.
+"""
+final_response = client.chat.completions.create( model="meta-llama/Llama-3.2-1B-Instruct", messages=[
+{
+"role": "user", "content": final_prompt
+}
+],
+max_tokens=80
+)
+
+final_answer = final_response.choices[0].message.content print("\nFINAL ANSWER:")
+
+print(final_answer)
+
+except Exception as e:
+print("\nTool execution failed.") print("Error:", e)
+else:
+print("\nFINAL ANSWER:")
+print("No multiplication tool was required.")
+Output / Result:
+Enter your request: Multiply 200 by 25 AGENT DECISION:
+ACTION: multiply a: 200
+b: 25
+ACTION: multiply OBSERVATION: 5000 FINAL ANSWER:
+The final answer is: 5000

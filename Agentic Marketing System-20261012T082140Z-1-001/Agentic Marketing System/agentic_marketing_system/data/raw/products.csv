@@ -1,0 +1,121 @@
+product_id,product_name,category,price,cost,units_sold,revenue,average_rating,review_count,conversion_rate,inventory
+prod_0001,Wireless Noise-Canceling Headphones,Electronics,149.99,65.0,712,106792.88,4.4,132,0.0194,15
+prod_0002,Ultra-Slim Power Bank 20000mAh,Electronics,39.99,16.0,483,19315.17,3.8,94,0.026,15
+prod_0003,Mechanical Gaming Keyboard,Electronics,89.99,38.0,413,37165.87,4.4,98,0.0689,15
+prod_0004,Smart Fitness Watch Pro,Electronics,199.99,85.0,351,70196.49,4.3,52,0.0198,15
+prod_0005,Bluetooth Portable Speaker,Electronics,49.99,21.0,234,11697.66,3.7,28,0.0468,79
+prod_0006,Ergonomic Wireless Mouse,Electronics,29.99,11.5,216,6477.84,4.2,53,0.0588,443
+prod_0007,4K USB-C Multi-Port Hub,Electronics,59.99,24.0,238,14277.62,4.2,67,0.0306,363
+prod_0008,Active Noise Cancelling Earbuds,Electronics,79.99,32.0,170,13598.3,3.8,43,0.0676,518
+prod_0009,Dual Monitor Stand Arm,Electronics,69.99,28.0,187,13088.13,4.6,37,0.0578,287
+prod_0010,Fast Wireless Charging Stand,Electronics,24.99,9.0,138,3448.62,3.8,27,0.0303,552
+prod_0011,Classic Organic Cotton T-Shirt,Fashion,24.99,8.5,143,3573.57,3.9,24,0.0233,206
+prod_0012,Slim-Fit Stretch Denim Jeans,Fashion,59.99,22.0,146,8758.54,3.9,47,0.0376,289
+prod_0013,Water-Resistant Commuter Backpack,Fashion,69.99,26.0,178,12458.22,4.6,55,0.0596,396
+prod_0014,Merino Wool Blend Sweater,Fashion,89.99,35.0,177,15928.23,3.6,52,0.0706,163
+prod_0015,Breathable Athletic Sneakers,Fashion,109.99,42.0,149,16388.51,4.2,31,0.0653,467
+prod_0016,Polarized Aviator Sunglasses,Fashion,44.99,15.0,119,5353.81,4.7,25,0.0386,279
+prod_0017,Genuine Leather Minimalist Wallet,Fashion,34.99,12.0,107,3743.93,4.5,34,0.0206,309
+prod_0018,Thermal Insulated Winter Jacket,Fashion,139.99,55.0,124,17358.76,4.6,31,0.0742,613
+prod_0019,Everyday Canvas Tote Bag,Fashion,19.99,6.0,104,2078.96,3.7,28,0.0238,338
+prod_0020,Stainless Steel Casual Watch,Fashion,79.99,28.0,122,9758.78,4.1,18,0.0655,261
+prod_0021,Stainless Steel French Press Coffee Maker,Home & Living,34.99,13.0,80,2799.2,4.0,18,0.0299,356
+prod_0022,Aromatherapy Essential Oil Diffuser,Home & Living,29.99,10.5,102,3058.98,4.5,23,0.057,234
+prod_0023,Ceramic Non-Stick Frying Pan 10-inch,Home & Living,44.99,17.0,83,3734.17,4.3,15,0.0278,590
+prod_0024,Bamboo Luxury Cutting Board Set,Home & Living,27.99,9.5,89,2491.11,3.8,19,0.0443,349
+prod_0025,Weighted Blanket 15 lbs,Home & Living,74.99,29.0,94,7049.06,4.9,11,0.0545,491
+prod_0026,LED Desk Lamp with Wireless Charging,Home & Living,39.99,15.0,76,3039.24,3.7,26,0.0365,617
+prod_0027,Vacuum Insulated Water Bottle 32oz,Home & Living,24.99,8.0,64,1599.36,4.6,13,0.0311,252
+prod_0028,Memory Foam Ergonomic Seat Cushion,Home & Living,36.99,14.0,64,2367.36,4.6,19,0.0409,269
+prod_0029,Microfiber Queen Bed Sheet Set,Home & Living,49.99,18.0,87,4349.13,3.7,27,0.0717,661
+prod_0030,Smart Wi-Fi LED Light Strip,Home & Living,22.99,7.5,74,1701.26,4.5,14,0.0301,481
+prod_0031,Data Structures & Algorithms in Python,Books & Media,49.99,18.0,85,4249.15,4.0,18,0.0701,449
+prod_0032,Designing Data-Intensive Applications,Books & Media,54.99,20.0,128,7038.72,3.6,28,0.026,553
+prod_0033,The Lean Startup Handbook,Books & Media,21.99,7.0,88,1935.12,4.2,16,0.033,511
+prod_0034,Atomic Habits for Success,Books & Media,18.99,6.0,68,1291.32,4.0,21,0.0513,417
+prod_0035,Machine Learning Engineering Guide,Books & Media,59.99,22.0,81,4859.19,3.7,12,0.0749,479
+prod_0036,Creative Strategy in Modern Marketing,Books & Media,32.99,11.0,41,1352.59,4.1,8,0.0611,699
+prod_0037,Deep Learning: Foundations and Practice,Books & Media,64.99,24.0,114,7408.86,3.6,37,0.0538,591
+prod_0038,Zero to One: Notes on Startups,Books & Media,19.99,6.5,70,1399.3,4.4,8,0.052,427
+prod_0039,User Experience Design Principles,Books & Media,39.99,14.0,37,1479.63,4.0,6,0.0748,533
+prod_0040,Financial Intelligence for Founders,Books & Media,26.99,9.0,49,1322.51,3.8,14,0.0495,733
+prod_0041,Anti-Burst Gym Exercise Ball with Pump,Sports & Outdoors,22.99,8.0,62,1425.38,3.4,8,0.0591,587
+prod_0042,Adjustable Dumbbell Set 50 lbs,Sports & Outdoors,179.99,75.0,59,10619.41,4.7,13,0.0608,634
+prod_0043,Non-Slip Pro Yoga Mat with Strap,Sports & Outdoors,34.99,12.0,54,1889.46,4.4,6,0.0244,468
+prod_0044,Resistance Bands Set (5 Levels),Sports & Outdoors,19.99,6.5,51,1019.49,3.6,10,0.0182,618
+prod_0045,Ultralight Camping Hammock,Sports & Outdoors,29.99,10.0,69,2069.31,4.7,11,0.033,487
+prod_0046,Hydration Pack Running Backpack,Sports & Outdoors,42.99,15.0,52,2235.48,4.5,6,0.0469,302
+prod_0047,Carbon Fiber Trekking Poles,Sports & Outdoors,49.99,18.0,59,2949.41,4.7,13,0.035,568
+prod_0048,Insulated Stainless Steel Shaker Bottle,Sports & Outdoors,18.99,6.0,55,1044.45,4.2,15,0.0293,436
+prod_0049,Speed Jump Rope with Ball Bearings,Sports & Outdoors,14.99,4.5,54,809.46,4.5,14,0.0487,644
+prod_0050,Compact Deep Tissue Massage Gun,Sports & Outdoors,89.99,34.0,101,9088.99,4.8,14,0.0704,505
+prod_0051,Sonic Electric Toothbrush with 4 Heads,Health & Beauty,49.99,17.0,65,3249.35,3.9,15,0.0191,710
+prod_0052,Vitamin C + Hyaluronic Acid Face Serum,Health & Beauty,28.99,9.0,76,2203.24,3.9,10,0.0742,637
+prod_0053,Natural Mineral Sunscreen SPF 50,Health & Beauty,21.99,7.0,43,945.57,3.9,9,0.0213,706
+prod_0054,Organic Argan Hair Repair Oil,Health & Beauty,24.99,8.0,45,1124.55,4.3,8,0.0225,629
+prod_0055,Collagen Peptides Powder 16oz,Health & Beauty,36.99,13.0,41,1516.59,4.1,9,0.0219,648
+prod_0056,Deep Hydration Night Cream,Health & Beauty,32.99,11.0,51,1682.49,4.2,6,0.0252,586
+prod_0057,Beard Grooming Kit with Sandalwood Oil,Health & Beauty,29.99,10.0,43,1289.57,4.1,6,0.0493,392
+prod_0058,Ultra-Quiet Cool Mist Humidifier,Health & Beauty,39.99,14.5,56,2239.44,4.2,10,0.0526,737
+prod_0059,Daily Multivitamin for Active Adults,Health & Beauty,22.99,7.5,48,1103.52,3.7,6,0.0487,625
+prod_0060,Exfoliating Coffee Body Scrub,Health & Beauty,17.99,5.5,46,827.54,4.4,8,0.0586,458
+prod_0061,Deep Hydration Night Cream (Classic),Health & Beauty,42.89,14.3,50,2144.5,3.9,9,0.0274,232
+prod_0062,Stainless Steel French Press Coffee Maker (Mini),Home & Living,39.54,14.69,52,2056.08,4.1,11,0.0154,560
+prod_0063,Sonic Electric Toothbrush with 4 Heads (Max),Health & Beauty,43.99,14.96,50,2199.5,3.3,9,0.0315,463
+prod_0064,Breathable Athletic Sneakers (Ultra),Fashion,119.89,45.78,71,8512.19,4.1,20,0.0512,471
+prod_0065,Insulated Stainless Steel Shaker Bottle (Max),Sports & Outdoors,23.55,7.44,51,1201.05,4.5,17,0.0245,248
+prod_0066,Beard Grooming Kit with Sandalwood Oil (Edition),Health & Beauty,31.79,10.6,31,985.49,3.9,8,0.0515,563
+prod_0067,Vitamin C + Hyaluronic Acid Face Serum (Plus),Health & Beauty,30.44,9.45,44,1339.36,3.7,8,0.0581,333
+prod_0068,Merino Wool Blend Sweater (Mini),Fashion,96.29,37.45,85,8184.65,3.9,12,0.0289,292
+prod_0069,Active Noise Cancelling Earbuds (Lite),Electronics,102.39,40.96,90,9215.1,4.1,27,0.0175,436
+prod_0070,Ultra-Slim Power Bank 20000mAh (Lite),Electronics,50.79,20.32,98,4977.42,3.5,27,0.0393,261
+prod_0071,Data Structures & Algorithms in Python (Max),Books & Media,51.99,18.72,51,2651.49,4.8,17,0.0283,600
+prod_0072,Machine Learning Engineering Guide (Classic),Books & Media,71.99,26.4,105,7558.95,4.4,23,0.0542,483
+prod_0073,Ultra-Quiet Cool Mist Humidifier (Max),Health & Beauty,37.59,13.63,36,1353.24,3.5,4,0.0179,590
+prod_0074,Anti-Burst Gym Exercise Ball with Pump (Ultra),Sports & Outdoors,23.22,8.08,40,928.8,3.3,11,0.0388,646
+prod_0075,Non-Slip Pro Yoga Mat with Strap (Plus),Sports & Outdoors,46.54,15.96,33,1535.82,3.3,4,0.0243,521
+prod_0076,Smart Fitness Watch Pro (Classic),Electronics,181.99,77.35,82,14923.18,4.6,27,0.0273,472
+prod_0077,Fast Wireless Charging Stand (Plus),Electronics,26.49,9.54,49,1298.01,4.1,6,0.0411,334
+prod_0078,Polarized Aviator Sunglasses (Max),Fashion,44.09,14.7,58,2557.22,3.4,15,0.0473,426
+prod_0079,Aromatherapy Essential Oil Diffuser (Plus),Home & Living,32.39,11.34,36,1166.04,4.8,8,0.0648,251
+prod_0080,Resistance Bands Set (5 Levels) (Mini),Sports & Outdoors,19.59,6.37,49,959.91,4.7,12,0.059,651
+prod_0081,Polarized Aviator Sunglasses (Edition),Fashion,41.84,13.95,40,1673.6,4.5,8,0.0502,523
+prod_0082,Daily Multivitamin for Active Adults (Plus),Health & Beauty,27.13,8.85,41,1112.33,4.1,14,0.0616,262
+prod_0083,Breathable Athletic Sneakers (Plus),Fashion,141.89,54.18,72,10216.08,4.4,24,0.0228,322
+prod_0084,Resistance Bands Set (5 Levels) (Ultra),Sports & Outdoors,20.39,6.63,49,999.11,4.3,15,0.0576,459
+prod_0085,Machine Learning Engineering Guide (Lite),Books & Media,52.79,19.36,74,3906.46,4.2,15,0.0565,198
+prod_0086,Ergonomic Wireless Mouse (Lite),Electronics,27.59,10.58,50,1379.5,4.8,8,0.0231,426
+prod_0087,Carbon Fiber Trekking Poles (Mini),Sports & Outdoors,42.49,15.3,29,1232.21,3.3,5,0.0592,297
+prod_0088,Anti-Burst Gym Exercise Ball with Pump (Lite),Sports & Outdoors,23.68,8.24,31,734.08,4.1,10,0.0365,240
+prod_0089,LED Desk Lamp with Wireless Charging (Lite),Home & Living,53.59,20.1,77,4126.43,3.3,19,0.0329,522
+prod_0090,Slim-Fit Stretch Denim Jeans (Edition),Fashion,74.39,27.28,41,3049.99,4.6,6,0.0353,526
+prod_0091,Natural Mineral Sunscreen SPF 50 (Max),Health & Beauty,28.15,8.96,40,1126.0,4.8,7,0.0555,421
+prod_0092,Mechanical Gaming Keyboard (Ultra),Electronics,117.89,49.78,85,10020.65,4.5,22,0.0356,507
+prod_0093,Organic Argan Hair Repair Oil (Edition),Health & Beauty,23.24,7.44,38,883.12,4.3,6,0.0341,231
+prod_0094,Atomic Habits for Success (Max),Books & Media,23.93,7.56,42,1005.06,3.9,11,0.0303,615
+prod_0095,Merino Wool Blend Sweater (Plus),Fashion,106.19,41.3,43,4566.17,3.8,9,0.0289,242
+prod_0096,LED Desk Lamp with Wireless Charging (Ultra),Home & Living,43.99,16.5,33,1451.67,4.3,8,0.0572,386
+prod_0097,Ultra-Slim Power Bank 20000mAh (Edition),Electronics,37.59,15.04,36,1353.24,4.7,4,0.0283,269
+prod_0098,Carbon Fiber Trekking Poles (Edition),Sports & Outdoors,60.49,21.78,55,3326.95,3.7,15,0.0453,456
+prod_0099,4K USB-C Multi-Port Hub (Mini),Electronics,56.99,22.8,83,4730.17,3.3,10,0.0368,433
+prod_0100,Resistance Bands Set (5 Levels) (Edition),Sports & Outdoors,21.39,6.96,37,791.43,4.7,6,0.061,532
+prod_0101,Aromatherapy Essential Oil Diffuser (Ultra),Home & Living,38.99,13.65,23,896.77,4.0,4,0.0483,394
+prod_0102,Machine Learning Engineering Guide (Mini),Books & Media,54.59,20.02,66,3602.94,3.9,19,0.062,530
+prod_0103,Natural Mineral Sunscreen SPF 50 (Mini),Health & Beauty,24.85,7.91,23,571.55,3.8,5,0.0567,382
+prod_0104,Bamboo Luxury Cutting Board Set (Classic),Home & Living,34.71,11.78,36,1249.56,4.2,8,0.0311,440
+prod_0105,Atomic Habits for Success (Mini),Books & Media,20.7,6.54,55,1138.5,4.6,15,0.0548,281
+prod_0106,Vitamin C + Hyaluronic Acid Face Serum (Edition),Health & Beauty,32.18,9.99,37,1190.66,4.2,9,0.0318,632
+prod_0107,Breathable Athletic Sneakers (Max),Fashion,137.49,52.5,69,9486.81,3.4,12,0.0173,424
+prod_0108,Adjustable Dumbbell Set 50 lbs (Classic),Sports & Outdoors,190.79,79.5,53,10111.87,4.2,6,0.0247,553
+prod_0109,Zero to One: Notes on Startups (Classic),Books & Media,19.39,6.3,55,1066.45,4.2,14,0.0153,579
+prod_0110,4K USB-C Multi-Port Hub (Max),Electronics,56.39,22.56,70,3947.3,4.7,17,0.0409,205
+prod_0111,Resistance Bands Set (5 Levels) (Lite),Sports & Outdoors,18.19,5.92,28,509.32,3.4,4,0.0382,493
+prod_0112,Compact Deep Tissue Massage Gun (Edition),Sports & Outdoors,119.69,45.22,51,6104.19,4.6,13,0.0456,567
+prod_0113,Carbon Fiber Trekking Poles (Lite),Sports & Outdoors,64.99,23.4,72,4679.28,3.9,15,0.023,619
+prod_0114,Zero to One: Notes on Startups (Edition),Books & Media,24.59,8.0,27,663.93,4.5,4,0.0289,621
+prod_0115,Insulated Stainless Steel Shaker Bottle (Ultra),Sports & Outdoors,18.42,5.82,29,534.18,3.9,4,0.0507,341
+prod_0116,LED Desk Lamp with Wireless Charging (Edition),Home & Living,51.99,19.5,46,2391.54,3.3,14,0.0225,400
+prod_0117,Natural Mineral Sunscreen SPF 50 (Ultra),Health & Beauty,21.11,6.72,21,443.31,3.9,5,0.0315,467
+prod_0118,Data Structures & Algorithms in Python (Max),Books & Media,63.49,22.86,58,3682.42,3.8,15,0.0535,548
+prod_0119,Fast Wireless Charging Stand (Classic),Electronics,27.24,9.81,24,653.76,4.7,5,0.0299,425
+prod_0120,User Experience Design Principles (Ultra),Books & Media,48.79,17.08,50,2439.5,4.5,15,0.0599,449

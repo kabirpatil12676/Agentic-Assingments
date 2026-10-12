@@ -1,0 +1,1001 @@
+customer_id,name,email,age,occupation,city,customer_type,total_spend,total_orders,last_purchase_date
+cust_00001,Skyler Smith,skyler.smith1@example.com,47,Data Scientist,Denver,Regular,1123.45,8,2026-01-11
+cust_00002,Ava Hernandez,ava.hernandez2@example.com,31,Nurse,Austin,New,343.93,4,2025-08-16
+cust_00003,Lucas Taylor,lucas.taylor3@example.com,60,Sales Executive,New York,New,759.93,5,2026-01-04
+cust_00004,Emma Thomas,emma.thomas4@example.com,20,Student,San Francisco,New,139.97,2,2026-01-10
+cust_00005,Casey Taylor,casey.taylor5@example.com,43,Marketing Manager,New York,Occasional,316.95,5,2025-12-18
+cust_00006,Sophia Taylor,sophia.taylor6@example.com,40,Teacher,Boston,Occasional,1172.42,4,2025-11-24
+cust_00007,Alex Jackson,alex.jackson7@example.com,26,Software Engineer,Atlanta,Regular,546.07,7,2025-12-31
+cust_00008,Sophia Smith,sophia.smith8@example.com,38,Software Engineer,New York,Regular,1562.62,9,2025-09-26
+cust_00009,Riley Jones,riley.jones9@example.com,53,Freelancer,Austin,VIP,3324.67,22,2025-11-24
+cust_00010,Quinn Rodriguez,quinn.rodriguez10@example.com,46,Freelancer,Chicago,Regular,670.96,7,2025-12-27
+cust_00011,Sophia Miller,sophia.miller11@example.com,42,Freelancer,San Francisco,New,608.91,6,2026-01-08
+cust_00012,Lucas Wilson,lucas.wilson12@example.com,59,Freelancer,New York,Regular,1264.29,11,2026-01-10
+cust_00013,Taylor Thompson,taylor.thompson13@example.com,67,Nurse,Chicago,Occasional,436.15,3,2025-10-13
+cust_00014,Jackson Thompson,jackson.thompson14@example.com,25,Data Scientist,San Francisco,Regular,1124.0,9,2025-12-31
+cust_00015,Taylor Martin,taylor.martin15@example.com,64,Nurse,Boston,Occasional,361.44,4,2025-12-12
+cust_00016,Morgan Thomas,morgan.thomas16@example.com,46,Nurse,Atlanta,VIP,2790.73,24,2025-12-21
+cust_00017,Chris Martin,chris.martin17@example.com,64,Marketing Manager,Denver,Occasional,294.2,5,2026-01-14
+cust_00018,Quinn Thomas,quinn.thomas18@example.com,60,Sales Executive,Atlanta,New,49.99,1,2025-04-14
+cust_00019,Ava Williams,ava.williams19@example.com,40,Teacher,Chicago,Occasional,277.92,4,2025-12-28
+cust_00020,Jamie Smith,jamie.smith20@example.com,54,Accountant,Denver,Regular,1584.85,7,2026-01-12
+cust_00021,Cameron Rodriguez,cameron.rodriguez21@example.com,44,Accountant,Chicago,Regular,721.97,6,2025-11-04
+cust_00022,Kendall Davis,kendall.davis22@example.com,28,Data Scientist,New York,New,542.53,5,2026-01-11
+cust_00023,Peyton Garcia,peyton.garcia23@example.com,67,Nurse,Atlanta,Regular,1012.79,9,2025-12-28
+cust_00024,Jackson Smith,jackson.smith24@example.com,28,Accountant,Atlanta,New,145.97,2,2025-10-04
+cust_00025,Olivia Garcia,olivia.garcia25@example.com,42,Graphic Designer,Denver,Occasional,698.9,5,2025-12-07
+cust_00026,Reese Jackson,reese.jackson26@example.com,44,Sales Executive,Boston,Occasional,579.11,5,2025-12-30
+cust_00027,Avery Rodriguez,avery.rodriguez27@example.com,37,Accountant,Seattle,New,98.79,2,2025-05-05
+cust_00028,Morgan Jackson,morgan.jackson28@example.com,67,Graphic Designer,Boston,Regular,940.11,8,2025-12-21
+cust_00029,Casey Thompson,casey.thompson29@example.com,56,Graphic Designer,Atlanta,Regular,1705.94,11,2025-12-13
+cust_00030,Avery Garcia,avery.garcia30@example.com,46,Software Engineer,Chicago,Occasional,288.15,3,2025-09-24
+cust_00031,Casey Johnson,casey.johnson31@example.com,18,Student,Austin,Occasional,246.63,5,2025-11-02
+cust_00032,Morgan Smith,morgan.smith32@example.com,59,Marketing Manager,Atlanta,New,362.55,2,2025-08-21
+cust_00033,Quinn Martinez,quinn.martinez33@example.com,34,Accountant,Atlanta,Occasional,477.21,3,2025-11-17
+cust_00034,Ava Williams,ava.williams34@example.com,48,Accountant,San Francisco,Regular,1450.77,11,2025-12-10
+cust_00035,Sam Jones,sam.jones35@example.com,59,Freelancer,New York,Regular,1756.56,7,2025-10-13
+cust_00036,Peyton Thomas,peyton.thomas36@example.com,61,Graphic Designer,San Francisco,Regular,1147.83,8,2025-12-31
+cust_00037,Quinn Hernandez,quinn.hernandez37@example.com,42,Graphic Designer,Denver,New,312.26,2,2025-11-25
+cust_00038,Logan White,logan.white38@example.com,26,Nurse,Seattle,New,629.9,5,2025-10-14
+cust_00039,Emma Davis,emma.davis39@example.com,39,Software Engineer,Chicago,New,748.88,7,2025-12-12
+cust_00040,Riley Miller,riley.miller40@example.com,58,Software Engineer,Austin,New,114.97,2,2025-03-19
+cust_00041,Reese Hernandez,reese.hernandez41@example.com,67,Marketing Manager,New York,Regular,871.38,9,2025-12-27
+cust_00042,Riley Wilson,riley.wilson42@example.com,68,Data Scientist,New York,Occasional,597.94,4,2025-08-23
+cust_00043,Liam Garcia,liam.garcia43@example.com,39,Accountant,San Francisco,New,976.7,5,2025-11-14
+cust_00044,Reese Brown,reese.brown44@example.com,57,Freelancer,Chicago,New,329.97,2,2025-06-25
+cust_00045,Ava Jones,ava.jones45@example.com,27,Marketing Manager,Seattle,Regular,810.87,5,2025-12-24
+cust_00046,Quinn Brown,quinn.brown46@example.com,52,Data Scientist,Seattle,Regular,1434.42,12,2025-11-07
+cust_00047,Kendall Jackson,kendall.jackson47@example.com,54,Nurse,Seattle,Occasional,400.93,3,2025-09-15
+cust_00048,Isabella Thomas,isabella.thomas48@example.com,43,Freelancer,New York,Regular,959.02,9,2026-01-10
+cust_00049,Riley Thompson,riley.thompson49@example.com,18,Student,San Francisco,Regular,1239.01,12,2025-12-26
+cust_00050,Sophia Miller,sophia.miller50@example.com,53,Freelancer,New York,Occasional,544.27,3,2026-01-15
+cust_00051,Emma Moore,emma.moore51@example.com,28,Marketing Manager,Denver,Occasional,434.31,3,2025-11-19
+cust_00052,Jamie Brown,jamie.brown52@example.com,33,Nurse,Boston,Occasional,429.92,7,2025-10-16
+cust_00053,Liam Taylor,liam.taylor53@example.com,58,Accountant,Seattle,Occasional,544.95,3,2025-08-28
+cust_00054,Casey Martinez,casey.martinez54@example.com,30,Software Engineer,Boston,Occasional,452.72,5,2026-01-03
+cust_00055,Reese Johnson,reese.johnson55@example.com,21,Student,Atlanta,Occasional,649.32,5,2025-10-18
+cust_00056,Sophia Johnson,sophia.johnson56@example.com,36,Accountant,Atlanta,New,641.95,4,2025-11-25
+cust_00057,Lucas Wilson,lucas.wilson57@example.com,51,Sales Executive,Austin,Occasional,1103.08,7,2025-12-03
+cust_00058,Olivia Miller,olivia.miller58@example.com,22,Student,Chicago,Regular,602.66,9,2025-12-18
+cust_00059,Taylor Garcia,taylor.garcia59@example.com,30,Sales Executive,Denver,VIP,2903.76,18,2026-01-03
+cust_00060,Lucas Wilson,lucas.wilson60@example.com,55,Marketing Manager,Atlanta,Regular,1750.94,13,2026-01-07
+cust_00061,Skyler Garcia,skyler.garcia61@example.com,52,Nurse,Atlanta,Occasional,627.12,4,2025-12-08
+cust_00062,Aiden Williams,aiden.williams62@example.com,40,Graphic Designer,Austin,Occasional,349.91,5,2025-12-31
+cust_00063,Ava Smith,ava.smith63@example.com,41,Sales Executive,Seattle,Occasional,364.75,3,2025-12-05
+cust_00064,Aiden Jones,aiden.jones64@example.com,51,Freelancer,Atlanta,New,606.46,2,2025-10-25
+cust_00065,Jamie Jackson,jamie.jackson65@example.com,57,Accountant,Boston,Occasional,547.92,5,2026-01-10
+cust_00066,Olivia Garcia,olivia.garcia66@example.com,59,Teacher,Chicago,Occasional,424.94,4,2025-11-01
+cust_00067,Jamie Moore,jamie.moore67@example.com,68,Nurse,New York,Regular,816.21,7,2025-12-18
+cust_00068,Jordan Jones,jordan.jones68@example.com,55,Marketing Manager,Atlanta,Occasional,690.18,5,2026-01-04
+cust_00069,Kendall Hernandez,kendall.hernandez69@example.com,23,Accountant,San Francisco,Regular,1391.85,12,2025-11-12
+cust_00070,Taylor Moore,taylor.moore70@example.com,39,Nurse,Austin,Regular,595.8,7,2025-12-30
+cust_00071,Aiden Martinez,aiden.martinez71@example.com,66,Nurse,San Francisco,New,343.95,2,2025-08-28
+cust_00072,Emma Moore,emma.moore72@example.com,57,Nurse,Boston,Occasional,1044.31,5,2025-11-03
+cust_00073,Emma Wilson,emma.wilson73@example.com,37,Software Engineer,Chicago,New,71.79,1,2025-03-18
+cust_00074,Morgan Brown,morgan.brown74@example.com,51,Software Engineer,Denver,Inactive,0.0,0,
+cust_00075,Jordan Martinez,jordan.martinez75@example.com,26,Data Scientist,New York,Regular,686.69,7,2025-08-29
+cust_00076,Sam Garcia,sam.garcia76@example.com,56,Teacher,Denver,Occasional,766.2,5,2025-11-13
+cust_00077,Chris Williams,chris.williams77@example.com,62,Marketing Manager,Austin,New,486.95,2,2025-09-19
+cust_00078,Skyler Thompson,skyler.thompson78@example.com,32,Freelancer,Chicago,Occasional,425.94,3,2026-01-05
+cust_00079,Casey Smith,casey.smith79@example.com,52,Data Scientist,Atlanta,Occasional,357.35,3,2025-12-09
+cust_00080,Taylor Hernandez,taylor.hernandez80@example.com,45,Sales Executive,Austin,New,134.97,1,2025-06-20
+cust_00081,Olivia Rodriguez,olivia.rodriguez81@example.com,52,Data Scientist,Denver,New,144.97,2,2025-03-12
+cust_00082,Aiden Moore,aiden.moore82@example.com,29,Graphic Designer,Denver,Occasional,1435.96,7,2026-01-15
+cust_00083,Logan Wilson,logan.wilson83@example.com,67,Freelancer,Boston,Occasional,465.27,3,2025-09-03
+cust_00084,Alex Thompson,alex.thompson84@example.com,66,Nurse,Seattle,VIP,5275.02,23,2026-01-15
+cust_00085,Ava Wilson,ava.wilson85@example.com,21,Student,Atlanta,Inactive,0.0,0,
+cust_00086,Emma Davis,emma.davis86@example.com,62,Teacher,Chicago,New,525.95,3,2025-12-29
+cust_00087,Isabella Johnson,isabella.johnson87@example.com,42,Marketing Manager,San Francisco,Regular,984.57,8,2025-12-14
+cust_00088,Noah Jones,noah.jones88@example.com,28,Freelancer,Boston,VIP,6950.34,26,2026-01-02
+cust_00089,Chris Davis,chris.davis89@example.com,31,Teacher,Denver,Occasional,899.93,5,2025-08-09
+cust_00090,Ava Miller,ava.miller90@example.com,39,Sales Executive,Seattle,Occasional,619.86,7,2025-12-20
+cust_00091,Quinn Williams,quinn.williams91@example.com,32,Teacher,San Francisco,Occasional,380.3,5,2025-12-31
+cust_00092,Taylor Taylor,taylor.taylor92@example.com,23,Nurse,Boston,New,323.17,4,2025-10-04
+cust_00093,Quinn Anderson,quinn.anderson93@example.com,66,Sales Executive,San Francisco,Regular,1553.75,12,2026-01-15
+cust_00094,Ava Anderson,ava.anderson94@example.com,29,Data Scientist,Denver,New,324.75,3,2025-12-22
+cust_00095,Alex White,alex.white95@example.com,58,Graphic Designer,Atlanta,New,647.18,5,2025-09-02
+cust_00096,Emma Williams,emma.williams96@example.com,63,Freelancer,Chicago,Occasional,933.85,5,2025-12-31
+cust_00097,Morgan Jones,morgan.jones97@example.com,25,Data Scientist,Denver,New,175.95,3,2026-01-05
+cust_00098,Morgan Brown,morgan.brown98@example.com,38,Data Scientist,Atlanta,VIP,4342.23,26,2026-01-12
+cust_00099,Quinn Anderson,quinn.anderson99@example.com,65,Marketing Manager,Denver,Occasional,312.72,4,2025-11-13
+cust_00100,Emma Brown,emma.brown100@example.com,54,Marketing Manager,Denver,New,99.98,2,2025-10-12
+cust_00101,Jordan Anderson,jordan.anderson101@example.com,36,Nurse,Seattle,New,494.95,3,2025-06-26
+cust_00102,Aiden Anderson,aiden.anderson102@example.com,29,Accountant,Chicago,Occasional,393.92,4,2025-12-12
+cust_00103,Dakota Rodriguez,dakota.rodriguez103@example.com,35,Teacher,New York,Occasional,549.93,3,2025-04-23
+cust_00104,Emma White,emma.white104@example.com,24,Software Engineer,Chicago,Occasional,179.95,2,2025-12-31
+cust_00105,Jackson Thompson,jackson.thompson105@example.com,36,Graphic Designer,Austin,Occasional,452.4,6,2026-01-14
+cust_00106,Logan Davis,logan.davis106@example.com,37,Sales Executive,Chicago,Inactive,0.0,0,
+cust_00107,Casey Jones,casey.jones107@example.com,31,Marketing Manager,New York,Occasional,381.94,4,2025-12-25
+cust_00108,Sam Smith,sam.smith108@example.com,45,Software Engineer,New York,Regular,699.89,6,2025-10-27
+cust_00109,Chris Rodriguez,chris.rodriguez109@example.com,26,Teacher,New York,New,149.99,1,2025-07-17
+cust_00110,Noah Williams,noah.williams110@example.com,53,Nurse,San Francisco,Regular,859.71,9,2025-12-27
+cust_00111,Quinn Martin,quinn.martin111@example.com,37,Teacher,San Francisco,Inactive,0.0,0,
+cust_00112,Quinn Smith,quinn.smith112@example.com,18,Student,Seattle,New,107.88,2,2025-11-20
+cust_00113,Liam Brown,liam.brown113@example.com,54,Nurse,Denver,Occasional,319.12,4,2025-09-06
+cust_00114,Harper Jones,harper.jones114@example.com,27,Software Engineer,Boston,Regular,928.4,7,2025-10-01
+cust_00115,Dakota White,dakota.white115@example.com,56,Freelancer,Boston,Occasional,314.5,3,2025-07-05
+cust_00116,Morgan Brown,morgan.brown116@example.com,64,Sales Executive,Denver,Occasional,99.96,2,2025-07-08
+cust_00117,Reese Martinez,reese.martinez117@example.com,52,Accountant,Chicago,Occasional,513.91,4,2025-08-15
+cust_00118,Reese Martinez,reese.martinez118@example.com,65,Software Engineer,Boston,Occasional,436.24,3,2025-09-06
+cust_00119,Taylor Williams,taylor.williams119@example.com,28,Marketing Manager,Atlanta,Occasional,583.14,4,2025-12-30
+cust_00120,Jackson Jones,jackson.jones120@example.com,58,Software Engineer,Boston,Occasional,305.22,6,2025-12-12
+cust_00121,Liam Brown,liam.brown121@example.com,49,Sales Executive,Boston,New,56.78,2,2025-11-23
+cust_00122,Avery White,avery.white122@example.com,42,Nurse,New York,Occasional,986.92,5,2026-01-15
+cust_00123,Sam Moore,sam.moore123@example.com,37,Freelancer,Chicago,Regular,593.87,7,2026-01-08
+cust_00124,Morgan Rodriguez,morgan.rodriguez124@example.com,59,Sales Executive,Boston,Occasional,164.76,3,2025-12-10
+cust_00125,Harper Rodriguez,harper.rodriguez125@example.com,24,Sales Executive,New York,Occasional,800.81,4,2025-11-30
+cust_00126,Cameron Smith,cameron.smith126@example.com,34,Data Scientist,Boston,Occasional,207.53,4,2025-09-28
+cust_00127,Sam Smith,sam.smith127@example.com,28,Nurse,San Francisco,New,746.93,4,2026-01-09
+cust_00128,Dakota Thomas,dakota.thomas128@example.com,52,Sales Executive,Chicago,Inactive,0.0,0,
+cust_00129,Avery Martinez,avery.martinez129@example.com,59,Marketing Manager,Boston,Occasional,493.59,5,2025-08-19
+cust_00130,Sophia White,sophia.white130@example.com,26,Marketing Manager,Austin,Regular,1457.76,12,2025-12-06
+cust_00131,Liam Thomas,liam.thomas131@example.com,54,Data Scientist,Atlanta,Regular,1014.71,8,2025-12-22
+cust_00132,Pat Martin,pat.martin132@example.com,30,Nurse,Seattle,Occasional,590.43,4,2025-09-04
+cust_00133,Liam Thompson,liam.thompson133@example.com,54,Software Engineer,Seattle,Occasional,277.95,4,2025-11-12
+cust_00134,Harper Johnson,harper.johnson134@example.com,23,Graphic Designer,Denver,VIP,1951.8,14,2026-01-14
+cust_00135,Sophia Rodriguez,sophia.rodriguez135@example.com,41,Graphic Designer,Austin,Occasional,394.8,7,2025-11-14
+cust_00136,Noah Thomas,noah.thomas136@example.com,20,Student,Atlanta,Regular,644.26,9,2025-09-29
+cust_00137,Kendall Jackson,kendall.jackson137@example.com,65,Sales Executive,Chicago,Occasional,523.74,3,2026-01-12
+cust_00138,Reese Smith,reese.smith138@example.com,52,Nurse,New York,Regular,1094.6,7,2025-12-12
+cust_00139,Logan Taylor,logan.taylor139@example.com,68,Freelancer,Denver,Occasional,605.27,6,2025-12-18
+cust_00140,Alex Martinez,alex.martinez140@example.com,33,Software Engineer,Denver,Occasional,369.42,4,2026-01-03
+cust_00141,Reese Brown,reese.brown141@example.com,38,Teacher,San Francisco,New,675.91,4,2025-12-29
+cust_00142,Kendall Williams,kendall.williams142@example.com,48,Freelancer,Denver,Occasional,214.33,4,2025-07-29
+cust_00143,Jamie Miller,jamie.miller143@example.com,27,Teacher,Chicago,Inactive,0.0,0,
+cust_00144,Isabella Anderson,isabella.anderson144@example.com,45,Software Engineer,Chicago,Occasional,500.5,7,2026-01-04
+cust_00145,Casey Davis,casey.davis145@example.com,34,Software Engineer,Austin,Regular,2194.31,10,2025-12-28
+cust_00146,Sophia Moore,sophia.moore146@example.com,52,Software Engineer,Austin,Regular,1217.42,9,2025-12-26
+cust_00147,Liam Thompson,liam.thompson147@example.com,64,Freelancer,Atlanta,Inactive,0.0,0,
+cust_00148,Aiden Martinez,aiden.martinez148@example.com,32,Freelancer,Boston,New,279.8,4,2025-12-06
+cust_00149,Quinn Wilson,quinn.wilson149@example.com,40,Software Engineer,Atlanta,Occasional,404.94,5,2026-01-05
+cust_00150,Avery Hernandez,avery.hernandez150@example.com,51,Sales Executive,San Francisco,Occasional,369.94,4,2025-10-26
+cust_00151,Taylor Williams,taylor.williams151@example.com,62,Teacher,Seattle,Regular,1529.38,9,2025-10-15
+cust_00152,Logan Jackson,logan.jackson152@example.com,25,Nurse,Atlanta,Occasional,505.92,4,2025-08-24
+cust_00153,Harper Moore,harper.moore153@example.com,55,Graphic Designer,Boston,New,425.05,3,2025-12-06
+cust_00154,Morgan Martinez,morgan.martinez154@example.com,19,Student,Atlanta,Regular,439.91,10,2025-10-26
+cust_00155,Riley Hernandez,riley.hernandez155@example.com,51,Marketing Manager,New York,New,219.96,3,2025-11-18
+cust_00156,Cameron Anderson,cameron.anderson156@example.com,41,Sales Executive,Austin,Occasional,211.97,3,2026-01-06
+cust_00157,Jackson Martinez,jackson.martinez157@example.com,27,Teacher,New York,Occasional,771.9,5,2026-01-13
+cust_00158,Avery Rodriguez,avery.rodriguez158@example.com,65,Sales Executive,Denver,Regular,1510.64,12,2026-01-10
+cust_00159,Logan Jones,logan.jones159@example.com,45,Teacher,San Francisco,Regular,1324.32,7,2026-01-04
+cust_00160,Harper Williams,harper.williams160@example.com,42,Nurse,Austin,New,218.52,4,2025-11-06
+cust_00161,Ava Jones,ava.jones161@example.com,65,Nurse,Boston,Occasional,104.53,2,2025-12-25
+cust_00162,Alex Anderson,alex.anderson162@example.com,42,Nurse,Boston,New,240.66,3,2026-01-05
+cust_00163,Sophia Moore,sophia.moore163@example.com,35,Graphic Designer,Boston,Regular,767.08,6,2025-10-14
+cust_00164,Avery Brown,avery.brown164@example.com,55,Marketing Manager,San Francisco,Regular,974.75,11,2026-01-14
+cust_00165,Liam Martinez,liam.martinez165@example.com,62,Sales Executive,New York,Inactive,0.0,0,
+cust_00166,Sam Miller,sam.miller166@example.com,34,Freelancer,Denver,Regular,1020.58,10,2025-08-31
+cust_00167,Noah Hernandez,noah.hernandez167@example.com,25,Freelancer,Austin,Inactive,0.0,0,
+cust_00168,Quinn White,quinn.white168@example.com,41,Teacher,Chicago,Occasional,680.38,4,2025-12-27
+cust_00169,Avery Moore,avery.moore169@example.com,35,Sales Executive,Chicago,Regular,1114.93,7,2025-12-11
+cust_00170,Quinn Wilson,quinn.wilson170@example.com,47,Freelancer,Atlanta,New,227.15,2,2025-12-26
+cust_00171,Chris Davis,chris.davis171@example.com,61,Sales Executive,Denver,Occasional,165.85,3,2025-10-06
+cust_00172,Aiden Anderson,aiden.anderson172@example.com,19,Student,Atlanta,Regular,1205.86,9,2025-12-28
+cust_00173,Taylor Miller,taylor.miller173@example.com,40,Software Engineer,Seattle,Occasional,561.55,7,2025-11-18
+cust_00174,Taylor Garcia,taylor.garcia174@example.com,51,Marketing Manager,Denver,Occasional,454.92,4,2025-11-18
+cust_00175,Dakota Martin,dakota.martin175@example.com,46,Nurse,New York,VIP,3081.43,14,2025-10-26
+cust_00176,Riley Smith,riley.smith176@example.com,43,Software Engineer,Boston,Occasional,1112.91,5,2025-06-07
+cust_00177,Sam Johnson,sam.johnson177@example.com,41,Teacher,Austin,Inactive,0.0,0,
+cust_00178,Quinn White,quinn.white178@example.com,23,Marketing Manager,Atlanta,Occasional,429.64,5,2025-09-05
+cust_00179,Ava Jones,ava.jones179@example.com,58,Data Scientist,Chicago,VIP,4185.4,24,2026-01-14
+cust_00180,Morgan Wilson,morgan.wilson180@example.com,38,Sales Executive,Denver,New,222.36,3,2025-09-13
+cust_00181,Riley Thomas,riley.thomas181@example.com,63,Software Engineer,New York,Occasional,371.92,5,2025-10-09
+cust_00182,Harper Jackson,harper.jackson182@example.com,24,Software Engineer,Atlanta,Regular,1702.58,12,2025-12-15
+cust_00183,Olivia Jones,olivia.jones183@example.com,41,Freelancer,Chicago,Occasional,672.05,3,2025-12-16
+cust_00184,Riley Thompson,riley.thompson184@example.com,49,Freelancer,Boston,VIP,2845.55,15,2025-12-31
+cust_00185,Taylor Martin,taylor.martin185@example.com,57,Software Engineer,Boston,New,378.14,4,2025-10-15
+cust_00186,Dakota Moore,dakota.moore186@example.com,25,Sales Executive,New York,Occasional,446.8,6,2025-12-08
+cust_00187,Cameron Williams,cameron.williams187@example.com,45,Data Scientist,New York,Occasional,877.91,5,2025-12-31
+cust_00188,Sam Johnson,sam.johnson188@example.com,45,Software Engineer,Boston,Inactive,0.0,0,
+cust_00189,Ava Hernandez,ava.hernandez189@example.com,67,Teacher,Austin,Occasional,949.9,5,2025-12-18
+cust_00190,Taylor Hernandez,taylor.hernandez190@example.com,25,Marketing Manager,Austin,New,159.98,2,2025-05-26
+cust_00191,Jackson Davis,jackson.davis191@example.com,25,Graphic Designer,New York,Occasional,239.95,3,2025-08-03
+cust_00192,Ava Jackson,ava.jackson192@example.com,53,Sales Executive,Denver,Occasional,304.79,3,2025-09-15
+cust_00193,Cameron Johnson,cameron.johnson193@example.com,64,Graphic Designer,Seattle,VIP,2960.82,17,2026-01-08
+cust_00194,Reese Taylor,reese.taylor194@example.com,51,Software Engineer,Boston,Occasional,599.33,5,2025-12-17
+cust_00195,Olivia Moore,olivia.moore195@example.com,46,Marketing Manager,Atlanta,Occasional,835.72,4,2025-12-26
+cust_00196,Reese White,reese.white196@example.com,34,Nurse,San Francisco,Regular,1097.86,9,2025-11-21
+cust_00197,Taylor Martinez,taylor.martinez197@example.com,65,Teacher,San Francisco,Occasional,529.92,5,2025-12-27
+cust_00198,Chris Hernandez,chris.hernandez198@example.com,45,Accountant,Denver,Occasional,1194.4,5,2025-12-25
+cust_00199,Casey Johnson,casey.johnson199@example.com,27,Teacher,Denver,VIP,4244.66,23,2026-01-14
+cust_00200,Kendall Miller,kendall.miller200@example.com,24,Nurse,Boston,New,222.79,4,2025-12-04
+cust_00201,Jordan Jones,jordan.jones201@example.com,27,Freelancer,Atlanta,Regular,922.0,8,2026-01-05
+cust_00202,Dakota Thompson,dakota.thompson202@example.com,25,Teacher,Boston,Inactive,0.0,0,
+cust_00203,Cameron Anderson,cameron.anderson203@example.com,51,Marketing Manager,Atlanta,New,626.63,8,2025-08-03
+cust_00204,Kendall Anderson,kendall.anderson204@example.com,48,Software Engineer,Austin,Inactive,0.0,0,
+cust_00205,Morgan Smith,morgan.smith205@example.com,34,Data Scientist,Chicago,Occasional,501.52,6,2025-10-12
+cust_00206,Casey Rodriguez,casey.rodriguez206@example.com,68,Nurse,San Francisco,Occasional,656.91,4,2025-08-30
+cust_00207,Olivia Moore,olivia.moore207@example.com,35,Freelancer,Seattle,Regular,491.2,6,2025-12-12
+cust_00208,Chris Hernandez,chris.hernandez208@example.com,28,Software Engineer,Atlanta,Regular,1254.81,10,2025-12-16
+cust_00209,Peyton Jackson,peyton.jackson209@example.com,41,Teacher,San Francisco,Occasional,184.94,3,2025-11-21
+cust_00210,Kendall Garcia,kendall.garcia210@example.com,30,Marketing Manager,Boston,Regular,1359.57,7,2025-11-06
+cust_00211,Alex Anderson,alex.anderson211@example.com,58,Graphic Designer,Atlanta,Regular,1453.77,12,2025-11-15
+cust_00212,Harper Williams,harper.williams212@example.com,27,Accountant,Austin,Occasional,959.91,5,2025-07-25
+cust_00213,Sophia Thomas,sophia.thomas213@example.com,59,Accountant,Denver,Occasional,435.32,5,2025-08-18
+cust_00214,Quinn Hernandez,quinn.hernandez214@example.com,66,Teacher,San Francisco,Regular,1484.47,9,2025-12-06
+cust_00215,Sophia Jones,sophia.jones215@example.com,50,Marketing Manager,Austin,Occasional,173.94,4,2025-09-26
+cust_00216,Avery Miller,avery.miller216@example.com,33,Sales Executive,Austin,Regular,1218.81,10,2025-12-29
+cust_00217,Kendall Wilson,kendall.wilson217@example.com,28,Graphic Designer,Boston,Inactive,0.0,0,
+cust_00218,Sam Wilson,sam.wilson218@example.com,62,Graphic Designer,Seattle,Regular,963.85,10,2026-01-04
+cust_00219,Logan Thompson,logan.thompson219@example.com,32,Sales Executive,Austin,Regular,757.67,8,2026-01-07
+cust_00220,Ava Thompson,ava.thompson220@example.com,25,Freelancer,Boston,New,319.97,3,2026-01-10
+cust_00221,Emma Thompson,emma.thompson221@example.com,39,Software Engineer,New York,VIP,3489.01,21,2026-01-08
+cust_00222,Harper Smith,harper.smith222@example.com,54,Freelancer,Denver,Regular,1678.0,13,2026-01-14
+cust_00223,Skyler Garcia,skyler.garcia223@example.com,66,Data Scientist,Seattle,Occasional,1375.77,7,2025-10-22
+cust_00224,Olivia Johnson,olivia.johnson224@example.com,33,Accountant,San Francisco,Occasional,257.1,6,2025-10-31
+cust_00225,Pat Martinez,pat.martinez225@example.com,61,Accountant,Atlanta,Occasional,849.9,5,2026-01-08
+cust_00226,Dakota Jones,dakota.jones226@example.com,46,Teacher,Boston,Occasional,410.56,4,2026-01-11
+cust_00227,Morgan Rodriguez,morgan.rodriguez227@example.com,51,Graphic Designer,Atlanta,Occasional,327.36,3,2025-12-05
+cust_00228,Avery Taylor,avery.taylor228@example.com,62,Software Engineer,New York,Regular,655.18,7,2026-01-04
+cust_00229,Lucas Thompson,lucas.thompson229@example.com,43,Marketing Manager,Boston,Regular,1123.81,7,2025-11-14
+cust_00230,Kendall Hernandez,kendall.hernandez230@example.com,54,Marketing Manager,Atlanta,Inactive,0.0,0,
+cust_00231,Taylor Taylor,taylor.taylor231@example.com,55,Accountant,New York,Occasional,556.54,4,2026-01-14
+cust_00232,Jordan Johnson,jordan.johnson232@example.com,41,Graphic Designer,Boston,Regular,910.13,8,2025-12-21
+cust_00233,Peyton Smith,peyton.smith233@example.com,29,Accountant,Seattle,New,340.93,4,2025-09-29
+cust_00234,Noah Anderson,noah.anderson234@example.com,48,Marketing Manager,Seattle,Occasional,494.23,4,2025-11-04
+cust_00235,Logan Jackson,logan.jackson235@example.com,35,Nurse,New York,VIP,2368.94,20,2026-01-13
+cust_00236,Dakota Martin,dakota.martin236@example.com,51,Data Scientist,San Francisco,Occasional,215.93,3,2025-12-13
+cust_00237,Sam Brown,sam.brown237@example.com,48,Freelancer,San Francisco,New,448.14,4,2025-09-20
+cust_00238,Sophia Jones,sophia.jones238@example.com,35,Teacher,Boston,Occasional,821.7,4,2025-12-18
+cust_00239,Jordan Jones,jordan.jones239@example.com,23,Student,New York,Occasional,189.67,3,2025-12-13
+cust_00240,Harper Martin,harper.martin240@example.com,31,Accountant,Austin,Occasional,1149.1,8,2025-11-04
+cust_00241,Dakota White,dakota.white241@example.com,42,Teacher,Austin,New,200.76,3,2025-07-30
+cust_00242,Olivia Thompson,olivia.thompson242@example.com,42,Teacher,Atlanta,New,374.95,3,2026-01-09
+cust_00243,Jamie Brown,jamie.brown243@example.com,24,Student,Boston,Occasional,263.26,6,2026-01-08
+cust_00244,Casey Thompson,casey.thompson244@example.com,21,Student,Atlanta,Inactive,0.0,0,
+cust_00245,Chris Martin,chris.martin245@example.com,24,Student,Atlanta,Inactive,0.0,0,
+cust_00246,Logan Brown,logan.brown246@example.com,35,Graphic Designer,New York,Regular,296.72,4,2025-12-18
+cust_00247,Sam Thomas,sam.thomas247@example.com,67,Teacher,Denver,Occasional,1011.5,6,2025-10-26
+cust_00248,Aiden Johnson,aiden.johnson248@example.com,68,Sales Executive,Atlanta,Occasional,956.3,6,2025-10-29
+cust_00249,Liam Moore,liam.moore249@example.com,56,Graphic Designer,Boston,Occasional,387.2,5,2025-06-16
+cust_00250,Lucas Jackson,lucas.jackson250@example.com,44,Marketing Manager,Atlanta,Occasional,897.12,4,2025-12-18
+cust_00251,Pat Garcia,pat.garcia251@example.com,40,Data Scientist,Atlanta,New,68.98,2,2025-12-31
+cust_00252,Avery Wilson,avery.wilson252@example.com,68,Data Scientist,Chicago,Occasional,143.96,2,2025-11-21
+cust_00253,Skyler Anderson,skyler.anderson253@example.com,58,Accountant,Boston,New,49.99,1,2026-01-02
+cust_00254,Morgan Thompson,morgan.thompson254@example.com,66,Data Scientist,Seattle,Inactive,0.0,0,
+cust_00255,Ava Anderson,ava.anderson255@example.com,32,Nurse,Denver,Occasional,611.82,6,2025-09-21
+cust_00256,Cameron Hernandez,cameron.hernandez256@example.com,64,Data Scientist,San Francisco,VIP,2401.54,16,2026-01-06
+cust_00257,Pat Jackson,pat.jackson257@example.com,40,Accountant,Chicago,Inactive,0.0,0,
+cust_00258,Morgan White,morgan.white258@example.com,60,Data Scientist,Austin,Occasional,267.47,3,2025-07-27
+cust_00259,Emma Garcia,emma.garcia259@example.com,18,Student,Chicago,Regular,259.94,6,2025-12-28
+cust_00260,Morgan Jones,morgan.jones260@example.com,23,Teacher,Atlanta,Occasional,162.77,3,2025-11-25
+cust_00261,Emma Davis,emma.davis261@example.com,41,Accountant,Atlanta,Occasional,365.94,3,2025-07-27
+cust_00262,Emma Thompson,emma.thompson262@example.com,21,Student,San Francisco,Occasional,531.92,6,2025-12-28
+cust_00263,Lucas Johnson,lucas.johnson263@example.com,48,Nurse,Austin,Regular,1024.86,7,2025-09-11
+cust_00264,Alex Wilson,alex.wilson264@example.com,59,Data Scientist,New York,Regular,1124.73,8,2026-01-07
+cust_00265,Quinn Jackson,quinn.jackson265@example.com,56,Teacher,Seattle,Regular,1483.35,9,2025-12-31
+cust_00266,Casey Davis,casey.davis266@example.com,30,Sales Executive,Atlanta,Regular,877.26,8,2025-12-28
+cust_00267,Olivia Miller,olivia.miller267@example.com,23,Accountant,Seattle,Regular,1432.12,10,2025-12-04
+cust_00268,Chris White,chris.white268@example.com,63,Data Scientist,Chicago,Occasional,388.13,5,2025-09-22
+cust_00269,Taylor Taylor,taylor.taylor269@example.com,65,Sales Executive,Boston,Occasional,415.73,3,2025-11-28
+cust_00270,Jamie Garcia,jamie.garcia270@example.com,23,Marketing Manager,Atlanta,Regular,1208.2,8,2025-11-16
+cust_00271,Sophia Rodriguez,sophia.rodriguez271@example.com,44,Graphic Designer,Atlanta,Occasional,360.88,4,2025-12-22
+cust_00272,Casey Anderson,casey.anderson272@example.com,67,Freelancer,New York,New,109.97,2,2026-01-05
+cust_00273,Quinn Wilson,quinn.wilson273@example.com,20,Student,San Francisco,Regular,297.57,7,2026-01-15
+cust_00274,Olivia Brown,olivia.brown274@example.com,63,Sales Executive,Seattle,New,129.36,3,2025-11-04
+cust_00275,Riley Jones,riley.jones275@example.com,53,Teacher,Chicago,Occasional,948.32,4,2025-11-03
+cust_00276,Reese Jackson,reese.jackson276@example.com,53,Freelancer,Boston,Occasional,129.97,2,2026-01-08
+cust_00277,Kendall Hernandez,kendall.hernandez277@example.com,56,Graphic Designer,San Francisco,Inactive,0.0,0,
+cust_00278,Lucas Thompson,lucas.thompson278@example.com,30,Teacher,San Francisco,Inactive,0.0,0,
+cust_00279,Logan Jackson,logan.jackson279@example.com,32,Sales Executive,Chicago,Regular,1045.4,6,2025-12-03
+cust_00280,Morgan Davis,morgan.davis280@example.com,68,Sales Executive,Atlanta,Occasional,696.51,6,2025-12-05
+cust_00281,Jackson Johnson,jackson.johnson281@example.com,52,Sales Executive,Atlanta,Regular,470.47,6,2025-10-03
+cust_00282,Logan Johnson,logan.johnson282@example.com,58,Nurse,Atlanta,Occasional,386.54,5,2025-12-19
+cust_00283,Dakota Rodriguez,dakota.rodriguez283@example.com,23,Data Scientist,New York,New,194.95,3,2025-04-09
+cust_00284,Jordan Thomas,jordan.thomas284@example.com,45,Graphic Designer,San Francisco,Inactive,0.0,0,
+cust_00285,Lucas Williams,lucas.williams285@example.com,53,Software Engineer,New York,New,411.16,3,2025-09-30
+cust_00286,Chris Jones,chris.jones286@example.com,64,Data Scientist,Denver,VIP,3551.32,22,2026-01-05
+cust_00287,Isabella Taylor,isabella.taylor287@example.com,51,Nurse,Boston,New,159.23,3,2026-01-12
+cust_00288,Liam Jackson,liam.jackson288@example.com,31,Nurse,San Francisco,Occasional,1017.83,10,2026-01-01
+cust_00289,Kendall Jones,kendall.jones289@example.com,37,Marketing Manager,Denver,Regular,357.79,5,2025-12-09
+cust_00290,Quinn Jackson,quinn.jackson290@example.com,24,Student,Seattle,Inactive,0.0,0,
+cust_00291,Riley Hernandez,riley.hernandez291@example.com,45,Nurse,Chicago,Occasional,300.52,4,2025-10-23
+cust_00292,Jordan Thomas,jordan.thomas292@example.com,62,Graphic Designer,San Francisco,Occasional,1066.4,7,2025-10-15
+cust_00293,Morgan White,morgan.white293@example.com,25,Graphic Designer,San Francisco,Regular,1335.39,8,2025-12-01
+cust_00294,Noah Johnson,noah.johnson294@example.com,24,Student,Chicago,New,230.32,3,2025-05-31
+cust_00295,Sophia Johnson,sophia.johnson295@example.com,31,Graphic Designer,Chicago,Occasional,495.1,5,2025-08-25
+cust_00296,Logan White,logan.white296@example.com,66,Freelancer,Boston,Regular,540.12,8,2025-12-18
+cust_00297,Liam Martin,liam.martin297@example.com,37,Data Scientist,Austin,Regular,821.24,9,2025-12-10
+cust_00298,Peyton Thompson,peyton.thompson298@example.com,34,Data Scientist,New York,Occasional,624.02,4,2025-09-14
+cust_00299,Cameron Taylor,cameron.taylor299@example.com,56,Accountant,New York,Occasional,313.92,5,2026-01-12
+cust_00300,Sam Wilson,sam.wilson300@example.com,47,Nurse,Denver,New,166.87,4,2025-12-21
+cust_00301,Riley Garcia,riley.garcia301@example.com,42,Sales Executive,Atlanta,Regular,1201.59,11,2026-01-04
+cust_00302,Peyton Thomas,peyton.thomas302@example.com,49,Accountant,New York,Regular,1018.84,9,2025-12-22
+cust_00303,Riley Rodriguez,riley.rodriguez303@example.com,36,Marketing Manager,Denver,Occasional,533.42,4,2026-01-10
+cust_00304,Aiden Anderson,aiden.anderson304@example.com,28,Software Engineer,Atlanta,New,336.15,3,2026-01-15
+cust_00305,Casey Taylor,casey.taylor305@example.com,66,Graphic Designer,New York,Occasional,492.36,3,2025-12-16
+cust_00306,Skyler Davis,skyler.davis306@example.com,44,Graphic Designer,Chicago,Regular,1438.79,12,2025-11-22
+cust_00307,Noah Brown,noah.brown307@example.com,53,Graphic Designer,Chicago,VIP,5781.14,24,2026-01-09
+cust_00308,Dakota Garcia,dakota.garcia308@example.com,58,Freelancer,Chicago,Regular,719.87,8,2026-01-04
+cust_00309,Quinn Jackson,quinn.jackson309@example.com,64,Data Scientist,Denver,Inactive,0.0,0,
+cust_00310,Cameron Martin,cameron.martin310@example.com,54,Data Scientist,Seattle,Occasional,782.1,6,2025-12-18
+cust_00311,Lucas Davis,lucas.davis311@example.com,46,Accountant,Boston,Regular,610.8,6,2025-11-16
+cust_00312,Noah Jones,noah.jones312@example.com,18,Student,Chicago,Occasional,262.82,4,2025-09-19
+cust_00313,Avery Jones,avery.jones313@example.com,35,Freelancer,Denver,Occasional,402.76,6,2026-01-09
+cust_00314,Skyler Jackson,skyler.jackson314@example.com,64,Nurse,Chicago,Regular,1341.59,11,2025-09-28
+cust_00315,Noah Moore,noah.moore315@example.com,52,Data Scientist,Atlanta,Occasional,139.94,3,2025-11-22
+cust_00316,Sam Jackson,sam.jackson316@example.com,54,Teacher,Austin,Inactive,0.0,0,
+cust_00317,Kendall Johnson,kendall.johnson317@example.com,27,Sales Executive,New York,Regular,877.91,9,2025-11-21
+cust_00318,Sam Garcia,sam.garcia318@example.com,19,Student,Denver,Regular,1072.06,12,2026-01-13
+cust_00319,Kendall Hernandez,kendall.hernandez319@example.com,23,Student,Chicago,Regular,320.94,5,2025-12-09
+cust_00320,Liam Moore,liam.moore320@example.com,24,Freelancer,Atlanta,New,239.96,2,2026-01-03
+cust_00321,Alex Smith,alex.smith321@example.com,56,Sales Executive,Denver,VIP,3172.7,23,2026-01-02
+cust_00322,Alex Martin,alex.martin322@example.com,67,Sales Executive,Seattle,Occasional,765.99,7,2025-12-20
+cust_00323,Kendall Jones,kendall.jones323@example.com,38,Software Engineer,San Francisco,Regular,783.08,7,2025-12-28
+cust_00324,Ava Anderson,ava.anderson324@example.com,40,Sales Executive,Seattle,New,23.22,1,2025-06-18
+cust_00325,Dakota Hernandez,dakota.hernandez325@example.com,59,Software Engineer,Boston,Occasional,688.43,6,2026-01-09
+cust_00326,Liam Williams,liam.williams326@example.com,64,Graphic Designer,Seattle,New,319.93,5,2025-12-20
+cust_00327,Dakota Taylor,dakota.taylor327@example.com,24,Student,San Francisco,New,769.94,4,2025-10-28
+cust_00328,Emma Smith,emma.smith328@example.com,67,Accountant,New York,Occasional,779.36,5,2025-11-15
+cust_00329,Emma Martinez,emma.martinez329@example.com,59,Accountant,Denver,Regular,493.91,4,2026-01-02
+cust_00330,Pat Thompson,pat.thompson330@example.com,25,Student,Chicago,Occasional,596.22,4,2025-11-30
+cust_00331,Isabella Jackson,isabella.jackson331@example.com,59,Software Engineer,Seattle,VIP,4320.49,23,2025-12-18
+cust_00332,Alex Davis,alex.davis332@example.com,60,Marketing Manager,Boston,VIP,2231.94,14,2025-12-15
+cust_00333,Avery Miller,avery.miller333@example.com,59,Nurse,San Francisco,Inactive,0.0,0,
+cust_00334,Liam Jackson,liam.jackson334@example.com,44,Freelancer,Denver,Regular,540.85,9,2025-12-18
+cust_00335,Kendall Anderson,kendall.anderson335@example.com,26,Marketing Manager,San Francisco,Inactive,0.0,0,
+cust_00336,Ava Williams,ava.williams336@example.com,44,Nurse,Chicago,Regular,1080.99,11,2026-01-15
+cust_00337,Sophia Martinez,sophia.martinez337@example.com,24,Freelancer,Denver,Inactive,0.0,0,
+cust_00338,Skyler Garcia,skyler.garcia338@example.com,45,Data Scientist,Atlanta,New,83.08,2,2025-09-24
+cust_00339,Chris Thompson,chris.thompson339@example.com,65,Nurse,Denver,Occasional,451.85,5,2026-01-01
+cust_00340,Jackson Garcia,jackson.garcia340@example.com,68,Freelancer,Seattle,Regular,858.52,5,2026-01-06
+cust_00341,Dakota Jones,dakota.jones341@example.com,47,Data Scientist,Austin,Regular,1522.78,11,2025-12-14
+cust_00342,Alex Wilson,alex.wilson342@example.com,51,Software Engineer,San Francisco,Occasional,704.92,4,2025-10-13
+cust_00343,Sam Williams,sam.williams343@example.com,34,Data Scientist,San Francisco,Inactive,0.0,0,
+cust_00344,Morgan Smith,morgan.smith344@example.com,28,Accountant,Denver,Occasional,1069.69,6,2025-11-03
+cust_00345,Aiden Taylor,aiden.taylor345@example.com,23,Software Engineer,Boston,Occasional,660.92,4,2025-09-10
+cust_00346,Noah Jackson,noah.jackson346@example.com,38,Nurse,San Francisco,Occasional,726.04,4,2025-12-25
+cust_00347,Sam Rodriguez,sam.rodriguez347@example.com,42,Nurse,Austin,New,266.93,4,2025-12-22
+cust_00348,Taylor Miller,taylor.miller348@example.com,50,Accountant,Austin,Occasional,158.05,3,2025-08-18
+cust_00349,Jackson Williams,jackson.williams349@example.com,46,Data Scientist,Atlanta,Occasional,803.16,4,2025-09-27
+cust_00350,Quinn Brown,quinn.brown350@example.com,31,Accountant,Chicago,Regular,1016.03,8,2026-01-03
+cust_00351,Ava White,ava.white351@example.com,47,Nurse,Boston,VIP,3032.22,23,2026-01-02
+cust_00352,Reese White,reese.white352@example.com,31,Accountant,Boston,Occasional,420.33,6,2026-01-07
+cust_00353,Skyler Martinez,skyler.martinez353@example.com,34,Freelancer,Chicago,Occasional,390.8,5,2026-01-12
+cust_00354,Logan Garcia,logan.garcia354@example.com,43,Data Scientist,Atlanta,Occasional,424.51,5,2025-11-05
+cust_00355,Morgan Thompson,morgan.thompson355@example.com,35,Nurse,Boston,Occasional,149.97,3,2026-01-01
+cust_00356,Noah Hernandez,noah.hernandez356@example.com,68,Sales Executive,New York,New,125.76,2,2025-12-12
+cust_00357,Ava Williams,ava.williams357@example.com,49,Accountant,Seattle,Regular,1602.11,11,2025-10-13
+cust_00358,Riley Rodriguez,riley.rodriguez358@example.com,65,Marketing Manager,Seattle,Occasional,761.92,7,2025-08-08
+cust_00359,Taylor Hernandez,taylor.hernandez359@example.com,61,Nurse,Denver,Inactive,0.0,0,
+cust_00360,Peyton Martin,peyton.martin360@example.com,67,Freelancer,Denver,Occasional,610.88,6,2025-12-03
+cust_00361,Olivia Jackson,olivia.jackson361@example.com,19,Student,Boston,Occasional,181.24,4,2025-11-05
+cust_00362,Chris White,chris.white362@example.com,25,Graphic Designer,Boston,Inactive,0.0,0,
+cust_00363,Jackson Thomas,jackson.thomas363@example.com,29,Nurse,Boston,New,147.97,2,2025-10-14
+cust_00364,Riley Martin,riley.martin364@example.com,56,Software Engineer,Seattle,VIP,4916.74,20,2025-12-20
+cust_00365,Quinn Anderson,quinn.anderson365@example.com,48,Freelancer,Chicago,New,329.94,3,2025-12-24
+cust_00366,Cameron Smith,cameron.smith366@example.com,53,Freelancer,Austin,Occasional,272.74,5,2025-12-18
+cust_00367,Morgan Jones,morgan.jones367@example.com,45,Nurse,San Francisco,Occasional,872.6,5,2026-01-06
+cust_00368,Kendall Moore,kendall.moore368@example.com,45,Accountant,Chicago,Occasional,1112.69,7,2025-12-30
+cust_00369,Jamie Williams,jamie.williams369@example.com,42,Accountant,Atlanta,Regular,1398.21,5,2025-11-12
+cust_00370,Aiden Martinez,aiden.martinez370@example.com,64,Software Engineer,New York,Inactive,0.0,0,
+cust_00371,Kendall Miller,kendall.miller371@example.com,58,Marketing Manager,Chicago,Regular,643.26,8,2025-11-11
+cust_00372,Quinn Garcia,quinn.garcia372@example.com,48,Sales Executive,Denver,Occasional,275.93,3,2025-08-26
+cust_00373,Alex White,alex.white373@example.com,35,Nurse,Denver,Regular,1169.2,9,2025-12-19
+cust_00374,Alex Davis,alex.davis374@example.com,36,Nurse,Denver,New,374.34,4,2025-12-14
+cust_00375,Jackson Jackson,jackson.jackson375@example.com,34,Software Engineer,San Francisco,Occasional,822.43,3,2025-06-12
+cust_00376,Morgan Rodriguez,morgan.rodriguez376@example.com,65,Graphic Designer,Atlanta,Occasional,564.29,4,2025-12-07
+cust_00377,Harper Taylor,harper.taylor377@example.com,60,Teacher,Denver,Occasional,924.49,6,2025-11-27
+cust_00378,Harper Miller,harper.miller378@example.com,66,Teacher,Atlanta,Occasional,389.94,3,2025-11-07
+cust_00379,Liam Jones,liam.jones379@example.com,43,Freelancer,San Francisco,New,69.99,1,2025-06-16
+cust_00380,Morgan Miller,morgan.miller380@example.com,46,Graphic Designer,Seattle,Regular,1516.0,10,2025-12-31
+cust_00381,Reese White,reese.white381@example.com,31,Sales Executive,Denver,Regular,1327.69,10,2025-11-03
+cust_00382,Skyler Jackson,skyler.jackson382@example.com,67,Nurse,Austin,Occasional,189.96,2,2025-07-03
+cust_00383,Avery Jones,avery.jones383@example.com,34,Marketing Manager,Atlanta,Occasional,414.68,7,2026-01-06
+cust_00384,Aiden Anderson,aiden.anderson384@example.com,23,Freelancer,New York,Occasional,254.21,3,2025-12-08
+cust_00385,Peyton Martin,peyton.martin385@example.com,64,Graphic Designer,Denver,Regular,1369.89,10,2025-11-26
+cust_00386,Olivia Hernandez,olivia.hernandez386@example.com,54,Accountant,Denver,Occasional,235.97,4,2025-11-12
+cust_00387,Jackson Garcia,jackson.garcia387@example.com,41,Freelancer,New York,Regular,1320.71,5,2025-12-17
+cust_00388,Chris Hernandez,chris.hernandez388@example.com,59,Graphic Designer,Seattle,Occasional,345.92,3,2026-01-08
+cust_00389,Logan Brown,logan.brown389@example.com,40,Sales Executive,San Francisco,Occasional,194.24,4,2025-09-24
+cust_00390,Peyton Davis,peyton.davis390@example.com,24,Student,Atlanta,Occasional,294.69,4,2025-11-08
+cust_00391,Aiden Johnson,aiden.johnson391@example.com,51,Graphic Designer,Seattle,Inactive,0.0,0,
+cust_00392,Quinn Brown,quinn.brown392@example.com,38,Teacher,San Francisco,Regular,1473.53,8,2025-12-14
+cust_00393,Aiden White,aiden.white393@example.com,63,Freelancer,Boston,Inactive,0.0,0,
+cust_00394,Jackson Davis,jackson.davis394@example.com,36,Marketing Manager,Austin,Occasional,444.93,3,2025-12-16
+cust_00395,Harper Jackson,harper.jackson395@example.com,33,Teacher,Seattle,New,436.44,4,2025-08-10
+cust_00396,Logan Rodriguez,logan.rodriguez396@example.com,55,Data Scientist,Seattle,Occasional,270.14,4,2026-01-10
+cust_00397,Casey Jones,casey.jones397@example.com,67,Nurse,New York,Regular,562.8,5,2026-01-12
+cust_00398,Ava Garcia,ava.garcia398@example.com,66,Marketing Manager,Boston,Regular,2018.95,10,2025-10-24
+cust_00399,Emma Thomas,emma.thomas399@example.com,47,Marketing Manager,Seattle,Occasional,207.03,5,2025-11-03
+cust_00400,Kendall Rodriguez,kendall.rodriguez400@example.com,67,Software Engineer,Denver,Regular,1217.85,7,2025-11-21
+cust_00401,Logan Smith,logan.smith401@example.com,28,Accountant,Boston,Occasional,223.93,3,2025-06-10
+cust_00402,Jackson Jackson,jackson.jackson402@example.com,48,Teacher,San Francisco,New,324.92,4,2025-07-25
+cust_00403,Skyler Rodriguez,skyler.rodriguez403@example.com,43,Nurse,Chicago,Regular,1184.69,7,2025-12-09
+cust_00404,Logan Moore,logan.moore404@example.com,44,Sales Executive,Austin,Occasional,400.94,4,2025-09-28
+cust_00405,Alex Brown,alex.brown405@example.com,33,Software Engineer,Atlanta,VIP,3303.92,21,2025-11-24
+cust_00406,Pat Jones,pat.jones406@example.com,22,Student,Denver,Occasional,136.41,4,2025-08-23
+cust_00407,Casey Williams,casey.williams407@example.com,46,Software Engineer,Boston,Occasional,219.96,3,2025-12-30
+cust_00408,Noah Garcia,noah.garcia408@example.com,50,Nurse,Seattle,Regular,730.34,9,2026-01-09
+cust_00409,Pat Moore,pat.moore409@example.com,27,Software Engineer,New York,Regular,997.49,8,2025-11-19
+cust_00410,Alex Smith,alex.smith410@example.com,67,Graphic Designer,Atlanta,New,179.98,1,2025-09-17
+cust_00411,Olivia Jones,olivia.jones411@example.com,53,Software Engineer,Denver,Occasional,539.94,2,2025-04-30
+cust_00412,Noah Brown,noah.brown412@example.com,29,Nurse,San Francisco,Regular,550.1,7,2025-10-24
+cust_00413,Dakota Jones,dakota.jones413@example.com,64,Data Scientist,Austin,Occasional,811.36,5,2026-01-11
+cust_00414,Harper Miller,harper.miller414@example.com,51,Sales Executive,New York,Regular,703.86,9,2026-01-07
+cust_00415,Lucas Thomas,lucas.thomas415@example.com,62,Graphic Designer,Austin,Inactive,0.0,0,
+cust_00416,Taylor Brown,taylor.brown416@example.com,31,Accountant,Chicago,New,219.96,2,2025-06-17
+cust_00417,Cameron Thomas,cameron.thomas417@example.com,43,Software Engineer,Denver,Inactive,0.0,0,
+cust_00418,Emma Williams,emma.williams418@example.com,38,Graphic Designer,Seattle,Regular,1560.52,15,2026-01-14
+cust_00419,Sophia Smith,sophia.smith419@example.com,65,Freelancer,Seattle,New,162.76,2,2025-11-10
+cust_00420,Noah Taylor,noah.taylor420@example.com,41,Graphic Designer,Chicago,Occasional,119.06,2,2025-11-29
+cust_00421,Morgan Garcia,morgan.garcia421@example.com,54,Accountant,Denver,Regular,1667.17,12,2025-12-26
+cust_00422,Cameron Martinez,cameron.martinez422@example.com,31,Software Engineer,New York,New,240.85,4,2025-12-24
+cust_00423,Cameron Jackson,cameron.jackson423@example.com,66,Freelancer,Denver,Occasional,913.9,5,2025-11-30
+cust_00424,Alex Thompson,alex.thompson424@example.com,27,Accountant,San Francisco,Inactive,0.0,0,
+cust_00425,Jordan Johnson,jordan.johnson425@example.com,48,Data Scientist,Chicago,VIP,4580.83,21,2025-12-09
+cust_00426,Reese Taylor,reese.taylor426@example.com,28,Sales Executive,Denver,Occasional,464.45,5,2025-12-28
+cust_00427,Taylor Martin,taylor.martin427@example.com,36,Software Engineer,Seattle,Occasional,359.96,2,2025-11-29
+cust_00428,Logan Williams,logan.williams428@example.com,42,Teacher,Denver,Occasional,891.89,5,2025-12-16
+cust_00429,Riley Williams,riley.williams429@example.com,50,Graphic Designer,New York,Inactive,0.0,0,
+cust_00430,Avery Miller,avery.miller430@example.com,30,Accountant,New York,Regular,1434.61,8,2026-01-13
+cust_00431,Chris Moore,chris.moore431@example.com,45,Marketing Manager,New York,Inactive,0.0,0,
+cust_00432,Chris Anderson,chris.anderson432@example.com,31,Sales Executive,Seattle,Occasional,901.71,5,2026-01-09
+cust_00433,Jamie Thomas,jamie.thomas433@example.com,40,Software Engineer,New York,Inactive,0.0,0,
+cust_00434,Olivia Thompson,olivia.thompson434@example.com,63,Software Engineer,Seattle,Occasional,454.71,4,2025-11-05
+cust_00435,Jordan Moore,jordan.moore435@example.com,59,Accountant,Boston,Occasional,670.34,3,2025-09-13
+cust_00436,Sophia Brown,sophia.brown436@example.com,59,Marketing Manager,Seattle,Occasional,211.95,3,2025-06-30
+cust_00437,Jordan Smith,jordan.smith437@example.com,38,Sales Executive,New York,Regular,629.91,4,2025-12-15
+cust_00438,Lucas Jones,lucas.jones438@example.com,34,Teacher,Denver,Occasional,240.35,4,2025-11-02
+cust_00439,Jamie Garcia,jamie.garcia439@example.com,49,Nurse,Chicago,Occasional,469.85,6,2025-12-26
+cust_00440,Morgan Martin,morgan.martin440@example.com,66,Software Engineer,Boston,Occasional,180.95,3,2025-08-12
+cust_00441,Dakota Williams,dakota.williams441@example.com,52,Graphic Designer,New York,Regular,827.61,11,2025-11-20
+cust_00442,Taylor Jackson,taylor.jackson442@example.com,52,Data Scientist,Boston,Inactive,0.0,0,
+cust_00443,Avery Thompson,avery.thompson443@example.com,42,Teacher,Chicago,VIP,4074.3,23,2026-01-14
+cust_00444,Cameron Thompson,cameron.thompson444@example.com,54,Graphic Designer,Atlanta,New,493.33,4,2025-08-14
+cust_00445,Sam Smith,sam.smith445@example.com,49,Graphic Designer,Chicago,Inactive,0.0,0,
+cust_00446,Emma Smith,emma.smith446@example.com,44,Graphic Designer,Boston,VIP,1461.88,12,2026-01-14
+cust_00447,Morgan Davis,morgan.davis447@example.com,56,Nurse,Seattle,Inactive,0.0,0,
+cust_00448,Jordan Jones,jordan.jones448@example.com,68,Nurse,Atlanta,Regular,693.58,8,2025-12-19
+cust_00449,Isabella Martin,isabella.martin449@example.com,24,Student,Chicago,Regular,820.38,9,2026-01-02
+cust_00450,Logan Brown,logan.brown450@example.com,55,Accountant,San Francisco,Occasional,504.91,5,2025-10-24
+cust_00451,Logan Thompson,logan.thompson451@example.com,26,Nurse,San Francisco,New,149.98,2,2025-08-25
+cust_00452,Avery Rodriguez,avery.rodriguez452@example.com,43,Marketing Manager,Chicago,Occasional,870.87,8,2025-12-17
+cust_00453,Quinn Rodriguez,quinn.rodriguez453@example.com,37,Teacher,Boston,New,198.74,3,2025-12-19
+cust_00454,Sophia Thompson,sophia.thompson454@example.com,29,Graphic Designer,Austin,Regular,1194.81,9,2025-12-20
+cust_00455,Quinn Martinez,quinn.martinez455@example.com,49,Marketing Manager,Atlanta,Regular,487.1,6,2025-09-14
+cust_00456,Quinn Wilson,quinn.wilson456@example.com,52,Teacher,Chicago,Occasional,464.94,5,2025-12-11
+cust_00457,Jackson Wilson,jackson.wilson457@example.com,68,Software Engineer,Austin,Regular,899.32,10,2026-01-10
+cust_00458,Ava Martinez,ava.martinez458@example.com,20,Student,Chicago,New,126.28,2,2025-10-02
+cust_00459,Dakota Martin,dakota.martin459@example.com,26,Graphic Designer,Boston,Regular,1351.8,10,2025-12-16
+cust_00460,Alex Taylor,alex.taylor460@example.com,51,Data Scientist,Austin,Occasional,355.34,4,2025-08-15
+cust_00461,Jackson Jones,jackson.jones461@example.com,30,Accountant,San Francisco,Regular,1009.48,7,2025-12-10
+cust_00462,Pat Taylor,pat.taylor462@example.com,46,Graphic Designer,Austin,Regular,2299.24,12,2026-01-15
+cust_00463,Lucas Williams,lucas.williams463@example.com,24,Software Engineer,Seattle,New,39.99,1,2025-11-06
+cust_00464,Jackson Jones,jackson.jones464@example.com,28,Graphic Designer,Atlanta,Regular,955.75,9,2025-11-14
+cust_00465,Jordan Miller,jordan.miller465@example.com,24,Student,Atlanta,Regular,1144.57,10,2025-10-31
+cust_00466,Dakota Thomas,dakota.thomas466@example.com,34,Accountant,New York,Occasional,334.93,5,2025-06-28
+cust_00467,Casey Hernandez,casey.hernandez467@example.com,32,Marketing Manager,Seattle,Regular,627.68,5,2025-09-21
+cust_00468,Emma Wilson,emma.wilson468@example.com,54,Freelancer,Chicago,New,151.48,4,2025-12-28
+cust_00469,Jordan Williams,jordan.williams469@example.com,40,Sales Executive,Atlanta,Occasional,697.2,4,2025-12-13
+cust_00470,Emma Martin,emma.martin470@example.com,38,Nurse,Chicago,Regular,1963.97,11,2026-01-15
+cust_00471,Jackson Anderson,jackson.anderson471@example.com,25,Student,Denver,Occasional,274.94,4,2025-11-15
+cust_00472,Dakota Rodriguez,dakota.rodriguez472@example.com,34,Freelancer,Boston,Occasional,219.96,2,2025-11-30
+cust_00473,Alex Rodriguez,alex.rodriguez473@example.com,26,Freelancer,Chicago,Occasional,525.71,5,2025-10-29
+cust_00474,Chris Brown,chris.brown474@example.com,38,Teacher,Chicago,Occasional,299.95,3,2025-05-06
+cust_00475,Sophia Garcia,sophia.garcia475@example.com,59,Sales Executive,New York,Occasional,512.78,4,2026-01-13
+cust_00476,Riley Thompson,riley.thompson476@example.com,43,Marketing Manager,Austin,Occasional,647.42,6,2026-01-07
+cust_00477,Logan Thompson,logan.thompson477@example.com,20,Student,Boston,New,524.15,3,2025-11-23
+cust_00478,Peyton Wilson,peyton.wilson478@example.com,34,Graphic Designer,Atlanta,New,29.99,1,2025-06-29
+cust_00479,Jordan Garcia,jordan.garcia479@example.com,21,Student,San Francisco,Occasional,564.42,6,2025-10-09
+cust_00480,Jamie White,jamie.white480@example.com,35,Accountant,New York,Occasional,263.97,2,2026-01-11
+cust_00481,Jordan Smith,jordan.smith481@example.com,32,Marketing Manager,Boston,Occasional,264.96,3,2025-11-20
+cust_00482,Taylor Anderson,taylor.anderson482@example.com,68,Software Engineer,Boston,Inactive,0.0,0,
+cust_00483,Jamie Wilson,jamie.wilson483@example.com,43,Nurse,San Francisco,New,855.59,7,2025-12-05
+cust_00484,Jackson Moore,jackson.moore484@example.com,64,Marketing Manager,Denver,Regular,1551.02,8,2025-12-31
+cust_00485,Riley Thompson,riley.thompson485@example.com,34,Sales Executive,Boston,Regular,1269.85,8,2025-11-26
+cust_00486,Chris Smith,chris.smith486@example.com,67,Data Scientist,Austin,Occasional,533.49,5,2025-06-04
+cust_00487,Chris White,chris.white487@example.com,43,Freelancer,New York,Inactive,0.0,0,
+cust_00488,Lucas Moore,lucas.moore488@example.com,32,Graphic Designer,San Francisco,New,99.98,2,2025-11-03
+cust_00489,Cameron Martinez,cameron.martinez489@example.com,33,Software Engineer,Chicago,Occasional,878.62,4,2025-09-13
+cust_00490,Alex Rodriguez,alex.rodriguez490@example.com,36,Teacher,Atlanta,Inactive,0.0,0,
+cust_00491,Casey Brown,casey.brown491@example.com,23,Software Engineer,Boston,Regular,775.37,7,2026-01-15
+cust_00492,Chris Thomas,chris.thomas492@example.com,54,Accountant,Denver,Occasional,500.55,7,2025-09-01
+cust_00493,Morgan Moore,morgan.moore493@example.com,59,Sales Executive,Denver,Occasional,244.07,5,2025-12-16
+cust_00494,Jackson Johnson,jackson.johnson494@example.com,41,Accountant,San Francisco,Regular,1056.67,7,2026-01-13
+cust_00495,Taylor Martinez,taylor.martinez495@example.com,33,Data Scientist,San Francisco,Occasional,924.64,8,2025-12-23
+cust_00496,Jamie White,jamie.white496@example.com,62,Software Engineer,San Francisco,Regular,621.26,7,2025-11-01
+cust_00497,Emma Miller,emma.miller497@example.com,24,Student,Denver,Inactive,0.0,0,
+cust_00498,Jamie Davis,jamie.davis498@example.com,21,Student,San Francisco,Regular,667.84,8,2025-09-07
+cust_00499,Liam Wilson,liam.wilson499@example.com,42,Sales Executive,Seattle,New,318.15,3,2025-12-24
+cust_00500,Dakota Thompson,dakota.thompson500@example.com,58,Software Engineer,New York,Regular,1335.93,7,2026-01-01
+cust_00501,Alex Thomas,alex.thomas501@example.com,19,Student,Boston,Regular,241.09,6,2025-12-11
+cust_00502,Pat Brown,pat.brown502@example.com,24,Freelancer,Atlanta,New,179.98,1,2025-12-18
+cust_00503,Taylor Moore,taylor.moore503@example.com,30,Marketing Manager,Seattle,Regular,816.62,12,2025-11-06
+cust_00504,Isabella Rodriguez,isabella.rodriguez504@example.com,28,Accountant,Atlanta,Occasional,278.92,4,2025-09-05
+cust_00505,Cameron Miller,cameron.miller505@example.com,51,Teacher,Denver,Regular,324.92,4,2025-11-18
+cust_00506,Casey Garcia,casey.garcia506@example.com,40,Accountant,Atlanta,Regular,1219.75,9,2026-01-07
+cust_00507,Taylor Anderson,taylor.anderson507@example.com,57,Marketing Manager,San Francisco,Regular,984.33,11,2025-09-30
+cust_00508,Peyton Johnson,peyton.johnson508@example.com,47,Freelancer,Chicago,Inactive,0.0,0,
+cust_00509,Logan Garcia,logan.garcia509@example.com,53,Nurse,Atlanta,Occasional,476.92,5,2026-01-11
+cust_00510,Kendall Thompson,kendall.thompson510@example.com,56,Nurse,New York,Regular,1261.63,10,2025-12-26
+cust_00511,Morgan Hernandez,morgan.hernandez511@example.com,34,Freelancer,Austin,New,273.77,3,2025-11-23
+cust_00512,Sam Johnson,sam.johnson512@example.com,50,Graphic Designer,Chicago,Regular,470.92,5,2025-09-27
+cust_00513,Ava Jones,ava.jones513@example.com,61,Nurse,Chicago,New,115.16,2,2025-04-02
+cust_00514,Taylor Taylor,taylor.taylor514@example.com,58,Teacher,San Francisco,Regular,930.37,9,2025-12-26
+cust_00515,Kendall Hernandez,kendall.hernandez515@example.com,23,Teacher,Seattle,Occasional,959.91,4,2026-01-08
+cust_00516,Sam Thompson,sam.thompson516@example.com,60,Nurse,Austin,Regular,1062.61,10,2026-01-14
+cust_00517,Logan Brown,logan.brown517@example.com,41,Software Engineer,San Francisco,Inactive,0.0,0,
+cust_00518,Casey Taylor,casey.taylor518@example.com,64,Teacher,Denver,Occasional,336.49,3,2025-11-25
+cust_00519,Jordan Miller,jordan.miller519@example.com,40,Freelancer,Atlanta,New,369.97,2,2025-04-18
+cust_00520,Jordan Taylor,jordan.taylor520@example.com,44,Marketing Manager,Denver,Occasional,739.92,4,2026-01-01
+cust_00521,Isabella Anderson,isabella.anderson521@example.com,24,Accountant,Seattle,Regular,538.89,6,2025-11-16
+cust_00522,Ava Moore,ava.moore522@example.com,67,Data Scientist,Seattle,Occasional,898.02,4,2025-06-07
+cust_00523,Noah Hernandez,noah.hernandez523@example.com,43,Marketing Manager,Seattle,Regular,949.95,8,2025-12-05
+cust_00524,Pat Hernandez,pat.hernandez524@example.com,36,Nurse,San Francisco,Inactive,0.0,0,
+cust_00525,Ava Johnson,ava.johnson525@example.com,55,Accountant,Boston,Occasional,334.65,7,2025-12-07
+cust_00526,Sam Martin,sam.martin526@example.com,59,Data Scientist,Denver,Regular,609.91,4,2025-12-15
+cust_00527,Ava Johnson,ava.johnson527@example.com,38,Graphic Designer,Chicago,Regular,283.72,6,2026-01-05
+cust_00528,Olivia Davis,olivia.davis528@example.com,22,Student,Boston,Occasional,629.98,6,2026-01-02
+cust_00529,Emma Brown,emma.brown529@example.com,66,Sales Executive,Denver,Occasional,569.95,4,2026-01-11
+cust_00530,Harper Hernandez,harper.hernandez530@example.com,34,Teacher,Atlanta,Regular,639.86,7,2026-01-14
+cust_00531,Cameron Miller,cameron.miller531@example.com,39,Sales Executive,Boston,New,300.94,3,2025-09-30
+cust_00532,Alex Taylor,alex.taylor532@example.com,26,Software Engineer,Seattle,Inactive,0.0,0,
+cust_00533,Aiden Garcia,aiden.garcia533@example.com,64,Freelancer,Chicago,Regular,1059.44,8,2025-10-27
+cust_00534,Emma Thomas,emma.thomas534@example.com,55,Graphic Designer,Seattle,New,229.34,3,2025-08-09
+cust_00535,Lucas Jones,lucas.jones535@example.com,20,Student,Atlanta,VIP,2153.71,20,2025-12-21
+cust_00536,Harper Wilson,harper.wilson536@example.com,68,Graphic Designer,Seattle,VIP,2984.53,21,2025-12-09
+cust_00537,Isabella Taylor,isabella.taylor537@example.com,45,Data Scientist,Denver,New,339.52,5,2025-09-18
+cust_00538,Quinn Wilson,quinn.wilson538@example.com,66,Data Scientist,Chicago,Occasional,332.13,4,2026-01-13
+cust_00539,Kendall Anderson,kendall.anderson539@example.com,58,Software Engineer,New York,New,101.97,2,2026-01-07
+cust_00540,Avery Brown,avery.brown540@example.com,53,Freelancer,Seattle,New,309.04,4,2025-09-17
+cust_00541,Emma Martinez,emma.martinez541@example.com,40,Teacher,Seattle,Regular,755.65,8,2026-01-08
+cust_00542,Sam Martin,sam.martin542@example.com,38,Data Scientist,Chicago,New,143.96,2,2025-09-15
+cust_00543,Liam Martinez,liam.martinez543@example.com,66,Freelancer,Denver,Regular,886.14,8,2025-10-19
+cust_00544,Avery Rodriguez,avery.rodriguez544@example.com,24,Student,Atlanta,Inactive,0.0,0,
+cust_00545,Logan Thompson,logan.thompson545@example.com,35,Nurse,New York,Occasional,462.92,4,2025-10-16
+cust_00546,Lucas Anderson,lucas.anderson546@example.com,55,Graphic Designer,Atlanta,Inactive,0.0,0,
+cust_00547,Avery Brown,avery.brown547@example.com,53,Marketing Manager,Austin,Occasional,702.91,4,2025-12-14
+cust_00548,Liam Martinez,liam.martinez548@example.com,64,Data Scientist,Austin,Inactive,0.0,0,
+cust_00549,Riley Wilson,riley.wilson549@example.com,49,Graphic Designer,Boston,Regular,947.46,8,2025-10-17
+cust_00550,Quinn Brown,quinn.brown550@example.com,53,Data Scientist,Seattle,Occasional,304.93,3,2025-09-27
+cust_00551,Skyler Davis,skyler.davis551@example.com,55,Freelancer,San Francisco,New,97.17,1,2025-05-11
+cust_00552,Reese Johnson,reese.johnson552@example.com,32,Nurse,Seattle,Regular,1310.85,7,2025-12-21
+cust_00553,Logan Hernandez,logan.hernandez553@example.com,32,Teacher,Denver,Regular,1304.84,8,2025-12-24
+cust_00554,Skyler Martinez,skyler.martinez554@example.com,63,Marketing Manager,San Francisco,Inactive,0.0,0,
+cust_00555,Alex Hernandez,alex.hernandez555@example.com,40,Teacher,New York,Regular,553.51,6,2025-11-08
+cust_00556,Skyler Williams,skyler.williams556@example.com,31,Marketing Manager,Austin,Inactive,0.0,0,
+cust_00557,Dakota Thomas,dakota.thomas557@example.com,53,Nurse,Denver,New,102.39,1,2025-04-25
+cust_00558,Peyton Davis,peyton.davis558@example.com,23,Student,New York,Occasional,89.58,2,2025-09-21
+cust_00559,Alex Smith,alex.smith559@example.com,63,Sales Executive,Chicago,Occasional,277.19,4,2025-11-08
+cust_00560,Sam Brown,sam.brown560@example.com,47,Teacher,Seattle,Regular,1712.37,10,2025-12-04
+cust_00561,Taylor Johnson,taylor.johnson561@example.com,42,Data Scientist,Austin,New,266.37,2,2025-08-28
+cust_00562,Reese Jones,reese.jones562@example.com,44,Accountant,Boston,Occasional,937.9,6,2025-10-15
+cust_00563,Lucas Taylor,lucas.taylor563@example.com,24,Graphic Designer,Austin,Occasional,211.95,2,2025-07-09
+cust_00564,Noah Smith,noah.smith564@example.com,60,Marketing Manager,Chicago,Regular,1451.11,10,2025-11-26
+cust_00565,Olivia Johnson,olivia.johnson565@example.com,47,Software Engineer,Boston,Regular,977.68,10,2025-11-15
+cust_00566,Harper Johnson,harper.johnson566@example.com,65,Sales Executive,New York,Regular,754.79,6,2026-01-10
+cust_00567,Olivia Brown,olivia.brown567@example.com,24,Student,New York,New,54.98,2,2025-09-23
+cust_00568,Peyton Rodriguez,peyton.rodriguez568@example.com,53,Nurse,San Francisco,Occasional,296.76,3,2025-10-27
+cust_00569,Reese Brown,reese.brown569@example.com,22,Student,Seattle,Regular,933.11,10,2025-12-18
+cust_00570,Ava Brown,ava.brown570@example.com,55,Marketing Manager,Denver,New,261.07,2,2025-11-12
+cust_00571,Avery Brown,avery.brown571@example.com,29,Freelancer,San Francisco,Inactive,0.0,0,
+cust_00572,Sophia Rodriguez,sophia.rodriguez572@example.com,56,Graphic Designer,Chicago,Occasional,224.34,5,2025-11-25
+cust_00573,Chris Johnson,chris.johnson573@example.com,58,Nurse,Seattle,Occasional,632.49,6,2026-01-08
+cust_00574,Riley Smith,riley.smith574@example.com,23,Accountant,Boston,Regular,1563.3,9,2025-10-04
+cust_00575,Sam Williams,sam.williams575@example.com,55,Software Engineer,Atlanta,Regular,706.52,5,2025-08-26
+cust_00576,Emma Garcia,emma.garcia576@example.com,52,Software Engineer,Seattle,Inactive,0.0,0,
+cust_00577,Jordan Brown,jordan.brown577@example.com,34,Data Scientist,Atlanta,Occasional,364.94,3,2026-01-02
+cust_00578,Reese Brown,reese.brown578@example.com,29,Teacher,Boston,Occasional,463.92,4,2025-12-15
+cust_00579,Jamie Anderson,jamie.anderson579@example.com,51,Marketing Manager,Austin,VIP,3806.8,22,2025-12-31
+cust_00580,Ava Martinez,ava.martinez580@example.com,34,Software Engineer,Boston,Occasional,283.18,3,2025-11-13
+cust_00581,Casey Taylor,casey.taylor581@example.com,67,Nurse,Atlanta,Occasional,289.08,4,2025-11-20
+cust_00582,Sam Johnson,sam.johnson582@example.com,33,Marketing Manager,San Francisco,Occasional,396.27,3,2025-10-01
+cust_00583,Jackson Thompson,jackson.thompson583@example.com,66,Freelancer,Atlanta,Occasional,938.91,5,2025-10-02
+cust_00584,Sophia Anderson,sophia.anderson584@example.com,62,Freelancer,Denver,Regular,346.31,4,2025-07-15
+cust_00585,Lucas Moore,lucas.moore585@example.com,30,Marketing Manager,Atlanta,New,519.94,3,2025-12-31
+cust_00586,Taylor Rodriguez,taylor.rodriguez586@example.com,64,Accountant,New York,Occasional,465.04,4,2025-12-12
+cust_00587,Liam Martinez,liam.martinez587@example.com,56,Sales Executive,Chicago,VIP,2893.21,18,2025-12-23
+cust_00588,Reese Garcia,reese.garcia588@example.com,53,Freelancer,San Francisco,New,91.83,2,2025-10-05
+cust_00589,Ava Jackson,ava.jackson589@example.com,62,Nurse,Austin,Occasional,179.96,2,2025-05-10
+cust_00590,Aiden Moore,aiden.moore590@example.com,33,Marketing Manager,Atlanta,VIP,3745.4,14,2026-01-15
+cust_00591,Riley Martinez,riley.martinez591@example.com,40,Accountant,Boston,Inactive,0.0,0,
+cust_00592,Peyton Taylor,peyton.taylor592@example.com,48,Sales Executive,Chicago,Regular,695.6,5,2025-12-23
+cust_00593,Jackson Thompson,jackson.thompson593@example.com,51,Accountant,Atlanta,Regular,1054.86,6,2025-12-07
+cust_00594,Morgan Moore,morgan.moore594@example.com,64,Accountant,Boston,Occasional,619.9,5,2025-08-14
+cust_00595,Jordan Jackson,jordan.jackson595@example.com,58,Nurse,Denver,Regular,518.54,5,2025-07-15
+cust_00596,Isabella Martin,isabella.martin596@example.com,58,Freelancer,Seattle,Regular,382.1,5,2025-12-29
+cust_00597,Cameron Johnson,cameron.johnson597@example.com,37,Accountant,Boston,New,620.67,2,2025-11-27
+cust_00598,Olivia Anderson,olivia.anderson598@example.com,68,Teacher,Atlanta,Occasional,324.71,4,2025-08-20
+cust_00599,Alex Martinez,alex.martinez599@example.com,45,Software Engineer,Chicago,Regular,1401.99,9,2025-11-24
+cust_00600,Olivia Brown,olivia.brown600@example.com,25,Sales Executive,Boston,Occasional,518.89,7,2026-01-03
+cust_00601,Morgan Rodriguez,morgan.rodriguez601@example.com,62,Marketing Manager,Denver,Occasional,449.41,5,2025-11-25
+cust_00602,Pat Hernandez,pat.hernandez602@example.com,35,Software Engineer,Denver,Regular,638.44,9,2025-12-07
+cust_00603,Jordan Thompson,jordan.thompson603@example.com,30,Software Engineer,Denver,Occasional,784.96,5,2025-07-29
+cust_00604,Skyler Smith,skyler.smith604@example.com,56,Freelancer,Austin,Occasional,675.94,3,2026-01-04
+cust_00605,Lucas Martin,lucas.martin605@example.com,34,Nurse,Atlanta,Occasional,135.57,2,2025-06-13
+cust_00606,Dakota White,dakota.white606@example.com,61,Marketing Manager,San Francisco,Inactive,0.0,0,
+cust_00607,Reese White,reese.white607@example.com,67,Sales Executive,Denver,Occasional,234.15,3,2025-12-21
+cust_00608,Avery Hernandez,avery.hernandez608@example.com,31,Nurse,Boston,Occasional,233.93,3,2025-11-25
+cust_00609,Ava Jackson,ava.jackson609@example.com,43,Freelancer,Seattle,Occasional,549.13,4,2025-11-27
+cust_00610,Liam Anderson,liam.anderson610@example.com,66,Graphic Designer,Seattle,Regular,606.89,6,2025-11-13
+cust_00611,Olivia Brown,olivia.brown611@example.com,45,Marketing Manager,Boston,Inactive,0.0,0,
+cust_00612,Liam Jackson,liam.jackson612@example.com,41,Accountant,Denver,Occasional,371.31,3,2025-09-21
+cust_00613,Alex Taylor,alex.taylor613@example.com,32,Sales Executive,San Francisco,VIP,1863.69,12,2025-11-08
+cust_00614,Casey Miller,casey.miller614@example.com,22,Student,Chicago,New,262.37,3,2025-05-22
+cust_00615,Ava Johnson,ava.johnson615@example.com,67,Data Scientist,Austin,New,341.12,4,2026-01-13
+cust_00616,Cameron Hernandez,cameron.hernandez616@example.com,29,Graphic Designer,New York,Occasional,561.63,5,2025-12-12
+cust_00617,Riley Martin,riley.martin617@example.com,67,Sales Executive,Denver,Inactive,0.0,0,
+cust_00618,Dakota Thomas,dakota.thomas618@example.com,23,Student,Denver,Occasional,333.76,3,2025-09-29
+cust_00619,Harper Hernandez,harper.hernandez619@example.com,37,Data Scientist,Chicago,VIP,4302.63,27,2026-01-09
+cust_00620,Sophia Davis,sophia.davis620@example.com,41,Teacher,Chicago,New,462.44,4,2025-12-07
+cust_00621,Chris Miller,chris.miller621@example.com,55,Marketing Manager,San Francisco,Occasional,389.94,3,2026-01-12
+cust_00622,Casey Jackson,casey.jackson622@example.com,22,Student,Denver,Occasional,696.99,6,2025-11-24
+cust_00623,Alex Martinez,alex.martinez623@example.com,52,Freelancer,Seattle,Regular,731.02,10,2025-10-28
+cust_00624,Lucas Martinez,lucas.martinez624@example.com,18,Student,Austin,Regular,1033.06,9,2025-12-29
+cust_00625,Jackson Thompson,jackson.thompson625@example.com,58,Data Scientist,Atlanta,New,104.97,2,2025-08-09
+cust_00626,Kendall Garcia,kendall.garcia626@example.com,34,Software Engineer,Boston,Occasional,299.94,3,2026-01-06
+cust_00627,Peyton Jackson,peyton.jackson627@example.com,48,Marketing Manager,Denver,Occasional,227.94,3,2025-08-10
+cust_00628,Liam Martinez,liam.martinez628@example.com,44,Graphic Designer,Chicago,Occasional,293.93,4,2025-12-12
+cust_00629,Peyton Smith,peyton.smith629@example.com,30,Graphic Designer,Atlanta,Occasional,744.59,5,2025-09-03
+cust_00630,Jordan Martinez,jordan.martinez630@example.com,47,Graphic Designer,Chicago,Occasional,168.4,3,2025-12-30
+cust_00631,Alex Martin,alex.martin631@example.com,46,Data Scientist,Seattle,Occasional,1043.82,5,2025-11-04
+cust_00632,Isabella Davis,isabella.davis632@example.com,23,Student,Seattle,Occasional,269.04,4,2025-09-02
+cust_00633,Emma Williams,emma.williams633@example.com,36,Marketing Manager,New York,Regular,888.06,10,2026-01-11
+cust_00634,Ava Brown,ava.brown634@example.com,36,Graphic Designer,Denver,New,224.97,1,2025-04-04
+cust_00635,Noah Jones,noah.jones635@example.com,24,Nurse,San Francisco,Occasional,402.68,5,2026-01-02
+cust_00636,Taylor Williams,taylor.williams636@example.com,26,Teacher,New York,Inactive,0.0,0,
+cust_00637,Logan Garcia,logan.garcia637@example.com,39,Data Scientist,San Francisco,Regular,1071.18,9,2025-12-21
+cust_00638,Reese Martinez,reese.martinez638@example.com,24,Accountant,Denver,Occasional,486.92,3,2025-12-10
+cust_00639,Emma White,emma.white639@example.com,27,Software Engineer,New York,New,79.99,1,2025-06-13
+cust_00640,Olivia Williams,olivia.williams640@example.com,45,Freelancer,New York,Inactive,0.0,0,
+cust_00641,Jackson Wilson,jackson.wilson641@example.com,61,Software Engineer,Seattle,Occasional,61.39,2,2025-09-23
+cust_00642,Dakota Smith,dakota.smith642@example.com,53,Accountant,Denver,Occasional,332.95,3,2025-08-02
+cust_00643,Noah Taylor,noah.taylor643@example.com,57,Graphic Designer,Austin,Occasional,966.89,6,2025-12-31
+cust_00644,Liam Anderson,liam.anderson644@example.com,23,Marketing Manager,Seattle,New,353.67,1,2025-11-03
+cust_00645,Morgan Johnson,morgan.johnson645@example.com,23,Sales Executive,Austin,Occasional,617.9,4,2025-07-31
+cust_00646,Avery Davis,avery.davis646@example.com,45,Sales Executive,San Francisco,Occasional,1291.22,4,2025-08-25
+cust_00647,Chris Miller,chris.miller647@example.com,37,Sales Executive,Austin,Occasional,618.78,8,2026-01-07
+cust_00648,Liam Thompson,liam.thompson648@example.com,26,Software Engineer,Austin,Regular,1164.42,12,2026-01-15
+cust_00649,Avery Williams,avery.williams649@example.com,39,Sales Executive,San Francisco,Occasional,552.92,4,2025-08-04
+cust_00650,Jamie Anderson,jamie.anderson650@example.com,31,Freelancer,Atlanta,Regular,832.35,9,2026-01-06
+cust_00651,Avery White,avery.white651@example.com,27,Graphic Designer,San Francisco,New,162.97,3,2026-01-01
+cust_00652,Quinn Martinez,quinn.martinez652@example.com,62,Teacher,Atlanta,Regular,2944.69,14,2026-01-07
+cust_00653,Logan Thompson,logan.thompson653@example.com,46,Freelancer,Austin,Occasional,534.94,4,2025-10-16
+cust_00654,Jamie Garcia,jamie.garcia654@example.com,37,Marketing Manager,New York,Occasional,479.9,5,2025-11-30
+cust_00655,Liam Martinez,liam.martinez655@example.com,53,Teacher,Austin,Occasional,280.55,4,2025-12-20
+cust_00656,Skyler Jackson,skyler.jackson656@example.com,29,Teacher,Seattle,Occasional,360.01,5,2026-01-08
+cust_00657,Ava Rodriguez,ava.rodriguez657@example.com,31,Freelancer,San Francisco,New,183.96,3,2025-12-10
+cust_00658,Noah Williams,noah.williams658@example.com,27,Graphic Designer,Seattle,Occasional,657.29,4,2025-10-18
+cust_00659,Sophia Thompson,sophia.thompson659@example.com,21,Student,Denver,Occasional,480.24,4,2025-12-17
+cust_00660,Emma Jones,emma.jones660@example.com,46,Data Scientist,Atlanta,Occasional,623.88,8,2025-10-15
+cust_00661,Sam Hernandez,sam.hernandez661@example.com,55,Freelancer,Seattle,Regular,679.34,10,2025-12-19
+cust_00662,Kendall Smith,kendall.smith662@example.com,65,Nurse,Boston,Regular,631.89,6,2026-01-01
+cust_00663,Quinn Miller,quinn.miller663@example.com,34,Marketing Manager,Austin,New,382.74,3,2025-09-04
+cust_00664,Noah Moore,noah.moore664@example.com,45,Freelancer,Austin,New,744.93,4,2025-11-19
+cust_00665,Riley Williams,riley.williams665@example.com,39,Graphic Designer,Atlanta,VIP,2567.79,16,2026-01-14
+cust_00666,Kendall Anderson,kendall.anderson666@example.com,24,Student,Chicago,Regular,697.89,9,2026-01-12
+cust_00667,Emma Martinez,emma.martinez667@example.com,19,Student,New York,Occasional,233.95,5,2025-09-08
+cust_00668,Dakota Taylor,dakota.taylor668@example.com,46,Data Scientist,Austin,Inactive,0.0,0,
+cust_00669,Dakota Garcia,dakota.garcia669@example.com,56,Software Engineer,Seattle,New,522.74,3,2025-07-15
+cust_00670,Skyler Moore,skyler.moore670@example.com,61,Teacher,Boston,Occasional,552.06,5,2025-11-09
+cust_00671,Chris Garcia,chris.garcia671@example.com,27,Marketing Manager,Atlanta,Occasional,358.66,5,2025-06-12
+cust_00672,Chris Anderson,chris.anderson672@example.com,61,Marketing Manager,Austin,Regular,1066.59,12,2025-11-27
+cust_00673,Jackson Martinez,jackson.martinez673@example.com,30,Graphic Designer,Denver,Regular,1115.55,9,2025-12-27
+cust_00674,Pat Thompson,pat.thompson674@example.com,33,Accountant,Atlanta,New,412.76,2,2025-06-30
+cust_00675,Riley Johnson,riley.johnson675@example.com,31,Nurse,New York,New,165.94,4,2025-12-01
+cust_00676,Sam Martin,sam.martin676@example.com,25,Freelancer,Austin,New,564.21,4,2025-11-17
+cust_00677,Chris Rodriguez,chris.rodriguez677@example.com,34,Marketing Manager,New York,New,140.95,2,2025-08-16
+cust_00678,Isabella Wilson,isabella.wilson678@example.com,28,Nurse,New York,Occasional,572.94,3,2025-10-08
+cust_00679,Aiden Moore,aiden.moore679@example.com,33,Freelancer,Atlanta,Occasional,513.13,5,2025-09-22
+cust_00680,Jackson Thompson,jackson.thompson680@example.com,34,Freelancer,Austin,Occasional,729.9,5,2025-12-17
+cust_00681,Harper Thompson,harper.thompson681@example.com,27,Teacher,Atlanta,Regular,753.63,7,2026-01-05
+cust_00682,Morgan Smith,morgan.smith682@example.com,35,Nurse,Austin,Occasional,514.91,4,2025-08-20
+cust_00683,Chris Moore,chris.moore683@example.com,62,Freelancer,San Francisco,Regular,928.37,10,2025-12-24
+cust_00684,Taylor Moore,taylor.moore684@example.com,65,Sales Executive,San Francisco,VIP,1263.45,16,2025-12-27
+cust_00685,Isabella Thomas,isabella.thomas685@example.com,56,Sales Executive,New York,New,542.37,4,2025-11-05
+cust_00686,Olivia Martin,olivia.martin686@example.com,50,Teacher,New York,Occasional,274.94,3,2025-08-04
+cust_00687,Logan Thompson,logan.thompson687@example.com,29,Nurse,Boston,Occasional,981.21,5,2025-11-14
+cust_00688,Sophia Garcia,sophia.garcia688@example.com,28,Data Scientist,Atlanta,Regular,766.22,8,2026-01-02
+cust_00689,Casey Davis,casey.davis689@example.com,23,Sales Executive,Denver,New,441.45,3,2025-05-05
+cust_00690,Kendall Smith,kendall.smith690@example.com,24,Student,San Francisco,Inactive,0.0,0,
+cust_00691,Reese Anderson,reese.anderson691@example.com,29,Graphic Designer,Boston,New,444.81,5,2025-08-31
+cust_00692,Casey Jackson,casey.jackson692@example.com,50,Nurse,Seattle,Regular,1749.93,11,2025-12-28
+cust_00693,Liam Taylor,liam.taylor693@example.com,36,Freelancer,Seattle,Occasional,357.14,4,2025-11-22
+cust_00694,Chris Anderson,chris.anderson694@example.com,58,Sales Executive,Atlanta,Occasional,374.94,3,2025-09-03
+cust_00695,Sophia Taylor,sophia.taylor695@example.com,31,Data Scientist,Boston,Regular,1502.4,10,2025-12-04
+cust_00696,Jackson Miller,jackson.miller696@example.com,29,Graphic Designer,Atlanta,Regular,340.21,5,2025-09-21
+cust_00697,Jackson Jackson,jackson.jackson697@example.com,62,Nurse,Boston,Occasional,468.94,3,2025-09-25
+cust_00698,Jackson Williams,jackson.williams698@example.com,32,Nurse,New York,Regular,1289.02,9,2025-12-04
+cust_00699,Taylor Rodriguez,taylor.rodriguez699@example.com,37,Nurse,San Francisco,New,299.98,1,2025-08-16
+cust_00700,Noah Taylor,noah.taylor700@example.com,48,Software Engineer,New York,Occasional,195.14,3,2026-01-02
+cust_00701,Sophia Miller,sophia.miller701@example.com,63,Freelancer,New York,Inactive,0.0,0,
+cust_00702,Pat Martin,pat.martin702@example.com,41,Accountant,New York,Occasional,295.78,5,2025-07-20
+cust_00703,Harper Miller,harper.miller703@example.com,66,Freelancer,Chicago,VIP,1266.49,11,2026-01-12
+cust_00704,Chris Williams,chris.williams704@example.com,40,Graphic Designer,New York,Occasional,513.51,5,2025-12-11
+cust_00705,Logan Davis,logan.davis705@example.com,56,Nurse,Denver,Occasional,827.11,4,2025-11-20
+cust_00706,Peyton Wilson,peyton.wilson706@example.com,58,Software Engineer,San Francisco,Inactive,0.0,0,
+cust_00707,Ava Rodriguez,ava.rodriguez707@example.com,37,Teacher,Boston,New,166.56,3,2025-10-10
+cust_00708,Lucas Taylor,lucas.taylor708@example.com,59,Graphic Designer,Atlanta,New,482.14,4,2025-12-06
+cust_00709,Reese Martin,reese.martin709@example.com,29,Data Scientist,Austin,VIP,4418.52,18,2025-12-02
+cust_00710,Jamie Brown,jamie.brown710@example.com,55,Sales Executive,Seattle,Regular,707.3,7,2025-12-30
+cust_00711,Olivia Hernandez,olivia.hernandez711@example.com,47,Freelancer,Seattle,Occasional,261.74,4,2025-09-28
+cust_00712,Sophia Hernandez,sophia.hernandez712@example.com,66,Graphic Designer,Boston,Inactive,0.0,0,
+cust_00713,Skyler Brown,skyler.brown713@example.com,39,Freelancer,New York,Occasional,602.63,5,2025-12-05
+cust_00714,Jackson Martinez,jackson.martinez714@example.com,49,Graphic Designer,Chicago,Occasional,814.3,5,2025-08-15
+cust_00715,Olivia Rodriguez,olivia.rodriguez715@example.com,38,Sales Executive,New York,Occasional,346.93,4,2025-07-22
+cust_00716,Taylor Jackson,taylor.jackson716@example.com,34,Nurse,Boston,Regular,761.75,7,2025-11-29
+cust_00717,Isabella Thompson,isabella.thompson717@example.com,40,Teacher,Chicago,Occasional,579.93,3,2025-12-14
+cust_00718,Noah Davis,noah.davis718@example.com,38,Graphic Designer,Atlanta,Inactive,0.0,0,
+cust_00719,Pat Garcia,pat.garcia719@example.com,35,Graphic Designer,Seattle,Inactive,0.0,0,
+cust_00720,Sam Brown,sam.brown720@example.com,30,Freelancer,Boston,Regular,982.18,7,2025-11-30
+cust_00721,Sophia Jackson,sophia.jackson721@example.com,25,Accountant,New York,New,725.52,5,2025-12-20
+cust_00722,Skyler Thompson,skyler.thompson722@example.com,40,Teacher,Boston,Occasional,542.88,6,2025-12-01
+cust_00723,Dakota Garcia,dakota.garcia723@example.com,59,Sales Executive,Seattle,Regular,478.9,6,2025-09-23
+cust_00724,Skyler Jackson,skyler.jackson724@example.com,25,Sales Executive,Denver,Regular,1098.84,8,2025-11-01
+cust_00725,Quinn Brown,quinn.brown725@example.com,67,Nurse,Austin,Occasional,834.03,4,2025-12-15
+cust_00726,Liam Davis,liam.davis726@example.com,24,Student,New York,Occasional,70.69,2,2025-12-30
+cust_00727,Chris Jackson,chris.jackson727@example.com,39,Teacher,Seattle,Occasional,657.96,6,2025-12-22
+cust_00728,Cameron Miller,cameron.miller728@example.com,54,Accountant,Boston,Occasional,412.92,4,2026-01-05
+cust_00729,Cameron Taylor,cameron.taylor729@example.com,40,Nurse,Boston,Regular,1655.99,11,2026-01-13
+cust_00730,Logan Garcia,logan.garcia730@example.com,29,Freelancer,Austin,Regular,2100.55,11,2025-12-24
+cust_00731,Aiden Taylor,aiden.taylor731@example.com,35,Graphic Designer,Denver,Occasional,197.93,3,2025-10-16
+cust_00732,Jackson Smith,jackson.smith732@example.com,34,Marketing Manager,Atlanta,Inactive,0.0,0,
+cust_00733,Isabella Martin,isabella.martin733@example.com,57,Accountant,Austin,Occasional,584.92,3,2025-09-25
+cust_00734,Peyton Thompson,peyton.thompson734@example.com,26,Data Scientist,Seattle,Occasional,323.32,6,2025-11-19
+cust_00735,Pat Rodriguez,pat.rodriguez735@example.com,53,Marketing Manager,New York,Regular,1494.37,11,2026-01-04
+cust_00736,Casey Anderson,casey.anderson736@example.com,46,Accountant,Boston,Regular,751.93,9,2025-12-21
+cust_00737,Alex Thomas,alex.thomas737@example.com,30,Data Scientist,Boston,Occasional,229.05,4,2025-05-10
+cust_00738,Logan Thompson,logan.thompson738@example.com,64,Freelancer,Chicago,New,353.67,1,2025-03-11
+cust_00739,Sophia Wilson,sophia.wilson739@example.com,45,Sales Executive,Austin,New,716.73,4,2026-01-05
+cust_00740,Sophia Hernandez,sophia.hernandez740@example.com,28,Sales Executive,Atlanta,Occasional,620.83,6,2025-10-19
+cust_00741,Emma Jones,emma.jones741@example.com,33,Data Scientist,Atlanta,New,354.97,2,2025-03-17
+cust_00742,Emma White,emma.white742@example.com,59,Teacher,Denver,New,254.94,3,2025-10-21
+cust_00743,Chris Martinez,chris.martinez743@example.com,37,Software Engineer,San Francisco,Occasional,1024.88,7,2025-12-19
+cust_00744,Harper Taylor,harper.taylor744@example.com,40,Data Scientist,Seattle,Occasional,405.92,4,2025-12-06
+cust_00745,Reese Miller,reese.miller745@example.com,34,Teacher,Atlanta,Inactive,0.0,0,
+cust_00746,Liam Rodriguez,liam.rodriguez746@example.com,67,Marketing Manager,Chicago,VIP,4092.3,22,2026-01-07
+cust_00747,Dakota Brown,dakota.brown747@example.com,29,Graphic Designer,Austin,Regular,681.71,8,2026-01-15
+cust_00748,Alex Taylor,alex.taylor748@example.com,56,Sales Executive,New York,Occasional,178.95,3,2025-10-30
+cust_00749,Taylor Taylor,taylor.taylor749@example.com,42,Data Scientist,Austin,Regular,1157.47,7,2025-08-26
+cust_00750,Emma Jones,emma.jones750@example.com,31,Data Scientist,Atlanta,Regular,1366.52,10,2025-12-21
+cust_00751,Liam Anderson,liam.anderson751@example.com,23,Student,New York,Regular,522.24,8,2025-12-21
+cust_00752,Peyton Hernandez,peyton.hernandez752@example.com,31,Sales Executive,Seattle,Occasional,1040.63,4,2025-10-25
+cust_00753,Emma Thompson,emma.thompson753@example.com,50,Freelancer,Atlanta,New,89.99,1,2025-10-03
+cust_00754,Lucas Anderson,lucas.anderson754@example.com,53,Sales Executive,Seattle,Occasional,162.97,3,2025-10-31
+cust_00755,Cameron Thomas,cameron.thomas755@example.com,39,Accountant,Seattle,Regular,911.04,6,2025-08-14
+cust_00756,Kendall Jones,kendall.jones756@example.com,23,Student,New York,Occasional,400.35,6,2025-12-11
+cust_00757,Olivia Moore,olivia.moore757@example.com,53,Sales Executive,New York,Occasional,485.1,5,2025-08-24
+cust_00758,Harper Garcia,harper.garcia758@example.com,23,Nurse,Seattle,VIP,2945.56,20,2025-12-03
+cust_00759,Isabella Jackson,isabella.jackson759@example.com,50,Graphic Designer,Denver,Occasional,322.42,4,2025-12-12
+cust_00760,Ava Taylor,ava.taylor760@example.com,37,Marketing Manager,Denver,Regular,903.71,8,2025-11-21
+cust_00761,Kendall White,kendall.white761@example.com,67,Nurse,Chicago,Regular,1630.73,10,2025-11-09
+cust_00762,Reese Davis,reese.davis762@example.com,27,Data Scientist,Seattle,Occasional,257.82,3,2026-01-01
+cust_00763,Emma Hernandez,emma.hernandez763@example.com,62,Data Scientist,San Francisco,Regular,828.14,10,2025-12-19
+cust_00764,Pat Martinez,pat.martinez764@example.com,24,Freelancer,Atlanta,Occasional,664.95,4,2025-07-04
+cust_00765,Chris Brown,chris.brown765@example.com,41,Sales Executive,New York,Regular,559.1,6,2025-11-25
+cust_00766,Riley Williams,riley.williams766@example.com,32,Accountant,New York,Regular,270.74,4,2025-11-07
+cust_00767,Reese Wilson,reese.wilson767@example.com,54,Graphic Designer,Boston,Occasional,312.85,3,2025-11-25
+cust_00768,Taylor Jones,taylor.jones768@example.com,18,Student,Boston,Occasional,362.32,5,2026-01-11
+cust_00769,Peyton Moore,peyton.moore769@example.com,34,Nurse,San Francisco,Inactive,0.0,0,
+cust_00770,Ava Smith,ava.smith770@example.com,30,Data Scientist,Denver,Regular,588.86,11,2026-01-15
+cust_00771,Riley Johnson,riley.johnson771@example.com,35,Nurse,Atlanta,Regular,641.88,7,2025-11-10
+cust_00772,Skyler Taylor,skyler.taylor772@example.com,66,Software Engineer,Chicago,Inactive,0.0,0,
+cust_00773,Emma Johnson,emma.johnson773@example.com,58,Teacher,Austin,Occasional,162.15,3,2026-01-14
+cust_00774,Pat Anderson,pat.anderson774@example.com,26,Accountant,Seattle,Regular,916.19,11,2025-12-16
+cust_00775,Emma Thomas,emma.thomas775@example.com,43,Software Engineer,Chicago,Regular,509.76,6,2025-11-19
+cust_00776,Dakota Garcia,dakota.garcia776@example.com,23,Data Scientist,San Francisco,Regular,586.9,6,2025-10-25
+cust_00777,Cameron Williams,cameron.williams777@example.com,38,Accountant,Austin,New,512.96,3,2025-06-15
+cust_00778,Liam White,liam.white778@example.com,44,Accountant,San Francisco,Regular,1225.81,11,2025-12-08
+cust_00779,Emma Jones,emma.jones779@example.com,19,Student,Boston,Regular,267.04,6,2025-10-08
+cust_00780,Peyton Anderson,peyton.anderson780@example.com,51,Graphic Designer,Boston,Occasional,618.64,3,2025-09-15
+cust_00781,Noah Jones,noah.jones781@example.com,39,Nurse,Boston,VIP,3666.58,26,2025-12-15
+cust_00782,Peyton Wilson,peyton.wilson782@example.com,57,Accountant,Atlanta,VIP,4123.89,22,2025-12-30
+cust_00783,Peyton Anderson,peyton.anderson783@example.com,43,Graphic Designer,Austin,Occasional,442.25,6,2025-10-05
+cust_00784,Taylor Martin,taylor.martin784@example.com,32,Freelancer,Austin,Occasional,149.82,3,2025-07-04
+cust_00785,Quinn Smith,quinn.smith785@example.com,63,Data Scientist,Boston,Occasional,430.18,6,2025-08-23
+cust_00786,Harper Anderson,harper.anderson786@example.com,62,Marketing Manager,New York,Inactive,0.0,0,
+cust_00787,Liam Jackson,liam.jackson787@example.com,47,Teacher,San Francisco,Regular,946.37,8,2025-11-17
+cust_00788,Harper Wilson,harper.wilson788@example.com,43,Accountant,Austin,Occasional,209.69,4,2025-12-12
+cust_00789,Morgan Martin,morgan.martin789@example.com,65,Teacher,San Francisco,New,139.98,1,2025-12-28
+cust_00790,Chris Johnson,chris.johnson790@example.com,21,Student,Austin,Regular,476.02,6,2025-11-25
+cust_00791,Jordan Thompson,jordan.thompson791@example.com,64,Graphic Designer,San Francisco,Occasional,716.34,4,2025-11-26
+cust_00792,Jordan Anderson,jordan.anderson792@example.com,37,Accountant,Seattle,New,194.97,3,2025-09-08
+cust_00793,Lucas Davis,lucas.davis793@example.com,64,Software Engineer,New York,New,199.93,4,2025-05-08
+cust_00794,Jackson Johnson,jackson.johnson794@example.com,46,Software Engineer,Atlanta,Occasional,557.3,6,2025-10-22
+cust_00795,Kendall Johnson,kendall.johnson795@example.com,19,Student,Seattle,Occasional,366.18,3,2025-09-14
+cust_00796,Morgan Garcia,morgan.garcia796@example.com,57,Graphic Designer,San Francisco,Regular,594.18,8,2025-11-11
+cust_00797,Logan Miller,logan.miller797@example.com,58,Graphic Designer,Chicago,Regular,1370.84,9,2025-12-23
+cust_00798,Sophia Thompson,sophia.thompson798@example.com,45,Nurse,San Francisco,Occasional,865.52,4,2026-01-13
+cust_00799,Chris Miller,chris.miller799@example.com,58,Nurse,San Francisco,New,209.64,2,2026-01-12
+cust_00800,Liam Miller,liam.miller800@example.com,57,Sales Executive,Boston,Occasional,335.16,3,2025-11-01
+cust_00801,Aiden Anderson,aiden.anderson801@example.com,49,Teacher,Boston,Occasional,286.43,4,2025-07-29
+cust_00802,Logan Jackson,logan.jackson802@example.com,36,Teacher,Chicago,Inactive,0.0,0,
+cust_00803,Cameron Hernandez,cameron.hernandez803@example.com,51,Sales Executive,Seattle,Occasional,629.5,6,2026-01-10
+cust_00804,Harper Smith,harper.smith804@example.com,20,Student,Seattle,VIP,2595.0,26,2025-12-31
+cust_00805,Riley Davis,riley.davis805@example.com,23,Student,Seattle,Occasional,97.81,3,2025-05-17
+cust_00806,Morgan Johnson,morgan.johnson806@example.com,52,Data Scientist,Austin,Inactive,0.0,0,
+cust_00807,Casey Anderson,casey.anderson807@example.com,60,Marketing Manager,Austin,Occasional,567.93,4,2026-01-07
+cust_00808,Taylor Thompson,taylor.thompson808@example.com,48,Data Scientist,Seattle,Regular,1128.03,10,2025-12-23
+cust_00809,Jackson Moore,jackson.moore809@example.com,34,Software Engineer,Boston,Regular,1483.63,7,2026-01-07
+cust_00810,Harper Wilson,harper.wilson810@example.com,25,Freelancer,San Francisco,New,694.94,4,2025-05-11
+cust_00811,Taylor Johnson,taylor.johnson811@example.com,44,Freelancer,Denver,Inactive,0.0,0,
+cust_00812,Lucas Brown,lucas.brown812@example.com,37,Nurse,Denver,Occasional,277.66,4,2025-10-27
+cust_00813,Avery Martin,avery.martin813@example.com,25,Nurse,New York,New,95.48,2,2025-02-07
+cust_00814,Jamie Martin,jamie.martin814@example.com,67,Sales Executive,Austin,Occasional,401.94,5,2025-12-21
+cust_00815,Quinn White,quinn.white815@example.com,19,Student,Denver,Regular,440.98,6,2025-11-01
+cust_00816,Sam Jones,sam.jones816@example.com,44,Data Scientist,Denver,Occasional,521.81,4,2025-08-20
+cust_00817,Peyton Taylor,peyton.taylor817@example.com,39,Freelancer,New York,Occasional,322.65,5,2025-11-08
+cust_00818,Sophia Jones,sophia.jones818@example.com,31,Sales Executive,Denver,Occasional,779.91,6,2026-01-11
+cust_00819,Dakota Thompson,dakota.thompson819@example.com,35,Graphic Designer,Atlanta,Occasional,309.5,3,2025-06-17
+cust_00820,Sophia Thomas,sophia.thomas820@example.com,43,Software Engineer,Seattle,Regular,886.81,15,2026-01-14
+cust_00821,Liam Thomas,liam.thomas821@example.com,50,Software Engineer,San Francisco,New,68.97,1,2026-01-03
+cust_00822,Jamie Anderson,jamie.anderson822@example.com,61,Teacher,Chicago,Occasional,308.93,3,2025-12-17
+cust_00823,Cameron White,cameron.white823@example.com,51,Data Scientist,Austin,Inactive,0.0,0,
+cust_00824,Jordan Garcia,jordan.garcia824@example.com,35,Marketing Manager,Atlanta,New,251.72,4,2025-12-21
+cust_00825,Sophia Williams,sophia.williams825@example.com,30,Teacher,Austin,New,59.98,1,2025-02-10
+cust_00826,Harper Jones,harper.jones826@example.com,22,Student,Chicago,Inactive,0.0,0,
+cust_00827,Avery Hernandez,avery.hernandez827@example.com,53,Teacher,San Francisco,VIP,1265.81,10,2026-01-12
+cust_00828,Pat Jackson,pat.jackson828@example.com,56,Graphic Designer,Chicago,Occasional,411.52,5,2025-11-07
+cust_00829,Olivia Smith,olivia.smith829@example.com,47,Accountant,Austin,Occasional,644.33,5,2026-01-11
+cust_00830,Avery Davis,avery.davis830@example.com,67,Marketing Manager,New York,Regular,660.49,9,2025-12-19
+cust_00831,Emma Smith,emma.smith831@example.com,19,Student,Atlanta,Occasional,178.42,4,2025-08-14
+cust_00832,Aiden Brown,aiden.brown832@example.com,24,Data Scientist,Boston,New,133.52,3,2025-09-06
+cust_00833,Dakota Martin,dakota.martin833@example.com,68,Nurse,Chicago,Occasional,696.9,5,2025-12-12
+cust_00834,Chris Davis,chris.davis834@example.com,55,Accountant,San Francisco,Occasional,585.07,7,2026-01-09
+cust_00835,Riley Martin,riley.martin835@example.com,22,Student,New York,Occasional,190.95,3,2025-12-21
+cust_00836,Alex Anderson,alex.anderson836@example.com,66,Nurse,Austin,Occasional,260.41,4,2025-09-06
+cust_00837,Kendall Rodriguez,kendall.rodriguez837@example.com,26,Data Scientist,Chicago,Occasional,321.05,5,2025-11-07
+cust_00838,Riley Jones,riley.jones838@example.com,23,Student,Seattle,Occasional,229.76,3,2025-12-10
+cust_00839,Noah Taylor,noah.taylor839@example.com,56,Marketing Manager,San Francisco,New,129.97,2,2025-04-28
+cust_00840,Reese Garcia,reese.garcia840@example.com,59,Freelancer,Chicago,New,229.97,3,2025-12-18
+cust_00841,Lucas White,lucas.white841@example.com,44,Nurse,Seattle,Regular,865.62,10,2025-11-27
+cust_00842,Emma Jones,emma.jones842@example.com,60,Marketing Manager,Chicago,Occasional,375.07,4,2025-10-26
+cust_00843,Reese Jones,reese.jones843@example.com,64,Data Scientist,Austin,Regular,1493.04,8,2026-01-03
+cust_00844,Peyton Jackson,peyton.jackson844@example.com,30,Teacher,San Francisco,Regular,833.57,8,2025-12-23
+cust_00845,Sophia Martinez,sophia.martinez845@example.com,49,Marketing Manager,New York,Occasional,164.95,4,2025-10-14
+cust_00846,Sam Davis,sam.davis846@example.com,29,Accountant,Seattle,Occasional,640.76,2,2026-01-03
+cust_00847,Harper Thompson,harper.thompson847@example.com,21,Student,Seattle,Regular,1333.2,12,2025-12-10
+cust_00848,Cameron Williams,cameron.williams848@example.com,67,Graphic Designer,New York,Regular,1540.46,12,2025-12-09
+cust_00849,Olivia Anderson,olivia.anderson849@example.com,34,Sales Executive,Atlanta,Regular,1610.56,9,2026-01-06
+cust_00850,Chris Davis,chris.davis850@example.com,37,Accountant,Austin,Occasional,399.96,2,2025-09-07
+cust_00851,Reese Garcia,reese.garcia851@example.com,21,Student,Seattle,Occasional,68.98,2,2025-08-24
+cust_00852,Aiden White,aiden.white852@example.com,54,Marketing Manager,Atlanta,Regular,1203.4,10,2026-01-15
+cust_00853,Reese Taylor,reese.taylor853@example.com,25,Accountant,Chicago,Occasional,518.63,7,2025-11-10
+cust_00854,Harper Thompson,harper.thompson854@example.com,61,Teacher,Denver,Inactive,0.0,0,
+cust_00855,Kendall Brown,kendall.brown855@example.com,51,Sales Executive,New York,Occasional,709.68,6,2026-01-11
+cust_00856,Noah Johnson,noah.johnson856@example.com,58,Graphic Designer,Denver,VIP,2683.24,17,2025-12-21
+cust_00857,Avery Hernandez,avery.hernandez857@example.com,24,Student,Chicago,Occasional,227.69,5,2025-07-17
+cust_00858,Chris Thomas,chris.thomas858@example.com,41,Data Scientist,Atlanta,Inactive,0.0,0,
+cust_00859,Quinn Hernandez,quinn.hernandez859@example.com,19,Student,Austin,New,603.7,6,2025-08-31
+cust_00860,Chris Thompson,chris.thompson860@example.com,67,Sales Executive,San Francisco,Inactive,0.0,0,
+cust_00861,Reese Martinez,reese.martinez861@example.com,51,Marketing Manager,Denver,Occasional,438.86,2,2025-11-20
+cust_00862,Isabella Hernandez,isabella.hernandez862@example.com,28,Accountant,Chicago,Regular,1112.22,8,2025-12-11
+cust_00863,Taylor Brown,taylor.brown863@example.com,68,Marketing Manager,San Francisco,Occasional,633.15,6,2025-12-31
+cust_00864,Kendall Taylor,kendall.taylor864@example.com,55,Teacher,San Francisco,New,389.97,2,2025-10-01
+cust_00865,Peyton Taylor,peyton.taylor865@example.com,25,Marketing Manager,Denver,New,139.97,2,2025-08-09
+cust_00866,Logan Jones,logan.jones866@example.com,33,Marketing Manager,Boston,Inactive,0.0,0,
+cust_00867,Reese Wilson,reese.wilson867@example.com,42,Marketing Manager,New York,Regular,954.83,10,2025-12-19
+cust_00868,Emma Miller,emma.miller868@example.com,30,Accountant,Seattle,Inactive,0.0,0,
+cust_00869,Harper Rodriguez,harper.rodriguez869@example.com,23,Graphic Designer,New York,Regular,1179.71,10,2026-01-15
+cust_00870,Harper Moore,harper.moore870@example.com,38,Accountant,New York,Occasional,429.94,5,2025-12-30
+cust_00871,Reese Hernandez,reese.hernandez871@example.com,28,Accountant,Atlanta,New,226.56,2,2025-10-12
+cust_00872,Riley Jackson,riley.jackson872@example.com,40,Freelancer,New York,New,154.68,2,2025-10-12
+cust_00873,Jordan Miller,jordan.miller873@example.com,32,Sales Executive,Chicago,New,195.97,2,2025-12-14
+cust_00874,Sam Johnson,sam.johnson874@example.com,65,Teacher,New York,Regular,1511.22,9,2025-12-25
+cust_00875,Lucas Williams,lucas.williams875@example.com,26,Data Scientist,Boston,New,424.93,4,2026-01-02
+cust_00876,Chris Wilson,chris.wilson876@example.com,62,Nurse,Austin,Regular,1177.41,10,2025-10-12
+cust_00877,Quinn Thompson,quinn.thompson877@example.com,46,Freelancer,Austin,New,352.75,3,2025-10-12
+cust_00878,Jamie Anderson,jamie.anderson878@example.com,47,Software Engineer,Seattle,VIP,4152.06,25,2026-01-07
+cust_00879,Avery Moore,avery.moore879@example.com,31,Nurse,San Francisco,Regular,241.73,4,2025-11-11
+cust_00880,Kendall Thomas,kendall.thomas880@example.com,56,Data Scientist,Boston,New,287.33,4,2026-01-02
+cust_00881,Morgan Thompson,morgan.thompson881@example.com,63,Graphic Designer,New York,Regular,1428.43,8,2025-12-07
+cust_00882,Reese White,reese.white882@example.com,43,Accountant,Seattle,Regular,1407.63,8,2025-12-30
+cust_00883,Lucas Jones,lucas.jones883@example.com,62,Freelancer,Boston,Occasional,378.64,4,2025-11-19
+cust_00884,Jackson Miller,jackson.miller884@example.com,62,Accountant,Atlanta,Occasional,613.43,5,2025-06-14
+cust_00885,Alex Brown,alex.brown885@example.com,24,Data Scientist,Chicago,Inactive,0.0,0,
+cust_00886,Jackson White,jackson.white886@example.com,49,Software Engineer,Chicago,Occasional,400.64,4,2025-08-11
+cust_00887,Peyton Davis,peyton.davis887@example.com,23,Teacher,Boston,VIP,4213.32,22,2026-01-05
+cust_00888,Jackson Williams,jackson.williams888@example.com,42,Data Scientist,Seattle,Regular,773.22,6,2025-11-04
+cust_00889,Sophia Smith,sophia.smith889@example.com,30,Sales Executive,Boston,Occasional,339.2,4,2025-12-27
+cust_00890,Ava Miller,ava.miller890@example.com,35,Nurse,New York,Occasional,284.23,5,2025-12-08
+cust_00891,Jackson Johnson,jackson.johnson891@example.com,64,Accountant,Atlanta,Occasional,701.52,3,2025-05-22
+cust_00892,Isabella Jackson,isabella.jackson892@example.com,44,Marketing Manager,Atlanta,Occasional,516.56,7,2025-10-19
+cust_00893,Logan Martinez,logan.martinez893@example.com,18,Student,Seattle,Occasional,349.63,5,2026-01-07
+cust_00894,Taylor Jones,taylor.jones894@example.com,40,Teacher,Boston,New,84.97,2,2025-08-11
+cust_00895,Emma Jackson,emma.jackson895@example.com,33,Teacher,Denver,VIP,2644.03,19,2025-12-25
+cust_00896,Harper Brown,harper.brown896@example.com,42,Nurse,Austin,New,519.94,3,2025-12-08
+cust_00897,Casey Thomas,casey.thomas897@example.com,28,Teacher,New York,Inactive,0.0,0,
+cust_00898,Quinn Wilson,quinn.wilson898@example.com,36,Graphic Designer,Boston,Occasional,302.44,6,2025-12-01
+cust_00899,Jackson Johnson,jackson.johnson899@example.com,35,Software Engineer,Boston,Regular,703.73,4,2025-08-25
+cust_00900,Jackson Moore,jackson.moore900@example.com,55,Sales Executive,New York,Occasional,458.42,4,2025-07-05
+cust_00901,Noah Martin,noah.martin901@example.com,42,Teacher,Atlanta,Regular,1888.81,9,2026-01-12
+cust_00902,Pat Johnson,pat.johnson902@example.com,52,Software Engineer,Austin,Regular,533.59,9,2026-01-15
+cust_00903,Alex Wilson,alex.wilson903@example.com,25,Sales Executive,San Francisco,Inactive,0.0,0,
+cust_00904,Jamie Hernandez,jamie.hernandez904@example.com,25,Freelancer,San Francisco,New,87.98,1,2025-12-24
+cust_00905,Alex Thompson,alex.thompson905@example.com,42,Sales Executive,Seattle,Regular,881.94,10,2025-12-26
+cust_00906,Pat Wilson,pat.wilson906@example.com,40,Teacher,Chicago,Regular,902.75,11,2025-12-28
+cust_00907,Casey Jones,casey.jones907@example.com,33,Accountant,San Francisco,Occasional,425.84,6,2025-11-04
+cust_00908,Pat Jackson,pat.jackson908@example.com,23,Student,San Francisco,Regular,1106.85,10,2025-12-30
+cust_00909,Olivia Wilson,olivia.wilson909@example.com,59,Data Scientist,Austin,Occasional,199.98,2,2025-12-08
+cust_00910,Harper Martinez,harper.martinez910@example.com,57,Software Engineer,Seattle,Regular,626.76,7,2025-11-21
+cust_00911,Skyler Johnson,skyler.johnson911@example.com,29,Marketing Manager,New York,Regular,856.06,9,2025-11-12
+cust_00912,Dakota Miller,dakota.miller912@example.com,68,Software Engineer,Denver,Regular,1418.64,9,2025-10-18
+cust_00913,Avery Martinez,avery.martinez913@example.com,35,Accountant,Boston,New,324.97,2,2025-06-20
+cust_00914,Lucas Hernandez,lucas.hernandez914@example.com,59,Sales Executive,San Francisco,Inactive,0.0,0,
+cust_00915,Morgan Hernandez,morgan.hernandez915@example.com,42,Software Engineer,Atlanta,Regular,2074.75,13,2026-01-09
+cust_00916,Riley Garcia,riley.garcia916@example.com,32,Accountant,Atlanta,New,149.97,1,2025-06-01
+cust_00917,Dakota Miller,dakota.miller917@example.com,67,Data Scientist,Boston,New,239.95,3,2026-01-10
+cust_00918,Quinn Moore,quinn.moore918@example.com,24,Teacher,Boston,New,149.97,1,2025-01-23
+cust_00919,Cameron Moore,cameron.moore919@example.com,52,Accountant,San Francisco,Regular,636.67,8,2026-01-07
+cust_00920,Kendall Brown,kendall.brown920@example.com,48,Teacher,Austin,Occasional,709.02,3,2025-07-06
+cust_00921,Jackson Wilson,jackson.wilson921@example.com,57,Sales Executive,San Francisco,Occasional,515.45,5,2025-12-12
+cust_00922,Riley White,riley.white922@example.com,38,Freelancer,Denver,Occasional,290.32,5,2026-01-05
+cust_00923,Jamie Davis,jamie.davis923@example.com,67,Nurse,San Francisco,Occasional,356.93,5,2025-11-29
+cust_00924,Peyton Garcia,peyton.garcia924@example.com,34,Freelancer,Boston,Occasional,629.93,3,2025-09-03
+cust_00925,Morgan Thompson,morgan.thompson925@example.com,61,Freelancer,Atlanta,Inactive,0.0,0,
+cust_00926,Ava Hernandez,ava.hernandez926@example.com,34,Teacher,San Francisco,Occasional,769.29,5,2025-12-20
+cust_00927,Liam White,liam.white927@example.com,47,Software Engineer,San Francisco,Occasional,933.84,7,2025-12-31
+cust_00928,Pat Jones,pat.jones928@example.com,18,Student,San Francisco,Occasional,215.75,4,2025-06-27
+cust_00929,Peyton Wilson,peyton.wilson929@example.com,47,Marketing Manager,Atlanta,New,377.16,2,2025-12-27
+cust_00930,Pat Davis,pat.davis930@example.com,66,Freelancer,Atlanta,New,134.97,2,2026-01-08
+cust_00931,Lucas Thomas,lucas.thomas931@example.com,68,Data Scientist,Seattle,Occasional,359.74,3,2025-12-20
+cust_00932,Harper Martin,harper.martin932@example.com,48,Freelancer,New York,Regular,1607.6,10,2025-11-01
+cust_00933,Isabella Jackson,isabella.jackson933@example.com,18,Student,Boston,Occasional,472.75,3,2025-11-14
+cust_00934,Morgan Wilson,morgan.wilson934@example.com,24,Sales Executive,Boston,Inactive,0.0,0,
+cust_00935,Emma Martinez,emma.martinez935@example.com,68,Nurse,Denver,Regular,1503.06,9,2025-12-05
+cust_00936,Peyton Davis,peyton.davis936@example.com,65,Nurse,Denver,Occasional,221.36,3,2025-07-01
+cust_00937,Peyton Taylor,peyton.taylor937@example.com,46,Marketing Manager,Chicago,Occasional,1459.92,4,2025-11-29
+cust_00938,Sam Smith,sam.smith938@example.com,27,Data Scientist,Austin,Regular,1063.19,11,2025-11-29
+cust_00939,Liam Thomas,liam.thomas939@example.com,31,Marketing Manager,Atlanta,VIP,1622.82,11,2025-11-28
+cust_00940,Isabella White,isabella.white940@example.com,50,Nurse,Atlanta,Regular,1477.42,10,2026-01-06
+cust_00941,Peyton Hernandez,peyton.hernandez941@example.com,47,Accountant,Denver,Regular,873.42,8,2025-11-09
+cust_00942,Harper Smith,harper.smith942@example.com,59,Marketing Manager,Denver,Regular,1011.41,8,2026-01-14
+cust_00943,Reese Jackson,reese.jackson943@example.com,59,Graphic Designer,Seattle,Inactive,0.0,0,
+cust_00944,Logan Moore,logan.moore944@example.com,23,Student,New York,Occasional,967.0,5,2025-11-08
+cust_00945,Sam Martin,sam.martin945@example.com,40,Accountant,San Francisco,New,692.99,6,2026-01-13
+cust_00946,Kendall White,kendall.white946@example.com,28,Sales Executive,San Francisco,Occasional,515.95,3,2025-07-24
+cust_00947,Harper Johnson,harper.johnson947@example.com,44,Software Engineer,Seattle,Occasional,1174.88,6,2025-12-12
+cust_00948,Logan Martinez,logan.martinez948@example.com,49,Accountant,Atlanta,Occasional,717.54,4,2025-09-18
+cust_00949,Jordan White,jordan.white949@example.com,42,Data Scientist,Austin,Occasional,391.8,6,2025-12-05
+cust_00950,Logan Johnson,logan.johnson950@example.com,65,Accountant,Austin,Regular,1164.84,6,2025-12-10
+cust_00951,Avery Moore,avery.moore951@example.com,28,Freelancer,New York,Inactive,0.0,0,
+cust_00952,Aiden Rodriguez,aiden.rodriguez952@example.com,39,Sales Executive,San Francisco,Regular,934.88,6,2026-01-12
+cust_00953,Aiden Rodriguez,aiden.rodriguez953@example.com,23,Data Scientist,Seattle,New,22.99,1,2025-03-24
+cust_00954,Lucas Thompson,lucas.thompson954@example.com,32,Software Engineer,Austin,Inactive,0.0,0,
+cust_00955,Jackson Miller,jackson.miller955@example.com,39,Accountant,Boston,New,264.97,3,2025-09-23
+cust_00956,Chris Martin,chris.martin956@example.com,25,Graphic Designer,Atlanta,New,95.97,2,2025-12-11
+cust_00957,Harper Jones,harper.jones957@example.com,54,Software Engineer,Austin,Occasional,1142.49,5,2025-11-30
+cust_00958,Liam Hernandez,liam.hernandez958@example.com,63,Nurse,Chicago,Inactive,0.0,0,
+cust_00959,Jordan Rodriguez,jordan.rodriguez959@example.com,30,Graphic Designer,Boston,Regular,896.27,7,2025-12-19
+cust_00960,Skyler Wilson,skyler.wilson960@example.com,53,Accountant,Denver,Regular,1252.76,10,2025-10-29
+cust_00961,Dakota Taylor,dakota.taylor961@example.com,53,Sales Executive,Chicago,Inactive,0.0,0,
+cust_00962,Alex Wilson,alex.wilson962@example.com,51,Marketing Manager,Denver,Regular,1020.46,8,2026-01-01
+cust_00963,Morgan Jackson,morgan.jackson963@example.com,63,Teacher,New York,New,790.03,6,2025-11-06
+cust_00964,Jamie Rodriguez,jamie.rodriguez964@example.com,40,Nurse,Seattle,Occasional,725.33,4,2025-12-24
+cust_00965,Quinn Garcia,quinn.garcia965@example.com,66,Freelancer,Denver,Regular,1061.72,9,2025-12-17
+cust_00966,Liam Miller,liam.miller966@example.com,43,Graphic Designer,Boston,Inactive,0.0,0,
+cust_00967,Ava Williams,ava.williams967@example.com,18,Student,New York,Occasional,172.06,3,2025-11-23
+cust_00968,Liam Hernandez,liam.hernandez968@example.com,45,Sales Executive,San Francisco,Regular,817.02,6,2025-12-22
+cust_00969,Pat Johnson,pat.johnson969@example.com,24,Data Scientist,Seattle,Inactive,0.0,0,
+cust_00970,Harper Davis,harper.davis970@example.com,61,Software Engineer,New York,New,215.83,4,2025-10-11
+cust_00971,Taylor White,taylor.white971@example.com,31,Software Engineer,San Francisco,New,281.96,2,2025-10-06
+cust_00972,Isabella Brown,isabella.brown972@example.com,67,Freelancer,Austin,Occasional,615.91,4,2025-11-30
+cust_00973,Liam Williams,liam.williams973@example.com,63,Data Scientist,Atlanta,Regular,1026.44,9,2025-11-27
+cust_00974,Casey Miller,casey.miller974@example.com,27,Nurse,Boston,Occasional,640.96,4,2026-01-10
+cust_00975,Dakota Martinez,dakota.martinez975@example.com,18,Student,Denver,Inactive,0.0,0,
+cust_00976,Quinn Williams,quinn.williams976@example.com,54,Data Scientist,Austin,Regular,1364.83,9,2026-01-05
+cust_00977,Emma Moore,emma.moore977@example.com,29,Nurse,Austin,New,609.93,5,2025-05-26
+cust_00978,Pat White,pat.white978@example.com,64,Sales Executive,Denver,Regular,539.4,6,2025-12-10
+cust_00979,Jordan Williams,jordan.williams979@example.com,27,Data Scientist,San Francisco,Occasional,598.59,6,2025-10-03
+cust_00980,Isabella Moore,isabella.moore980@example.com,32,Accountant,New York,Inactive,0.0,0,
+cust_00981,Liam Taylor,liam.taylor981@example.com,22,Student,New York,New,104.57,2,2025-03-15
+cust_00982,Logan Smith,logan.smith982@example.com,55,Teacher,Denver,Regular,1054.49,10,2026-01-08
+cust_00983,Reese Taylor,reese.taylor983@example.com,27,Accountant,Atlanta,Inactive,0.0,0,
+cust_00984,Dakota Moore,dakota.moore984@example.com,30,Graphic Designer,New York,Occasional,579.94,4,2025-09-17
+cust_00985,Jordan Williams,jordan.williams985@example.com,46,Data Scientist,Denver,Occasional,463.51,4,2025-11-29
+cust_00986,Emma Davis,emma.davis986@example.com,34,Accountant,Seattle,Regular,1139.46,9,2025-10-16
+cust_00987,Avery Taylor,avery.taylor987@example.com,29,Nurse,Chicago,VIP,2606.12,20,2025-12-16
+cust_00988,Taylor Hernandez,taylor.hernandez988@example.com,35,Teacher,Atlanta,New,546.55,3,2025-12-31
+cust_00989,Alex Thompson,alex.thompson989@example.com,21,Student,Chicago,Regular,552.88,8,2026-01-13
+cust_00990,Skyler Jackson,skyler.jackson990@example.com,51,Software Engineer,Seattle,Occasional,204.75,3,2025-11-12
+cust_00991,Jamie Johnson,jamie.johnson991@example.com,48,Teacher,New York,VIP,1843.69,11,2026-01-14
+cust_00992,Liam Jackson,liam.jackson992@example.com,32,Sales Executive,Atlanta,Regular,2129.79,9,2025-10-12
+cust_00993,Jordan Jones,jordan.jones993@example.com,54,Graphic Designer,San Francisco,New,48.79,1,2025-11-21
+cust_00994,Lucas White,lucas.white994@example.com,18,Student,Atlanta,New,297.95,3,2025-08-26
+cust_00995,Chris Johnson,chris.johnson995@example.com,42,Marketing Manager,New York,Regular,361.37,5,2026-01-08
+cust_00996,Ava Thompson,ava.thompson996@example.com,27,Freelancer,Austin,Occasional,524.03,5,2025-12-27
+cust_00997,Taylor Davis,taylor.davis997@example.com,50,Accountant,Chicago,Regular,1304.46,7,2025-12-16
+cust_00998,Morgan Thompson,morgan.thompson998@example.com,57,Nurse,Boston,Inactive,0.0,0,
+cust_00999,Sophia Johnson,sophia.johnson999@example.com,60,Teacher,Chicago,Regular,1427.67,9,2026-01-08
+cust_01000,Casey Jones,casey.jones1000@example.com,49,Software Engineer,San Francisco,Occasional,227.95,3,2025-09-28

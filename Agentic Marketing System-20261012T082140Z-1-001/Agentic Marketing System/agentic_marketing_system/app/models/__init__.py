@@ -1,0 +1,43 @@
+"""Models package – re-exports all schemas for convenient imports."""
+
+from app.models.schemas import (  # noqa: F401
+    CampaignChannel,
+    CampaignStatus,
+    OptimizationDecision,
+    ProductInfo,
+    CustomerSegment,
+    CampaignContent,
+    Campaign,
+    ExecutionResult,
+    CampaignMetrics,
+    OptimizationRecommendation,
+    UserGoal,
+    PlanStep,
+    ExecutionPlan,
+    WorkflowState,
+    ProductRecord,
+    CustomerRecord,
+    PurchaseRecord,
+    CampaignEventRecord,
+)
+
+__all__ = [
+    "CampaignChannel",
+    "CampaignStatus",
+    "OptimizationDecision",
+    "ProductInfo",
+    "CustomerSegment",
+    "CampaignContent",
+    "Campaign",
+    "ExecutionResult",
+    "CampaignMetrics",
+    "OptimizationRecommendation",
+    "UserGoal",
+    "PlanStep",
+    "ExecutionPlan",
+    "WorkflowState",
+    "ProductRecord",
+    "CustomerRecord",
+    "PurchaseRecord",
+    "CampaignEventRecord",
+]

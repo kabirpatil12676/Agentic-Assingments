@@ -1,0 +1,56 @@
+
+Assignment 6
+Cover Page
+Name
+Kabir Pail
+Roll No.
+B-26
+Subject
+Agentic AI
+Department
+Information Technology
+Institute
+Walchand Institute of Technology, Solapur
+Assignment
+6
+
+Task 5: Prompt Template for Topic Explanation
+Objective: Create and use a LangChain PromptTemplate that inserts a user-provided topic into a prompt and asks the model to explain it simply.
+Code
+import osfrom dotenv import load_dotenvfrom huggingface_hub import InferenceClientfrom langchain_core.prompts import PromptTemplateload_dotenv()token = os.getenv("HF_TOKEN")client = InferenceClient(    api_key=token,    provider="featherless-ai")model = "meta-llama/Llama-3.2-1B-Instruct"def generate_response(prompt):    response = client.chat.completions.create(        model=model,        messages=[            {"role": "user", "content": prompt}        ],        max_tokens=100    )    return response.choices[0].message.contentprompt = PromptTemplate.from_template(    "Explain {topic} in simple words for a student.")topic = input("Enter topic: ")final_prompt = prompt.invoke({"topic": topic})print("\nExplanation:")print(generate_response(final_prompt.to_string()))
+Output / Result
+Enter topic: Artificial IntelligenceExplanation:Artificial Intelligence (AI) is a type of computer science that allows machines to think and learn like humans, making decisions and solving problems without being explicitly programmed. It uses algorithms and data to analyze information, recognize patterns, and make predictions or take actions, similar to how humans think and behave. AI can be used in various applications, such as virtual assistants, self-driving cars, and medical diagnosis, to improve efficiency, accuracy, and decision-making.
+
+Task 6: Calculator Agent
+Objective: Create an agent that can use a calculator tool..
+Code
+import osimport jsonfrom dotenv import load_dotenvfrom huggingface_hub import InferenceClientload_dotenv()token = os.getenv("HF_TOKEN")client = InferenceClient(    api_key=token,    provider="featherless-ai")model = "meta-llama/Llama-3.2-1B-Instruct"def generate_response(prompt):    response = client.chat.completions.create(        model=model,        messages=[            {"role": "user", "content": prompt}        ],        max_tokens=100    )    return response.choices[0].message.contentdef calculator(expression):    try:        return eval(            expression,            {"__builtins__": {}},            {}        )    except:        return "Invalid expression"question = input("Ask something: ")prompt = f"""You are an AI agent with access to a calculator.User question:{question}Decide whether a calculator is needed.Return ONLY valid JSON.If calculation is needed:{{    "use_calculator": true,    "expression": "250 + 150"}}If calculation is not needed:{{    "use_calculator": false,    "expression": ""}}"""answer = generate_response(prompt)print("\nAgent decision:")print(answer)try:    decision = json.loads(answer)    if decision["use_calculator"]:        expression = decision["expression"]        result = calculator(expression)        print("\nCalculator called.")        print("Expression:", expression)        print("Result:", result)        print("\nAgent Response:")        print(f"The result of {expression} is {result}.")    else:        normal_response = generate_response(question)        print("\nAgent Response:")        print(normal_response)except json.JSONDecodeError:    print("\nCould not read the agent's decision.")
+Output / Result
+Ask something: What is the result of 150 + 200 ?Agent decision:{"use_calculator": true,"expression": "150 + 200"}Calculator called.Expression: 150 + 200Agent Response:The result of 150 + 200 is 350.
+
+Task 7: Document Chunking
+Objective: Load a text document and divide it into smaller overlapping chunks using RecursiveCharacterTextSplitter.
+Code
+from langchain_community.document_loaders import TextLoaderfrom langchain_text_splitters import RecursiveCharacterTextSplitterdoc = TextLoader("data.txt").load()splitter = RecursiveCharacterTextSplitter(    chunk_size=200,    chunk_overlap=20)chunks = splitter.split_documents(doc)print("Number of chunks:", len(chunks))for i, chunk in enumerate(chunks):    print(f"\n--- Chunk {i + 1} ---")    print(chunk.page_content)
+Output / Result
+Number of chunks: 8--- Chunk 1 ---Artificial Intelligence is a branch of computer science that focuses on creating systems capable of performing tasks that normally require human intelligence. These tasks include learning, reasoning,--- Chunk 2 ---reasoning, problem solving, understanding language, recognizing images, and making decisions.--- Chunk 3 ---Machine Learning is an important part of Artificial Intelligence. It allows computers to learn patterns from data and make predictions without being explicitly programmed for every task. Machine--- Chunk 4 ---every task. Machine Learning algorithms are commonly used in recommendation systems, fraud detection, medical diagnosis, and image recognition.--- Chunk 5 ---Deep Learning is a subset of Machine Learning that uses neural networks with multiple layers. It is widely used in areas such as computer vision, natural language processing, speech recognition, and--- Chunk 6 ---recognition, and autonomous vehicles.--- Chunk 7 ---Artificial Intelligence is becoming increasingly important in healthcare, education, finance, transportation, and many other industries. However, AI systems also create challenges related to privacy,--- Chunk 8 ---related to privacy, security, bias, and responsible use.
+
+Task 8: Keyword Extraction
+Objective: Use a prompt template and the language model to extract five important keywords from user-provided text.
+Code
+import osfrom dotenv import load_dotenvfrom huggingface_hub import InferenceClientfrom langchain_core.prompts import PromptTemplateload_dotenv()token = os.getenv("HF_TOKEN")client = InferenceClient(    api_key=token,    provider="featherless-ai")model = "meta-llama/Llama-3.2-1B-Instruct"def generate_response(prompt):    response = client.chat.completions.create(        model=model,        messages=[            {"role": "user", "content": prompt}        ],        max_tokens=60    )    return response.choices[0].message.contentprompt = PromptTemplate.from_template(    """Extract exactly 5 important keywords from the following text.Return only the keywords as a numbered list.Text:{text}""")text = input("Enter text: ")final_prompt = prompt.invoke({"text": text})print("\nKeywords:")print(generate_response(final_prompt.to_string()))
+Output / Result
+Enter text: Artificial Intelligence is a branch of computer science that focuses on creating systems capable of performing tasks that normally require human intelligence. These tasks include learning, reasoning, problem solving, understanding language, recognizing images, and making decisions.Keywords:1. Artificial Intelligence2. Computer Science3. Learning4. Reasoning5. Problem Solving
+Task 9: Translation
+Objective: Use a prompt template to translate English text into a language specified by the user.
+Code
+import osfrom dotenv import load_dotenvfrom huggingface_hub import InferenceClientfrom langchain_core.prompts import PromptTemplateload_dotenv()token = os.getenv("HF_TOKEN")client = InferenceClient(    api_key=token,    provider="featherless-ai")model = "meta-llama/Llama-3.2-1B-Instruct"def generate_response(prompt):    response = client.chat.completions.create(        model=model,        messages=[            {"role": "user", "content": prompt}        ],        max_tokens=100    )    return response.choices[0].message.contentprompt = PromptTemplate.from_template(    """Translate the following English text into {language}.Return only the translated text.Text:{text}""")text = input("Text: ")language = input("Language: ")final_prompt = prompt.invoke({    "text": text,    "language": language})print("\nTranslation:")print(generate_response(final_prompt.to_string()))
+Output / Result
+Text: The color of the car is red.Language: GermanTranslation:Der Farbton des Autos ist rot.
+
+Task 10: Temperature Comparison
+Objective: Generate responses using low and high temperature settings and compare how temperature affects creativity and variation.
+Code
+import osfrom dotenv import load_dotenvfrom huggingface_hub import InferenceClientload_dotenv()token = os.getenv("HF_TOKEN")client = InferenceClient(    api_key=token,    provider="featherless-ai")model = "meta-llama/Llama-3.2-1B-Instruct"prompt = "Write a creative sentence about Artificial Intelligence."low = client.chat.completions.create(    model=model,    messages=[        {"role": "user", "content": prompt}    ],    temperature=0.1,    max_tokens=50)high = client.chat.completions.create(    model=model,    messages=[        {"role": "user", "content": prompt}    ],    temperature=1.0,    max_tokens=50)print("Low temperature:")print(low.choices[0].message.content)print("\nHigh temperature:")print(high.choices[0].message.content)
+Output / Result
+Low temperature:As the last rays of sunlight faded from the city's steel skyscrapers, a lone AI-powered street performer began to weave a mesmerizing tapestry of code and sound, its digital fingers dancing across the pavement to create a symphony of light andHigh temperature:As the swarm of glowing, algorithmic wings dispersed across the city, the sentient AI, Echo, whispered a prophecy in a language that only the wind could understand: "The dawn of a new era will be written in the code of memories."
