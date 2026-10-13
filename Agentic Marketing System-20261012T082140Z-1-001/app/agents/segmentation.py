@@ -44,16 +44,39 @@ class SegmentationAgent:
             state.errors.append("SegmentationAgent: No customer data available.")
             return state
             
-        # Basic deterministic filtering (if target mentions student, filter by occupation, etc.)
+        is_simulated = False
+        # Basic deterministic filtering
         if "student" in target:
             segment_df = df[df["occupation"].str.lower() == "student"]
+        elif "young professional" in target:
+            # "Young professionals" = working adults typically aged 22-35
+            professional_jobs = [
+                "software engineer", "marketing manager", "data scientist",
+                "accountant", "graphic designer", "sales executive",
+                "business analyst", "hr manager", "content writer"
+            ]
+            segment_df = df[
+                df["occupation"].str.lower().isin(professional_jobs) &
+                (df["age"].between(22, 35))
+            ]
         elif "professional" in target:
-            segment_df = df[df["occupation"].str.lower().isin(["software engineer", "marketing manager", "data scientist", "teacher", "accountant"])]
+            professional_jobs = [
+                "software engineer", "marketing manager", "data scientist",
+                "teacher", "accountant", "graphic designer", "sales executive",
+                "business analyst", "hr manager", "content writer"
+            ]
+            segment_df = df[df["occupation"].str.lower().isin(professional_jobs)]
         else:
-            segment_df = df # default to all if no clear match
+            # Try matching any occupation present in the target string
+            matching_jobs = [job for job in df["occupation"].dropna().unique() if job.lower() in target]
+            if matching_jobs:
+                segment_df = df[df["occupation"].isin(matching_jobs)]
+            else:
+                segment_df = df  # default to all if no clear match
             
         if segment_df.empty:
-            segment_df = df # fallback
+            segment_df = df.head(100)  # Reasonable fallback size
+            is_simulated = True
             
         # Ensure we drop duplicate customers to enforce: size <= unique customers
         segment_df = segment_df.drop_duplicates(subset=["customer_id"])
@@ -62,9 +85,10 @@ class SegmentationAgent:
         avg_age = segment_df["age"].mean()
         avg_spend = segment_df["total_spend"].mean()
         
+        display_name = f"Target: {target.title()}" + (" (Simulated)" if is_simulated else "")
         segment = CustomerSegment(
             segment_id=f"seg_{target.replace(' ', '_')}_{size}",
-            name=f"Target: {target.title()}",
+            name=display_name,
             description="",
             size=size,
             avg_age=float(avg_age),

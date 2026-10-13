@@ -85,32 +85,53 @@ class MonitoringAgent:
             baseline.campaign_conversion_rate = metrics.conversion_rate
             baseline.campaign_revenue = rev
 
-            if baseline.historical_revenue > 0:
-                actual_lift = (
-                    (rev - baseline.historical_revenue)
-                    / baseline.historical_revenue
-                )
-            else:
-                actual_lift = 1.0 if rev > 0 else 0.0
+            # Check for comparable historical campaign revenue in DB (same product, excluding current campaign)
+            hist_camp_rev = None
+            try:
+                with self.data_service.get_connection() as conn:
+                    cur = conn.cursor()
+                    cur.execute("""
+                        SELECT SUM(ce.revenue)
+                        FROM campaigns c
+                        JOIN campaign_events ce ON c.campaign_id = ce.campaign_id
+                        WHERE c.product_id = ? AND c.campaign_id != ?
+                        GROUP BY c.campaign_id
+                    """, (state.product_info.product_id, latest_exec.campaign_id))
+                    rows = [r[0] for r in cur.fetchall() if r[0] is not None]
+                    if rows:
+                        hist_camp_rev = sum(rows) / len(rows)
+            except Exception:
+                hist_camp_rev = None
 
-            baseline.actual_lift_pct = round(actual_lift, 4)
-            baseline.target_achieved = actual_lift >= baseline.target_lift_pct
+            if hist_camp_rev is not None and hist_camp_rev > 0:
+                actual_lift = (rev - hist_camp_rev) / hist_camp_rev
+                baseline.actual_lift_pct = round(actual_lift, 4)
+                if baseline.target_lift_pct > 0:
+                    baseline.target_achieved = actual_lift >= baseline.target_lift_pct
+                else:
+                    baseline.target_achieved = actual_lift > 0.0
+            else:
+                # Do NOT calculate sales lift using lifetime purchase aggregates
+                # If comparable campaign data is unavailable, lift cannot be reliably calculated
+                baseline.actual_lift_pct = None
+                baseline.target_achieved = None
 
             state.baseline = baseline
 
+            lift_str = f"{baseline.actual_lift_pct*100:.1f}%" if baseline.actual_lift_pct is not None else "N/A"
             logger.info(
-                "MonitoringAgent BASELINE: historical_rev=%.2f  campaign_rev=%.2f  "
-                "sales_lift=%.2f%%  target=%.0f%%  achieved=%s",
-                baseline.historical_revenue,
+                "MonitoringAgent BASELINE: hist_camp_rev=%s  campaign_rev=%.2f  "
+                "sales_lift=%s  target=%.2f  achieved=%s",
+                hist_camp_rev,
                 rev,
-                actual_lift * 100,
-                baseline.target_lift_pct * 100,
+                lift_str,
+                baseline.target_lift_pct,
                 baseline.target_achieved,
             )
             state.logs.append(
-                f"BASELINE | hist_rev=${baseline.historical_revenue:.2f} "
+                f"BASELINE | hist_camp_rev={hist_camp_rev} "
                 f"camp_rev=${rev:.2f} "
-                f"sales_lift={actual_lift*100:.1f}% "
+                f"sales_lift={lift_str} "
                 f"target={baseline.target_lift_pct*100:.0f}% "
                 f"achieved={baseline.target_achieved}"
             )
@@ -148,13 +169,13 @@ class MonitoringAgent:
         product_id = state.product_info.product_id
         category = state.product_info.category
 
-        # Parse target_lift from goal text (look for "X%")
-        target_lift = 0.15  # default 15%
+        # Parse target_lift from goal text (look for "X%"), default to 0.0 (positive sales lift)
+        target_lift = 0.0
         if state.goal and state.goal.goal_text:
             import re
-            match = re.search(r"(\d+)%", state.goal.goal_text)
+            match = re.search(r"(\d+(?:\.\d+)?)%", state.goal.goal_text)
             if match:
-                target_lift = int(match.group(1)) / 100.0
+                target_lift = float(match.group(1)) / 100.0
 
         try:
             purchases_df = self.data_service.load_purchases()

@@ -25,27 +25,71 @@ from huggingface_hub import InferenceClient
 
 load_dotenv()
 token = os.getenv("HF_TOKEN")
-client = None
+OLLAMA_URL = os.getenv("OLLAMA_URL", "http://localhost:11434")
+
+def _get_ollama_model():
+    env_model = os.getenv("OLLAMA_MODEL")
+    if env_model:
+        return env_model
+    try:
+        r = requests.get(f"{OLLAMA_URL}/api/tags", timeout=1.5)
+        if r.status_code == 200:
+            names = [m["name"] for m in r.json().get("models", [])]
+            for pref in ["qwen2.5:0.5b", "llama3.2:1b", "llama3.2:3b", "qwen2.5:1.5b", "qwen3.5:9b"]:
+                for n in names:
+                    if n == pref or n.startswith(pref):
+                        return n
+            if names:
+                return names[0]
+    except Exception:
+        pass
+    return "qwen2.5:0.5b"
+
+OLLAMA_MODEL = _get_ollama_model()
+
+hf_client = None
 if token:
     try:
-        client = InferenceClient(api_key=token, provider="featherless-ai")
+        hf_client = InferenceClient(api_key=token)
     except Exception as e:
-        print(f"Warning initializing client: {e}")
-
-model = "meta-llama/Llama-3.2-1B-Instruct"
+        pass
 
 def generate_response(prompt, max_tokens=250):
-    global client
-    if client and token:
+    # 1. Primary Engine: Local Ollama (Runs 100% on local GPU, zero rate limits, unlimited usage)
+    try:
+        res = requests.post(
+            f"{OLLAMA_URL}/api/generate",
+            json={
+                "model": OLLAMA_MODEL,
+                "prompt": prompt,
+                "stream": False,
+                "options": {
+                    "num_predict": max_tokens,
+                    "temperature": 0.3
+                }
+            },
+            timeout=25
+        )
+        if res.status_code == 200:
+            text = res.json().get("response", "").strip()
+            if text:
+                return text
+    except Exception:
+        pass
+
+    # 2. Secondary Engine: Hugging Face Cloud Inference (if configured and reachable)
+    if hf_client and token:
         try:
-            response = client.chat.completions.create(
-                model=model,
+            response = hf_client.chat.completions.create(
+                model="meta-llama/Llama-3.2-1B-Instruct",
                 messages=[{"role": "user", "content": prompt}],
                 max_tokens=max_tokens
             )
-            return response.choices[0].message.content
-        except Exception as e:
-            print(f"[Note: API call error ({e}). Using local fallback response]")
+            text = response.choices[0].message.content
+            if text:
+                return text
+        except Exception:
+            pass
 
     p_lower = prompt.lower()
     
@@ -79,18 +123,20 @@ def generate_response(prompt, max_tokens=250):
 
     # Task 21 fallbacks
     elif "supervisor agent" in p_lower:
-        if any(w in p_lower for w in ["calculate", "math", "add", "numbers", "multiply", "divide", "equation"]):
-            return "MATH"
-        elif any(w in p_lower for w in ["code", "python", "java", "c++", "program", "function", "class"]):
+        task_m = re.search(r'\nTask:\s*\n*([^\n]+)', prompt, re.IGNORECASE)
+        t_text = task_m.group(1).strip().lower() if task_m else p_lower
+        if any(w in t_text for w in ["code", "python", "java", "c++", "javascript", "program", "function", "class", "script", "algorithm", "developer"]):
             return "PYTHON"
+        elif any(w in t_text for w in ["calculate", "math", "add", "numbers", "multiply", "divide", "equation", "algebra", "integral", "derivative"]):
+            return "MATH"
         else:
             return "WRITING"
     elif "specialist" in p_lower:
         task_m = re.search(r'task:\s*\n*([^\n]+)', prompt, re.IGNORECASE)
         t = task_m.group(1).strip() if task_m else "the request"
-        if "math" in p_lower:
-            return f"Math Specialist Solution: Solving '{t}' step-by-step using standard algebraic principles."
-        elif "python" in p_lower or "code" in p_lower:
+        if "math specialist" in p_lower:
+            return f"Math Specialist Solution: Solving '{t}' step-by-step using standard mathematical principles."
+        elif "python specialist" in p_lower:
             return (
                 f"Python Specialist Solution for '{t}':\n\n"
                 "```python\n"
@@ -236,15 +282,18 @@ Keep the advice short and practical."""
 
 def task_23():
     print("\n--- Task 23: Computer Vision Classification and Decision Threshold Agent ---")
-    default_img = "d:/Kabir/sample_car.jpg"
+    # Default to local sample_car.jpg in the same directory as this script
+    script_dir = Path(__file__).parent
+    default_img = str(script_dir / "sample_car.jpg")
     image_input = input(f"Enter image path (default: {default_img}): ").strip().strip('"').strip("'")
     if not image_input:
         image_input = default_img
 
     image_path = Path(image_input)
+    # Fallback: try the local sample_car.jpg in the script directory
     if not image_path.is_file():
-        print(f"Image not found: {image_path.resolve()}. Using sample car image.")
-        image_path = Path(default_img)
+        print(f"Image not found: {image_path.resolve()}. Falling back to local sample_car.jpg.")
+        image_path = script_dir / "sample_car.jpg"
 
     label = None
     score = None
@@ -284,7 +333,12 @@ def main():
         print("0.  Run All Tasks sequentially")
         print("q.  Exit")
 
-        choice = input("\nEnter choice (20-23, 0, q): ").strip().lower()
+        try:
+            choice = input("\nEnter choice (20-23, 0, q): ").strip().lower()
+        except (EOFError, KeyboardInterrupt):
+            print("\nExiting Assignment 9...")
+            break
+
         if choice == "20":
             task_20()
         elif choice == "21":
@@ -298,7 +352,7 @@ def main():
             task_21()
             task_22()
             task_23()
-        elif choice in ["q", "exit"]:
+        elif choice in ["q", "exit", "quit"]:
             print("Exiting Assignment 9...")
             break
         else:

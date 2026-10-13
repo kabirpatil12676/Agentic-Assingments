@@ -41,10 +41,23 @@ class OptimizationAgent:
             
         metrics = state.metrics[-1]
         
+        target_achieved = state.baseline.target_achieved if state.baseline else None
+
         # Check if we've hit max loops
         if state.optimization_iteration >= self.config.max_optimization_loops:
             decision = OptimizationDecision.STOP
-            reason = "Max optimization loops reached."
+            if target_achieved is True:
+                reason = f"Iteration limit reached ({state.optimization_iteration}/{self.config.max_optimization_loops}). Target performance achieved."
+            elif target_achieved is False:
+                reason = (
+                    f"Iteration limit reached ({state.optimization_iteration}/{self.config.max_optimization_loops}). "
+                    "Target sales lift was not achieved. Recommend further optimization in next campaign cycle."
+                )
+            else:
+                reason = (
+                    f"Iteration limit reached ({state.optimization_iteration}/{self.config.max_optimization_loops}). "
+                    "Sales lift could not be evaluated due to missing historical campaign baseline. Recommend establishing campaign benchmark."
+                )
             rec = OptimizationRecommendation(
                 campaign_id=metrics.campaign_id,
                 decision=decision,
@@ -64,10 +77,16 @@ class OptimizationAgent:
                 
                 # fallback if LLM fails
                 if not rec_dict or "decision" not in rec_dict:
+                    if target_achieved is True:
+                        fallback_reason = "Target performance achieved."
+                    elif target_achieved is False:
+                        fallback_reason = "Iteration limit reached. Target sales lift was not achieved; further optimization recommended."
+                    else:
+                        fallback_reason = "Iteration limit reached. Comparable historical campaign baseline is unavailable."
                     rec_dict = {
                         "campaign_id": metrics.campaign_id,
                         "decision": "stop",
-                        "reason": "Default fallback decision.",
+                        "reason": fallback_reason,
                         "iteration": state.optimization_iteration
                     }
                 
@@ -77,14 +96,28 @@ class OptimizationAgent:
                         rec_dict["decision"] = OptimizationDecision(rec_dict["decision"].lower())
                     except ValueError:
                         rec_dict["decision"] = OptimizationDecision.STOP
-                        
+                
+                # Prevent misreporting poor performance as accepted
+                if rec_dict.get("decision") == OptimizationDecision.STOP:
+                    orig_reason = rec_dict.get("reason", "")
+                    if target_achieved is None:
+                        rec_dict["reason"] = (
+                            f"Iteration limit reached ({state.optimization_iteration + 1}/{self.config.max_optimization_loops}). "
+                            "Comparable historical campaign baseline is unavailable; recommend establishing campaign benchmark."
+                        )
+                    elif not target_achieved and ("accepting" in orig_reason.lower() or not orig_reason):
+                        rec_dict["reason"] = (
+                            f"Iteration limit reached ({state.optimization_iteration + 1}/{self.config.max_optimization_loops}). "
+                            "Target sales lift was not achieved. Recommend further optimization in next campaign cycle."
+                        )
+
                 rec = OptimizationRecommendation(**rec_dict)
             except Exception as e:
                 logger.error(f"OptimizationAgent error: {e}")
                 rec = OptimizationRecommendation(
                     campaign_id=metrics.campaign_id,
                     decision=OptimizationDecision.STOP,
-                    reason=f"Error in LLM: {e}",
+                    reason=f"Error in LLM: {e}. Target sales lift was not achieved.",
                     iteration=state.optimization_iteration
                 )
         

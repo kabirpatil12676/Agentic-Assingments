@@ -98,7 +98,11 @@ class LLMProvider:
             return {
                 "campaign_id": "mock_id",
                 "decision": "stop",
-                "reason": "Second iteration complete. Accepting current performance.",
+                "reason": (
+                    "Iteration limit reached (2/2). Target sales lift was not achieved. "
+                    "Recommend refining audience targeting, adjusting budget, or testing "
+                    "additional creative variants in the next campaign cycle."
+                ),
                 "suggested_changes": {},
                 "predicted_lift": 0.0,
                 "iteration": 2,
@@ -153,7 +157,7 @@ class LLMProvider:
         if self.config.provider == "ollama":
             url = f"{self.config.base_url}/api/generate"
             payload = {
-                "model": self.config.model_name,
+                "model": getattr(self.config, "model", getattr(self.config, "model_name", "qwen3.5:9b")),
                 "prompt": f"{system_prompt}\n\n{prompt}",
                 "stream": False
             }
